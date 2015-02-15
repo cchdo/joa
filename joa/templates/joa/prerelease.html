@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Java OceanAtlas Application</h1>
+<h2>Pre-releases</h2>
+
+<p>
+Try out the next version of JOA before it is released as a stable download.
+Pre-releases contain bug fixes and new features but are generally not stable
+enough for wide distribution.
+</p>
+
+<div class="alert alert-block">
+  <h4>Backup first!</h4>
+  It is likely that you will encounter bugs, crashes, and general instability.
+  Please make the appropriate backups before downloading and installing
+  pre-release software.
+</div>
+
+<h3>Alpha</h3>
+
+<div class="downloads">
+  <h4>JOA 5.1</h4>
+  <div class="row">
+    <div class="span4">
+      <h4>Mac OS X</h4>
+      <p><a href="/static/joa/prerelease/joa5.1/Java OceanAtlas 5.1.dmg" class="btn btn-primary">Download JOA 5.1 alpha</a></p>
+      <p><small>(58.6 MB)</small></p>
+    </div>
+    <div class="span4">
+      <h4>Windows</h4>
+      <p><a href="" class="btn btn-primary" disabled="disabled">Coming soon!</a></p>
+      <p><small></small></p>
+    </div>
+  </div>
+</div>
+<p>
+<a href="/static/joa/prerelease/joa5.1/whats_new_in_joa_5.1.pdf">What's new in JOA 5.1</a>
+</p>
+{% endblock %}
+{% block right_nav %}
+{% include "joa/_right_nav.html"%}
+{% endblock %}

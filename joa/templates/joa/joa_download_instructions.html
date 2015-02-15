@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Java OceanAtlas Application</h1>
+<h2>Download and installation instructions</h2>
+
+<p>
+  Java OceanAtlas (JOA) is a computer application written in Java.  JOA and its
+  support files must be installed on your computer.  JOA cannot be opened/run
+  from removable media such as a CD or DVD, nor can it be opened/run over a
+  network.
+</p>
+
+<p>
+  So long as your computer operating system includes the requisite level of
+  Java support, installing JOA is accomplished mainly by copying all the needed
+  files from the source (disk or web site) to your computer&rsquo;s hard drive,
+  and seeing that the JOA application and its support files remain in a single
+  folder/directory.
+</p>
+
+<p>It is important that you use the version of JOA made to run on your computer&rsquo;s
+operating system. There are versions of Java OceanAtlas compatible with Mac
+OS-X, Windows, and Linux available to the right.</p>
+
+<p>Once you have installed JOA, you should have a folder/directory on your
+computer with these contents:</p>
+
+<div class="image">
+  <img alt="List of folders: bathymetry, coastlines, Example Data Files, Java OceanAtlas 5.0, JOA_Support, lexicon.txt, ndeditsettings.txt, temp"
+       src="/static/dpo_examples/images/JOAimages/install_application.png">
+</div>
+
+<p>
+  Most of these are essential - the JOA application itself will not run without
+  information it looks for in some of the other files - and so all must be
+  co-located in the same folder/directory on your computer.
+</p>
+<p style="color: #FF6600; font-weight: bold;">IMPORTANT: Remember to COPY the
+  Java OceanAtlas Application and support files to your hard drive to complete
+  the installation process.
+</p>
+
+<h3 id="support_files">Support Files</h3>
+<h4>Bathymetry Add-ins</h4>
+<p>
+  If you would like to add higher-resolution ETOPO files, download any or all
+  of these files and unzip them into the JOA_Support folder/subdirectory on
+  your computer.
+</p>
+<p>
+  Java OceanAtlas contains ETOPO-60 and ETOPO-20 files. These are binary files
+  extracted from ETOPO-5 with bathymetry and elevations at 5-minute spatial
+  resolution.
+</p>
+{% endblock %}
+{% block right_nav %}
+{% include "joa/_right_nav.html"%}
+{% endblock %}

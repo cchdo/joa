@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Java OceanAtlas Application</h1>
+<h2>Updates and Version History</h2>
+
+<!-- For the link "JOA updates and version history" you will have 
+
+  instructions for updating JOA
+  clickable link(s) to download latest joa.jar file (and possibly some other file)
+  scrolling version history, with newest entry on top.
+
+
+  Typical version history entries would look like this:
+
+  Version History
+
+  Date  File Name Summary
+  2011-02-24  joa.jar bug repair
+  2011-02-04  JOA 5.0 application final 5.0 version on line -->
+
+  <h3>Available Updates</h3>
+  <p>
+  <a href="/joa/mac/jar5.0.2/JOA5.jar" class="joa_link btn btn-primary">JOA5.jar for JOA 5.0.2</a>
+  </p>
+
+  <h3>Instructions for Updating Java OceanAtlas</h3>
+
+  <p>From time to time we may replace the entire Java OceanAtlas (JOA) application in order to bring about broad changes to JOA features or interfaces.  All you need do to update your JOA application in such cases is to download the new JOA application and replace your existing one with it.  If the new JOA application comes with a new JOA_Support directory, you may wish to copy any customized files in your present JOA_Support directory into the new JOA_Support directory.  It is wise, however, to retain your previous JOA application and support files until you are satisfied that the new version of JOA is working to your satisfaction.</p>
+
+  <p>Most updates to JOA are, however, accomplished via replacement of an internal JOA file called a "joax.jar" file.  (Occasionally some other internal files may need to be replaced, too.)  The procedure to follow:</p>
+
+
+  <h3>Macintosh:</h3>
+  <ul>
+    <li>Download new file (typically named "JOA5.jar") to your computer.</li>
+
+    <li>Locate your working copy of the JOA application.</li>
+
+    <li>"Control-click" ("right-click on a two button mouse") on the JOA application.  You should see a menu something like this:
+
+      <br><img alt="Updates-1" src="/static/images/joa_images/updates-1.png"></li>
+
+    <li>Choose "Show Package Contents".  You should see a new window something like this:
+
+      <br><img alt="Updates-2" src="/static/images/joa_images/updates-2.png"></li>
+
+    <li>Move the old/existing file of the same name as the new one to a safe place somewhere on your computer.  This is optional, but if the new one does not work, you can then put the old one back into the JOA application package.</li>
+
+    <li>Place the new file (typically the "JOA5.jar" file), into the exact place where the old one resided.  (For the typical JOA5.jar file replacement/update, the new file goes into the "Java" folder, which is inside the "Resources" folder, which is inside the Java folder;  i.e., Contents/Resources/Java/JOA5.jar.)</li>
+
+    <li>Close the window and you are done updating the .jar file inside the JOA application.</li>
+  </ul>
+
+
+  <h3>Windows/Linux</h3>
+  <ul>
+    <li>Download new file (typically named "JOA5.jar") to your computer.</li>
+
+    <li>Locate your working copy of the JOA application.</li>
+
+    <li>Open the directory that contains the JOA execuble file:
+
+      <br><img alt="Updates-3" src="/static/images/joa_images/updates-3.png"></li>
+
+    <li>Move the old/existing file of the same name as the new one to a safe place somewhere on your computer.  This is optional, but if the new one does not work, you can then put the old one back into the JOA application directory.</li>
+
+    <li>Place the new file (typically the "JOA5.jar" file), into the exact place where the old one resided.  Note: depending upon how Windows is configured, you may or may not see the .jar file extension.</li>
+  </ul>
+
+
+
+
+
+  <!-- <ol>
+    <li>Download new file (typically named &quot;JOA5.jar&quot;) to your computer.</li>
+    <li>Locate your working copy of the JOA application.</li>
+    <li>&quot;Control-click&quot; (&quot;right-click&quot;) on the JOA application.  You should see a list something like this:
+    <img alt="Updates-1" src="/images/joa_images/updates-1.png?1296761426" /></li>
+
+    <li>Remove the old/existing file of the same name as the new one to a safe place somewhere on your computer.  This is optional, but if the new one does not work, you can then put the old one back into the JOA application package.</li>
+    <li>Place the new file (typically the &quot;JOA5.jar&quot; file), into the exact place where the old one resided.  (For the typical JOA5.jar file replacement/update, the new file goes into the &quot;Java&quot; folder, which is inside the &quot;Resources&quot; folder, which is inside the Java folder;  i.e. Contents/Resources/Java/JOA5.jar.)</li>
+    <li>Close the windows and you are done updating the .jar file inside the JOA application.</li>
+    </ol> -->
+{% endblock %}
+{% block right_nav %}
+{% include "joa/_right_nav.html"%}
+{% endblock %}

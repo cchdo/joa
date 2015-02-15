@@ -16,6 +16,19 @@ def index(page=None):
 
     return render_template(template, page='home', subpages=subpages)
 
+@app.route("/joa")
+@app.route("/joa/<path:page>")
+def joa(page=None):
+
+    # hacking due to rails translation
+    subpages = ['index']
+    template = 'joa/index.html'
+    if page:
+        subpages = [page.split('.')[0]]
+        template = "joa/" + page
+
+    return render_template(template, page='joa', subpages=subpages)
+
 @app.route("/tour")
 @app.route("/tour/<int:page>")
 def tour(page=None):
