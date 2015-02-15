@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div id="guided_tour">
+	<h1>Guided Tour of Java OceanAtlas </h1>
+	<h2>Modifying Plots</h2>
+	<div id="guided_tour_content">
+		
+	
+	<p>Again as you know or suspect, most Java OceanAtlas plots can be extensively modified.
+	To change the scale range or other aspects of almost any Java OceanAtlas plot, double-click anywhere inside the content area. You will get a dialog box from which you can alter the scale range and make other changes.</p> <p>Are the dots too small on the property-property plots? You can increase the symbol size or change the symbol shape.</p> <p>Do you wish a different background color? Single-clicking on a color swatch in a dialog box brings up a color picker, or you can change to 'white' or 'black' plot styles.</p> <p>And so forth. The plot will be redrawn in accord with the new set-up information when 'OK' is clicked, or will update in the background if 'Apply' is clicked.</p>
+	
+</div>
+</div>
+{% endblock %}
+{% block right_nav %}
+{% include "tour/_right_nav.html"%}
+{% endblock %}
