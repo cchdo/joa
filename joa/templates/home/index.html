@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="image">
+  <img alt="Front5" src="static/images/front5.jpg">
+  <div class="caption">Deploying a rosette</div>
+</div>
+
+<div class="main">
+  <h1>Welcome to the Java OceanAtlas suite!</h1>
+  <h2>An interactive tool to explore the ocean.</h2>
+
+  <div class="links">
+    <p>Use the tabs at the top right to access this site's three components:</p>
+    <p>
+    The <b>JOA application</b> with user guide and online guided tour.<br> 
+    <a href="/joa" class="joa_link">Go to JOA application page to download</a>
+    </p>
+    <p>
+    The <b>JOA data</b> set, including pre-WOCE data, WOA data, data for the DPO JOA Examples, and more.<br>  
+    <a href="/data" class="joa_link">Go to JOA data page</a>
+    </p>
+    <p>
+    The <b>DPO JOA Examples</b> accompaniment to the textbook<br> <em>Descriptive Physical Oceanography: An Introduction (Sixth Edition)</em> . <br>
+    <a href="/joa" class="joa_link">Go to The DPO JOA Examples</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
+{% block right_nav %}
+{% include "home/_right_nav.html"%}
+{% endblock %}
