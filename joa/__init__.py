@@ -122,7 +122,7 @@ def dpo_rewrite(page=None):
 def data(subpage=None, subsubpage=None):
     template = 'data/index.html'
     data=None
-    return render_template(template, data=data)
+    return render_template(template, page='data', data=data)
 
 if __name__ == "__main__":
     app.run(debug=True)

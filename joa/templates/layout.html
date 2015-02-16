@@ -36,6 +36,7 @@
       <div id="container" class="{{ page }} {% for sp in subpages %}{{sp}} {% endfor %} row-fluid">
         <div id="main_content" class="contained {% if self.right_nav() %}span8{% else %}span12{% endif %}">
           <div id="top"></div>
+          {% block data_warn %}{% endblock %}
           {% block body %}{% endblock %}
         </div>
         {% if self.right_nav() %}
