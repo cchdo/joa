@@ -299,7 +299,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1978.8M.49S_46S.joa", 
   "ship_name": "Melville", 
-  "year": "19788", 
+  "year": "1978", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -608,7 +608,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.25S.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -636,7 +636,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1987-88.6N.14S.joa", 
   "ship_name": "Knorr", 
-  "year": "19876", 
+  "year": "1987", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -904,7 +904,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.72W_71W.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -1241,7 +1241,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1983.9W.0N.joa", 
   "ship_name": "Unknown", 
-  "year": "19839", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -1395,7 +1395,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.27W_22W.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "South-Eastern"
   ], 
@@ -1774,7 +1774,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.42S_38S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -2141,7 +2141,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.4W_2E.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -2155,7 +2155,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.37N_58N.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -2169,7 +2169,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1972.6N.15N_18N.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -2225,7 +2225,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1972.8M.32S_23S.joa", 
   "ship_name": "Melville", 
-  "year": "19728", 
+  "year": "1972", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -2872,7 +2872,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.17N.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -3083,7 +3083,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1983.9W.24W.joa", 
   "ship_name": "Unknown", 
-  "year": "19839", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -3363,7 +3363,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1983.9W.5S.joa", 
   "ship_name": "Unknown", 
-  "year": "19839", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -3591,7 +3591,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1989.8M.41W.joa", 
   "ship_name": "Melville", 
-  "year": "19898", 
+  "year": "1989", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -3703,7 +3703,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1972.6N.15N_17N.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -3787,7 +3787,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1973.6N.67W_19E.joa", 
   "ship_name": "Knorr", 
-  "year": "19736", 
+  "year": "1973", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -3885,7 +3885,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1987.6N.10S_2N.joa", 
   "ship_name": "Knorr", 
-  "year": "19876", 
+  "year": "1987", 
   "sub_basin_name": [
    "South-Eastern"
   ], 
@@ -4446,7 +4446,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1983.9W.2S.joa", 
   "ship_name": "Unknown", 
-  "year": "19839", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -4547,7 +4547,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.58W.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    null
   ], 
@@ -4885,7 +4885,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983-84.6N.45S_34S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -4913,7 +4913,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1972.6N.69W_68W.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -5025,7 +5025,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.28N_39N.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "South-Western"
   ], 
@@ -5375,7 +5375,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.37S_34S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -5403,7 +5403,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.60W.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -5544,7 +5544,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.20S_15S.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -6137,7 +6137,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.50N_54N.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Central-Eastern"
   ], 
@@ -6557,7 +6557,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1978.8M.41W.joa", 
   "ship_name": "Melville", 
-  "year": "19788", 
+  "year": "1978", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -6825,7 +6825,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1982-83.6N.44W_18W.joa", 
   "ship_name": "Knorr", 
-  "year": "19826", 
+  "year": "1982", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -6895,7 +6895,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.38S_33S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -7385,7 +7385,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.62W.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -7595,7 +7595,7 @@
   "ship_shorthand": "8M", 
   "file_name": "ind.1978.8M.55-65E.joa", 
   "ship_name": "Melville", 
-  "year": "19788", 
+  "year": "1978", 
   "sub_basin_name": [
    null
   ], 
@@ -7609,7 +7609,7 @@
   "ship_shorthand": "6N", 
   "file_name": "ind.1983.6N.21E.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    null
   ], 
@@ -7834,7 +7834,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.61N_65N.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -8367,7 +8367,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1977.6N.55W.joa", 
   "ship_name": "Knorr", 
-  "year": "19776", 
+  "year": "1977", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -9112,7 +9112,7 @@
   "ship_shorthand": "6N", 
   "file_name": "ind.1983.6N.38S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    null
   ], 
@@ -9224,7 +9224,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.36S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -9238,7 +9238,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.6E.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -9252,7 +9252,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.15N_37N.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "South-Western"
   ], 
@@ -9364,7 +9364,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1972.6N.65W.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -9504,7 +9504,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.34W_17W.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -9630,7 +9630,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1975.8M.62W_56W.joa", 
   "ship_name": "Melville", 
-  "year": "19758", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -9913,7 +9913,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.3W.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -10124,7 +10124,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1983.9W.29W.joa", 
   "ship_name": "Unknown", 
-  "year": "19839", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -10181,7 +10181,7 @@
   "ship_shorthand": "6N", 
   "file_name": "ind.1983.6N.26-23E.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    null
   ], 
@@ -10868,7 +10868,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.71W.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -10910,7 +10910,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1975.8M.63S_61S.joa", 
   "ship_name": "Melville", 
-  "year": "19758", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -10924,7 +10924,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1975.8M.62S_56S.joa", 
   "ship_name": "Melville", 
-  "year": "19758", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -10994,7 +10994,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.60W.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -11401,7 +11401,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.0W_7E.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -11625,7 +11625,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983-84.6N.1W.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -11765,7 +11765,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.10E.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -11864,7 +11864,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1972.6N.44N_74N.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -12117,7 +12117,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.62W.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -12285,7 +12285,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1978.8M.47S.joa", 
   "ship_name": "Melville", 
-  "year": "19788", 
+  "year": "1978", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -12355,7 +12355,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1988-89.6N-8M.26S.joa", 
   "ship_name": "Melville", 
-  "year": "19886", 
+  "year": "1988", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -12411,7 +12411,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1972.8M.30S.joa", 
   "ship_name": "Melville", 
-  "year": "19728", 
+  "year": "1972", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -12944,7 +12944,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.75W_74W.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "South-Western"
   ], 
@@ -13070,7 +13070,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.69W.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -13520,7 +13520,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.28N_35N.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "South-Eastern"
   ], 
@@ -13604,7 +13604,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.34S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -13688,7 +13688,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1984.6N.63S.joa", 
   "ship_name": "Knorr", 
-  "year": "19846", 
+  "year": "1984", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -14562,7 +14562,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.41S_39S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -14928,7 +14928,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1989.8M.36W.joa", 
   "ship_name": "Melville", 
-  "year": "19898", 
+  "year": "1989", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -14970,7 +14970,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.67W.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -15757,7 +15757,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1978.8M.52S_47S.joa", 
   "ship_name": "Melville", 
-  "year": "19788", 
+  "year": "1978", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -15996,7 +15996,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1975.8M.63S_56S.joa", 
   "ship_name": "Melville", 
-  "year": "19758", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -16024,7 +16024,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.58W.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -16235,7 +16235,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1972.6N.18N.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -16740,7 +16740,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.35N_38N.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -17331,7 +17331,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1988-89.6N-8M.47S_4N.joa", 
   "ship_name": "Melville", 
-  "year": "19886", 
+  "year": "1988", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -17824,7 +17824,7 @@
   "ship_shorthand": "6N", 
   "file_name": "ind.1983.6N.13-17E.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    null
   ], 
@@ -17880,7 +17880,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.38S_36S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -18007,7 +18007,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.4E.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -18768,7 +18768,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.67W.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -19178,7 +19178,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1983.6N.10N.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -19388,7 +19388,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1986.6N.63W.joa", 
   "ship_name": "Knorr", 
-  "year": "19866", 
+  "year": "1986", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -20203,7 +20203,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.56W.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -20231,7 +20231,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.51N.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -20485,7 +20485,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.58N.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -20527,7 +20527,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.53W_30W.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -21200,7 +21200,7 @@
   "ship_shorthand": "8M", 
   "file_name": "ind.1978.8M.84-110E.joa", 
   "ship_name": "Melville", 
-  "year": "19788", 
+  "year": "1978", 
   "sub_basin_name": [
    null
   ], 
@@ -21776,7 +21776,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1982.6N.4N_17N.joa", 
   "ship_name": "Knorr", 
-  "year": "19826", 
+  "year": "1982", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -22098,7 +22098,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1972.6N.64W.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -22238,7 +22238,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.11W_9E.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "Central-Eastern"
   ], 
@@ -22280,7 +22280,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.64W.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -22506,7 +22506,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.0W_9E.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -22688,7 +22688,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.20E.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -22772,7 +22772,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1975.8M.62S_55S.joa", 
   "ship_name": "Melville", 
-  "year": "19758", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -23307,7 +23307,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.20N.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "South-Western"
   ], 
@@ -23489,7 +23489,7 @@
   "ship_shorthand": "6N", 
   "file_name": "ind.1983.6N.39S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    null
   ], 
@@ -23573,7 +23573,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1975.8M.61S_60S.joa", 
   "ship_name": "Melville", 
-  "year": "19758", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -23979,7 +23979,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1983.9W.30S_24S_2.joa", 
   "ship_name": "Unknown", 
-  "year": "19839", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -24302,7 +24302,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.20N_2.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "South-Western"
   ], 
@@ -24624,7 +24624,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1989.8M.37S_34S.joa", 
   "ship_name": "Melville", 
-  "year": "19898", 
+  "year": "1989", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -24764,7 +24764,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1986.6N.33N.joa", 
   "ship_name": "Knorr", 
-  "year": "19866", 
+  "year": "1986", 
   "sub_basin_name": [
    "South-Western"
   ], 
@@ -24820,7 +24820,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.64W_58W.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -24862,7 +24862,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1972.6N.34N_40N.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -24933,7 +24933,7 @@
   "ship_shorthand": "6N", 
   "file_name": "ind.1983.6N.36S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    null
   ], 
@@ -24947,7 +24947,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.19N_20N.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "South-Western"
   ], 
@@ -25101,7 +25101,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981.6N.47N.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -25129,7 +25129,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1984.6N.48W_47W.joa", 
   "ship_name": "Knorr", 
-  "year": "19846", 
+  "year": "1984", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -25269,7 +25269,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1983.6N.38W.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -25648,7 +25648,7 @@
   "ship_shorthand": "6N", 
   "file_name": "ind.1983.6N.14-13E.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    null
   ], 
@@ -25732,7 +25732,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1972.8M.41S_32S.joa", 
   "ship_name": "Melville", 
-  "year": "19728", 
+  "year": "1972", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -25845,7 +25845,7 @@
   "ship_shorthand": "6N", 
   "file_name": "ind.1983.6N.34S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    null
   ], 
@@ -25859,7 +25859,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.18N.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -26027,7 +26027,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1983.9W.30S_24S.joa", 
   "ship_name": "Unknown", 
-  "year": "19839", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -26321,7 +26321,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1983.6N.22E_25E.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -26561,7 +26561,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1986.6N.73W_71W.joa", 
   "ship_name": "Knorr", 
-  "year": "19866", 
+  "year": "1986", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -26659,7 +26659,7 @@
   "ship_shorthand": "6N", 
   "file_name": "ind.1983.6N.40S.joa", 
   "ship_name": "Knorr", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    null
   ], 
@@ -27237,7 +27237,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1981-82.6N.55W.joa", 
   "ship_name": "Knorr", 
-  "year": "19816", 
+  "year": "1981", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -27405,7 +27405,7 @@
   "ship_shorthand": "8M", 
   "file_name": "satl.1988-89.8M-OC.28W.joa", 
   "ship_name": "Oceanus", 
-  "year": "19888", 
+  "year": "1988", 
   "sub_basin_name": [
    "Central-Western"
   ], 
@@ -27419,7 +27419,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.64W.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -27812,7 +27812,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1987.6N.10S_5N.joa", 
   "ship_name": "Knorr", 
-  "year": "19876", 
+  "year": "1987", 
   "sub_basin_name": [
    "North-Western"
   ], 
@@ -28487,7 +28487,7 @@
   "ship_shorthand": "8M", 
   "file_name": "ind.1978.8M.110-75E.joa", 
   "ship_name": "Melville", 
-  "year": "19788", 
+  "year": "1978", 
   "sub_basin_name": [
    null
   ], 
@@ -28543,7 +28543,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.5E.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
@@ -28683,7 +28683,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1972.6N.71W_70W.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "South-Western"
   ], 
@@ -28726,7 +28726,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1973.6N.58S.joa", 
   "ship_name": "Knorr", 
-  "year": "19736", 
+  "year": "1973", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -29035,7 +29035,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1974.6N.73W_68W.joa", 
   "ship_name": "Knorr", 
-  "year": "19746", 
+  "year": "1974", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -29387,7 +29387,7 @@
   "ship_shorthand": "6N", 
   "file_name": "natl.1975.6N.56W.joa", 
   "ship_name": "Knorr", 
-  "year": "19756", 
+  "year": "1975", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -29415,7 +29415,7 @@
   "ship_shorthand": "6N", 
   "file_name": "satl.1972-73.6N.66W_1W.joa", 
   "ship_name": "Knorr", 
-  "year": "19726", 
+  "year": "1972", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -29443,7 +29443,7 @@
   "ship_shorthand": "8M", 
   "file_name": "natl.1983.6N-OC.11N_13N.joa", 
   "ship_name": "Oceanus", 
-  "year": "19836", 
+  "year": "1983", 
   "sub_basin_name": [
    "Southern"
   ], 
@@ -29598,7 +29598,7 @@
   "ship_shorthand": "99", 
   "file_name": "satl.1984.9W.4W_5E.joa", 
   "ship_name": "Unknown", 
-  "year": "19849", 
+  "year": "1984", 
   "sub_basin_name": [
    "North-Eastern"
   ], 
