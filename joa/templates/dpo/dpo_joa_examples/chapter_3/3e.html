@@ -1,0 +1,160 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 3E{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 3</a><ul><li class="webgen-menu-level3"><a href="3a.html">Example 3A</a></li><li class="webgen-menu-level3"><a href="3b.html">Example 3B</a></li><li class="webgen-menu-level3"><a href="3c.html">Example 3C</a></li><li class="webgen-menu-level3"><a href="3d.html">Example 3D</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 3E</span></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Three</h1>
+
+</h1>
+
+	<h2>Physical properties of seawater</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Three</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="3a.html">Example 3A</a></h1><p><a href="3a.html">Before we get started</a></p></li><li><h1><a href="3b.html">Example 3B</a></h1><p><a href="3b.html">Physical Properties</a></p></li><li><h1><a href="3c.html">Example 3C</a></h1><p><a href="3c.html">Effect of Temperature and Salinity on Compressibility</a></p></li><li><h1><a href="3d.html">Example 3D</a></h1><p><a href="3d.html">Static Stability and Brunt V&#228;is&#228;l&#228; Frequency</a></p></li><li><h1><span>Example 3E</span></h1><p><span>Sound in the Sea</span></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 3E: Sound in the Sea</h3>
+	
+
+<p>DPO 3.7 discusses sound in the sea.  You can use JOA&#39;s parameter calculator
+to calculate sound speed, and then plot the results with an eye to visualizing
+how sound speed varies with temperature, salinity, and
+<a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a>.  Here we
+will use profile data at one station, the
+<span class="fileName">A16S_2005_sta085_bottle.joa</span> data file.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">A16S_2005_sta085_bottle.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_3e_01">Exercise 3E-01: Seawater Properties - Sound Speed</h3></p>
+<ul>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr; <span class="fileName">A16S_2005_sta085_bottle.joa</span></li>
+  
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Calculations</a> &rarr; <b>Parameters...</b>
+  <p>Select potential temperature (<b>Theta</b>), density referred to sea surface pressure (<b>Sigma 0</b>), and <b>Sound velocity</b>:</p>
+
+    <p align="center">
+      <a href="/dpo_examples/images/ch3/fig3e-01.png" rel="lightbox" title="FIG 3e-01 JOA Parameter Calculations dialog box with theta, sigma-0, and sound velocity parameters checked ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3e-01s.png" />
+        <p class="caption">FIG 3e-01 JOA Parameter Calculations dialog box with theta, sigma-0, and sound velocity parameters checked </p>
+      </a>
+    </p>
+</li>        
+<li>Click <b>OK</b>    
+  <p>The three parameters now appear in the JOA <a class="glossary" href="/dpo_examples/glossary.html#data_window">Data window</a>:</p>
+  
+    <p align="center">
+      <a href="/dpo_examples/images/ch3/fig3e-02.png" rel="lightbox" title="FIG 3e-02 JOA Data Window after calculation of theta, sigma-0, and sound velocity parameters ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3e-02s.png" />
+        <p class="caption">FIG 3e-02 JOA Data Window after calculation of theta, sigma-0, and sound velocity parameters</p>
+      </a>
+    </p>
+  </li>    
+  
+<li>Next, set up a multiple-parameter JOA <a class="glossary_prop" href="/dpo_examples/glossary.html#plots">Property-Property Plot</a> using the technique described in the earlier examples for 
+    this DPO chapter:
+
+    <ul>
+        
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Plots</a> &rarr; <b>Property-Property&#133;</b></li>
+  <!--
+<li>To make the dialog box shown below, select <b>Property-Property&#133;</b> from the <b>Plots</b> menu.  </li>-->
+      
+<li>Now use the dialog box resizing symbol on the lower right of the dialog box to &ldquo;pull down&rdquo; (extend down) 
+        the dialog box (click on the symbol and move the mouse pointer down the screen).  You will see the scrolling X- and 
+        Y-axis parameter lists expand until all the parameters are visible. </li>
+      
+<li>Now, via right-clicks or ctrl/command-clicks, you will find you can select more than one X-axis parameter.  Do this for 
+        salinity (<b>SALT</b>), potential temperature (<b>THTA</b>), sigma-0 (<b>SIG0</b>), and sound velocity (<b>SVEL</b>), 
+        with pressure (<b>PRES</b>) for the Y-axis.  </li>
+      
+<li>Also select <b>Color symbols by &ldquo;Connect line color&rdquo;</b> and <b>Connect observations</b>, and select circular dot 
+        symbols, size 7 (to make your symbols easier to see on the resulting plot).</li>  
+    </ul>
+    <p>The <b>Basic</b> page of the <b>Property-Property Plot</b> dialog box should then look like this:</p>
+  
+    <p align="center">
+      <a href="/dpo_examples/images/ch3/fig3e-03.png" rel="lightbox" title="FIG 3e-03 JOA Property-Property plot dialog box &ldquo;Basic&rdquo; panel, set up for a multi-parameter plot as described ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3e-03s.png" />
+        <p class="caption">FIG 3e-03 JOA Property-Property plot dialog box Basic panel, set up for a multi-parameter plot as described </p>
+      </a>
+    </p>
+  </li>         
+  
+<li><b>Property-Property Plot</b> &rarr; <b>Advanced</b>  
+    <p>As with the previous DPO JOA Example, you can now customize the &ldquo;Minimum&rdquo; and &ldquo;Maximum&rdquo; values, &ldquo;Increment&rdquo; and &ldquo;# of Minor  Ticks&rdquo; (and, if you wish, the &ldquo;Connect line color&rdquo;, &ldquo;Symbol&rdquo; and symbol &ldquo;Size&rdquo;) for each of the X-axis parameters (reached individually by scrolling through the list of X-axis parameters) and the &ldquo;Minimum&rdquo; and &ldquo;Maximum&rdquo; values, &ldquo;Increment&rdquo;, and &ldquo;&#35; of Minor Ticks&rdquo; for the Y-axis parameter, which in this case is pressure (PRES).</p>
+    <p>Set these up as shown in the table:</p>
+  </li>
+  
+<li>Set up the <b>Advanced</b> panel of the <b>Property-Property Plot</b> dialog box with these values:
+  
+    <table bgcolor="" border="0" bordercolor="" width="100%">
+    <tr>
+      <td>AXIS</td>
+      <td>Minimum</td>
+      <td>Maximum</td>
+      <td>Increment</td>
+      <td># of minor ticks</td>
+       </tr>
+       <tr>
+      <td>SALT</td>
+      <td>34</td>
+      <td>37.5</td>
+      <td>0.5</td>
+      <td>4</td>
+       </tr>
+       <tr>
+      <td>THTA</td>
+      <td>0</td>
+      <td>28</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>SIG0</td>
+      <td>24</td>
+      <td>28</td>
+      <td>0.5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>SVEL</td>
+      <td>1450</td>
+      <td>1600</td>
+      <td>50</td>
+      <td>4</td>
+       </tr>
+       <tr>
+      <td>PRES</td>
+      <td>0</td>
+      <td>6500</td>
+      <td>500</td>
+      <td>4</td>
+       </tr>
+       </table><br />
+  </li>
+    
+  
+<li>Now when you click on the <b>Plot</b> button, you will see this plot:
+
+    <p align="center">
+      <a href="/dpo_examples/images/ch3/fig3e-04.png" rel="lightbox" title="FIG 3e-4 JOA Property-Property plot with ranges and increments as described ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3e-04s.png" />
+        <p class="caption">FIG 3e-04 JOA Property-Property plot with ranges and increments as described </p>
+      </a>
+    </p>  
+  </li>
+
+</ul>
+<p>Later in the DPO JOA Examples, when you learn how to plot vertical section data, we strongly urge you to make a <a class="glossary" href="/dpo_examples/glossary.html#vertical_sections">vertical section</a> of sound speed, for example with the <span class="fileName">WOA05_A16.joa</span> data file, which covers the length of the Atlantic Ocean from Antarctic waters to Iceland.  You will find such a section makes it easy to visualize the &ldquo;SOFAR channel&rdquo; sound speed minimum discussed in the text.</p>
+<p><br /></p>
+
+{% endblock %}

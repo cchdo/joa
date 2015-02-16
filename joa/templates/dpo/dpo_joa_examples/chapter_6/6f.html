@@ -1,0 +1,113 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 6F{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 6</a><ul><li class="webgen-menu-level3"><a href="6a.html">Example 6A</a></li><li class="webgen-menu-level3"><a href="6b.html">Example 6B</a></li><li class="webgen-menu-level3"><a href="6c.html">Example 6C</a></li><li class="webgen-menu-level3"><a href="6d.html">Example 6D</a></li><li class="webgen-menu-level3"><a href="6e.html">Example 6E</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 6F</span></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Six</h1>
+
+</h1>
+
+	<h2>Data analysis concepts and observational methods</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Six</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="6a.html">Example 6A</a></h1><p><a href="6a.html">Sections with Vertical Axes other than Pressure (or Depth)</a></p></li><li><h1><a href="6b.html">Example 6B</a></h1><p><a href="6b.html">Sections with horizontal axis other than distance</a></p></li><li><h1><a href="6c.html">Example 6C</a></h1><p><a href="6c.html">Exploiting some of JOA&#39;s Mapping Features</a></p></li><li><h1><a href="6d.html">Example 6D</a></h1><p><a href="6d.html">Maps of Properties on Density and Other Surfaces</a></p></li><li><h1><a href="6e.html">Example 6E</a></h1><p><a href="6e.html">Maps of Properties on Extrema</a></p></li><li><h1><span>Example 6F</span></h1><p><span>Plotting Map of Average of Properties Between Two Surfaces</span></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 6E: Plotting Map of Average of Properties Between Two Surfaces</h3>
+	
+
+<p>JOA can also calculate the average of any parameter between two surfaces.
+Sometimes this is useful when one is trying to visualize distributions of an
+identifiable layer of water.</p>
+
+<p>Here we will look at the distribution of the weighted mean oxygen concentration
+between 250 and 750 decibars in the <span class="fileName">WOA05_NorthAtlantic_square.joa</span> data file.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">WOA05_NorthAtlantic_square.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_6f_01">Exercise 6f-01</h3></p>
+
+<p>Continue from 6E-01:</p>
+
+<ul>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Calculations</a> &rarr; <b>Station Parameters</b> &rarr; <b>Integration&#133;</b></li>
+  
+<li>Set up the <b>Station Integration Calculations</b> panel for a calculation of the weighted mean of <b>O2</b> (dissolved oxygen) with respect to <b>PRES</b> (<a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a>) from <b>250</b> to <b>750</b> decibars over each profile as shown below:
+  <p align="center">
+    <a href="/dpo_examples/images/ch6/fig6f-01.png" rel="lightbox" title="Fig 6f-01 Station Integration Calculations dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6f-01s.png" />
+      <p class="caption">Fig 6f-01 Station Integration Calculations dialog box</p>
+    </a>
+  </p>  
+</li>
+  
+<li>Click <b>OK</b>, the result will appear in the <a class="glossary" href="/dpo_examples/glossary.html#data_window">Data Window</a></li>
+
+<li>With the open <b>Orthographic Map Plot</b> in the foreground, bring up the <b>Configure Map Plot</b> dialog box:
+  <ul>
+    <li>Double-click or control-click on a map plot </li>
+    <li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when a map plot is the front-most window</li>
+  </ul>
+</li>  
+  
+<li>Select the <b>Station calculation values</b> sub-panel of the <b>Station Colors</b> panel </li>
+    
+<li>A list of all available station calculations will be shown.  Select <b>INT(O2-PRES,250.0-750.0)-td</b> and then select the <span class="fileName">O2-global_cbr.xml</span> color bar, as shown below:
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6f-02.png" rel="lightbox" title="Fig 6f-02 Station Calculation Values sub-panel of Station Colors panel of the Configure Map Plot dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6f-02s.png" />
+      <p class="caption">Fig 6f-02 Station Calculation Values sub-panel of Station Colors panel of the Configure Map Plot dialog box</p>
+      </a>
+    </p>  
+  </li>
+  
+<li>Click <b>OK</b> to get this updated plot:
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6f-03.png" rel="lightbox" title="Fig 6f-03 Orthographic plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6f-03s.png" />
+      <p class="caption">Fig 6f-03 Orthographic plot</p>
+      </a>
+    </p>
+  </li>  
+</ul>
+
+<div class="examine_header">Examine:</div>
+<div class="examine">
+  <p>This plot provides a clear illustration of the ventilation (oxygenation) of the Northern North Atlantic Ocean from the Labrador Sea and the Nordic Seas, with high oxygen waters spreading away from these regions.  Note also the oxygen minima in the tropics, cut through in the equatorial zone due to the effects of equatorial upwelling.</p>
+</div>
+
+<div class="expand_link_header" id="expand_link_header_06f01">
+  <strong>BONUS FEATURE:</strong><br />
+  <a href="javascript:expand06f01.slideit()">A Virtual Research Cruise</a>
+</div>
+
+<div id="expand_link06f01">
+  <div id="expand_link">
+
+
+<p>The oceanographic data used in the JOA DPO Examples come from hundreds of oceanographic research cruises.  These cruises take months (usually years) of planning, then measurement specialists come together from different institutions and sometimes different countries, a research ship is readied, the work is done at sea, the data are processed at sea and ashore, and the data and related documentation are released for scientific use.</p>
+
+<p>It all begins with proposals from scientists to the agencies that support their work.  The proposal identifies the science goals, the work to be done, the resources (people, equipment, supplies, and ship time) required, and the intended data and distribution of the data.  Once the proposal is accepted for funding (this can take several iterations), ship time must be obtained.  Oceanographic research ships are busy and expensive to operate, and scheduling the required ship time can take one or more years.  The Chief Scientist meanwhile works with the ship operator and the various measurement teams to bring everything together at the appointed start port and date.</p>
+
+<p>The work at sea is organized carefully to bring about maximum scientific advantage with efficiency and close attention to safety.  The scientific team is organized by measurement speciality, e.g., CTD operations, salinity/oxygen/nutrient chemistry, carbon chemistry, CFCs, Acoustic Doppler Current Profiling, data processing, etc., with a chief and co-chief scientist in charge overall.  Typically each person works about 12 hours per day, every day of the week, until the work is done.</p>
+
+<p>The data themselves are carefully standardized and closely checked at sea and ashore for suitability, quality, and error.  Often a &quot;data quality code&quot; is attached to each reported data value.  Cruise documentation must be sufficient to inform a data user - perhaps many years in the future - of all information necessary to understand the origin, calibration, and quality of the data.</p>
+
+<p>To provide a view of a research cruise of the type that generates typical data used in the JOA DPO Examples, we have assembled text, photo, and video files - most from the 2007 &quot;I8S&quot; cruise of R/V Roger Revelle - into a virtual research cruise from proposal to final data report.  This can be found at &lt;%= link_to "http://ushydro.ucsd.edu/virtual_cruise/index.html", "http://ushydro.ucsd.edu/virtual_cruise/index.html" %&gt;.</p> 
+
+
+<center><p class="expand"><a href="javascript:expand06f01.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expand06f01=new animatedcollapse("expand_link06f01", 2000, true);</script>
+
+
+{% endblock %}

@@ -1,0 +1,177 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 2B{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 2</a><ul><li class="webgen-menu-level3"><a href="2a.html">Example 2A</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 2B</span></li><li class="webgen-menu-level3"><a href="2c.html">Example 2C</a></li><li class="webgen-menu-level3"><a href="2d.html">Example 2D</a></li><li class="webgen-menu-level3"><a href="2e.html">Example 2E</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+<a name="top"></a>
+
+	<h1>Chapter Two</h1>
+
+</h1>
+
+	<h2>Ocean dimensions, shapes and bottom materials</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Two</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="2a.html">Example 2A</a></h1><p><a href="2a.html">Dimensions</a></p></li><li><h1><span>Example 2B</span></h1><p><span>Sea-floor Dimensions</span></p></li><li><h1><a href="2c.html">Example 2C</a></h1><p><a href="2c.html">Bathymetry</a></p></li><li><h1><a href="2d.html">Example 2D</a></h1><p><a href="2d.html">DPO Extra Topic&#59; Map Projections</a></p></li><li><h1><a href="2e.html">Example 2E</a></h1><p><a href="2e.html">DPO Extra Topic&#59; Making a .joa file</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 2B: Sea-floor Dimensions</h3>
+	
+
+<p>DPO Section 2.2 deals with the configuration, dimensions, and principal
+features of the global sea floor. You can use the map customization features of
+Java OceanAtlas to examine the sea floor by changing the bathymetric
+information which is plotted on a map plot, by selecting sub-regions of maps to
+examine more closely, and by making maps which provide differing perspectives
+of the Earth.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">SIO.joa</span></li>
+  <li><span class="fileName">mycity.joa</span></li>
+</ul>
+
+<div class="expand_link_header" id="expand_link_header_02b01">
+<strong>LEARN MORE ABOUT:</strong><br />
+<a href="javascript:expand02b01.slideit()">Definitions of Useful Terms in Minimum JOA Data Headers</a>
+</div>
+
+<div id="expand_link02b01">
+<div id="expand_link">
+  <br />
+      
+  <div id="definition_link_header">Latitude:<br />
+    <p class="definition_list">Lines of latitude circle the globe parallel to the equator (0&deg;) as degrees north to the north pole (90&deg;N) or degrees south to the south pole (90&deg;S). Use positive values for north latitude and negative for south latitude.</p>  
+  </div>
+  
+  
+  <div id="definition_link_header">Longitude:<br />
+    <p class="definition_list">Lines of longitude circle the globe perpendicular to the equator and expressed relative to the Greenwich meridian (0&deg;) as degrees east or west from 0&deg; longitude. Use positive values for east longitude and negative for west longitude, i.e. 0 to 180 east and 0 to -180 west.  </p>
+  </div>
+  
+  
+  <div id="definition_link_header">Pressure:<br />
+    <p class="definition_list">Before electronic profiling devices came into common use, the vertical reference used for most oceanographic profiles was depth, measured from the sea surface downward, typically in meters. Electronic profiling devices often contain a pressure sensor: the output of which is most commonly translated into decibars (tenths of a bar). Pressure expressed in decibars is numerically close to depth expressed in meters. Pressure is not the same as depth, and it is important to remember the distinction between the two.</p>
+  </div>
+  
+  <div id="definition_link_header">Section:<br />
+    <p class="definition_list">A line of stations across a region. An abbreviation of cross-section.</p>
+  </div>
+  
+  
+  <div id="definition_link_header">Station:<br />
+    <p class="definition_list">A location where data profiles are collected from a ship. Profile and stations can be used interchangeably. </p>
+  </div>
+  
+  <br />
+  
+<center><p class="expand"><a href="javascript:expand02b01.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expand02b01=new animatedcollapse("expand_link02b01", 2000, true);</script>
+
+<p><br /></p>
+
+<p><h3 class="exercise_header" id="exercise_2b_01">Exercise 2B-01: Ocean Maps - Examining the World Ocean</h3></p>
+
+<p>Continue from 2A-02:</p>
+
+<p>You can use the Java OceanAtlas map to examine various features of the World Ocean.</p>
+
+<div class="note_header">NOTE:</div>
+
+<div class="note">
+<p>The principal oceans are the Atlantic, Indian, and Pacific Oceans.
+Oceanographers recognize another major ocean, the Southern Ocean, due to its
+unique features and importance to the global ocean circulation. The Arctic
+Ocean, although a much smaller region than the other oceans, is sometimes also
+recognized as a principal ocean.</p>
+</div>
+
+<ul>
+  
+<li>Compare the relative sizes and shapes of the Atlantic, Indian, and Pacific Oceans</li>
+  
+<li>Identify the Southern Ocean.  Remember in the DPO text how, specifically, the Southern Ocean differs geographically from the other oceans?</li>
+  
+<li>With the map plot as the front-most window, bring up the <b>Configure Map Plot</b> dialog box so that you can change the characteristics of the plot.  To bring up the <b>Configure Map Plot</b> dialog box:
+    <ul>
+      
+<li>Double-click or control-click on a map plot</li>
+      
+<li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when a map plot is the front-most window</li>
+    </ul>
+  </li>
+  
+<li>In the <b>Configure Map Plot</b> dialog box set the spacing of the plotted <a class="glossary" href="/dpo_examples/glossary.html#latitude">latitude</a> lines to 20 degrees and that of the plotted <a class="glossary" href="/dpo_examples/glossary.html#longitude">longitude</a> lines to 20 degrees, and click on <b>OK</b>.  Now the <b>Mercator</b> world ocean map plot has the latitude and longitude lines at 20-degree intervals</li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_2b_02">Exercise 2B-02: Analyzing Mercator Projections</h3></p>
+
+<p>For the following steps, recall that at the equator the distance spanned by one degree
+of latitude is the same as the distance spanned by one degree of longitude:</p>
+
+<ul>
+  <li>How does the <b>Mercator</b> map distort areas as one moves from the equator toward the poles?</li>
+  <li>Using a globe (or download and use the application <b>Google Earth</b>) and your JOA world map, compare the relative sizes of various land masses with their representation on the <b>Mercator</b> map plot.  For example compare the relative sizes of South America and Greenland on the globe with their relative sizes on the <b>Mercator</b> map plot.</li>
+  <li>How might the use of a <b>Mercator</b> map plot affect interpretation of a map of plotted data?  (For example, if the areas of various land masses were considered to be &#39;plotted data&#39;, how would the <b>Mercator</b> projection affect interpretation of land area?)</li> 
+  <li>How might this map projection affect interpretation of the map of some parameter such as ocean surface temperature?</li>
+  <li>Can you think of any reasons that, distortion aside, a <b>Mercator</b> plot might be useful?</li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_2b_03">Exercise 2B-03: Ocean Maps - Map units and Dimensions</h3></p>
+
+<p><br /></p>
+
+<div class="note_header">Useful Information: Global Measurements</div>
+
+<div class="note">
+
+<p><u>Coordinates</u>
+  <ul>
+    <li>Latitudes and longitudes are commonly provided in degrees, minutes, and seconds; in degrees and decimal minutes; or in decimal degrees.  The number of decimal places used varies depending on precision. They are written in the respective format:
+      <ul>    
+        <li>ddd&deg; mm&#39; ss&rdquo; or ddd mm ss</li>    
+        <li>ddd&deg; mm.mm&#39; or ddd mm.mm</li>    
+        <li>ddd.ddddd&deg; or ddd.ddddd</li>
+      </ul> 
+    </li>
+    <li>There are 60 seconds in a minute of position, and 60 minutes in a degree of position.</li>  
+    <li>To convert a position from degrees and decimal minutes to decimal degrees:
+      <ul>  
+        <li>ddd + mm.mm/60 = ddd.ddddd</li>
+      </ul>  
+    </li>
+  </ul>
+</p>
+<p><u>Nautical Mile</u>
+  <ul>
+    <li>One nautical mile is the distance spanned by one minute of latitude.</li> 
+    <li>One nautical mile at the equator is the distance spanned by one degree of longitude. It decreases poleward as a function of the cosine of latitude.</li>
+    <li>1 nautical mile = 1.1508 statute miles = 1852 meters = 6076.10 feet.</li>
+  </ul>
+</p>
+</div>
+
+<p><br /></p>
+
+<ul>
+  
+<li>What is the distance, in meters,  represented by one tenth of a
+  minute of latitude, by one hundredth of a minute? </li>
+  
+<li>By one tenth, one hundredth, one thousandth, and one ten thousandth
+  of a degree of latitude?</li>
+  
+<li>What is the distance, in meters, represented by one tenth and one
+  hundredth of a degree of longitude at the equator, and at 30, 45,
+  60, and 75 degrees latitude?</li>
+  
+<li>To know the position to &ldquo;within one ship length&rdquo;, for
+  an 85-meter ship to what precision in decimal degrees, and in degrees
+  and minutes, must one express position (latitude and longitude) at 45
+  degrees latitude?</li> 
+</ul>
+
+{% endblock %}

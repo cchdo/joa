@@ -1,0 +1,183 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Chapter Three{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><span>Chapter 3</span><ul><li class="webgen-menu-level3"><a href="3a.html">Example 3A</a></li><li class="webgen-menu-level3"><a href="3b.html">Example 3B</a></li><li class="webgen-menu-level3"><a href="3c.html">Example 3C</a></li><li class="webgen-menu-level3"><a href="3d.html">Example 3D</a></li><li class="webgen-menu-level3"><a href="3e.html">Example 3E</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Three</h1>
+
+</h1>
+
+	<h2>Physical properties of seawater</h2>
+
+
+	<ul id="examples"><li><h1><span>Chapter Three</span></h1><p><span>Introduction</span></p></li><li><h1><a href="3a.html">Example 3A</a></h1><p><a href="3a.html">Before we get started</a></p></li><li><h1><a href="3b.html">Example 3B</a></h1><p><a href="3b.html">Physical Properties</a></p></li><li><h1><a href="3c.html">Example 3C</a></h1><p><a href="3c.html">Effect of Temperature and Salinity on Compressibility</a></p></li><li><h1><a href="3d.html">Example 3D</a></h1><p><a href="3d.html">Static Stability and Brunt V&#228;is&#228;l&#228; Frequency</a></p></li><li><h1><a href="3e.html">Example 3E</a></h1><p><a href="3e.html">Sound in the Sea</a></p></li></ul><div class="clear"></div>
+	
+
+<div id="data-files-supplied">
+<%= data_files_chapter_listing('3', DpoDataFiles::DATA_FILES, true) %>
+</div>  
+
+<h3 id="goals">Goals:</h3>
+
+<ul>
+  
+<li>Explore the physical and chemical characteristics of seawater</li>
+  
+<li>Understand parameters which are calculated from basic measured characteristics</li>
+  
+<li>Explore vertical distributions at a single location in the South Atlantic Ocean</li>
+  
+<li>Examine the regional variations in vertical distributions to be examined in later chapters.</li>
+  
+<li>Learn how to navigate plots</li>
+</ul>
+
+<h3 id="to-accomplish-this-one-will">To accomplish this, one will:</h3>
+
+<ul>
+  
+<li>Open a station file</li>
+  
+<li>Create basic <a class="glossary_prop" href="/dpo_examples/glossary.html#plots">property-property plots</a></li>
+  
+<li>Create 4 parameter property-property graphs</li>
+  
+<li>Customize plots</li>
+  
+<li>Examine plots</li>
+</ul>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+  
+<li>JOA built in parameter calculator</li>
+  
+<li>JOA multiple x-axis parameter plotting capabilities</li>
+</ul>
+
+<h3 id="dpo-chapter-3-sections">DPO Chapter 3 Sections:</h3>
+<div class="dpo_sections_note">DPO JOA examples are available for the following <span class="dpo_sections_highlight">highlighted</span> sections:</div>
+<table class="dpo_sections_table"> 
+  <tbody> 
+    <tr class="dpo_sections_highlight">
+      <td>3.1</td>
+      <td>Molecular properties of water </td>
+    </tr>
+    <tr class="dpo_sections_highlight">
+      <td>3.2</td>
+      <td>Pressure</td>
+    </tr>
+    <tr>
+      <td>3.3</td>
+      <td>Thermal properties of seawater: temperature, heat and potential temperature</td>
+    </tr>
+    <tr>
+      <td>3.3.1</td>
+      <td>Temperature</td>
+    </tr>
+    <tr>
+      <td>3.3.2</td>
+      <td>Heat</td>
+    </tr>
+    <tr>
+      <td>3.3.3</td>
+      <td>Potential temperature</td>
+    </tr>
+    <tr class="dpo_sections_highlight">
+      <td>3.4</td>
+      <td>Salinity and conductivity</td>
+    </tr>
+    <tr class="dpo_sections_highlight">
+      <td>3.5</td>
+      <td>Density of seawater</td>
+    </tr>
+    <tr>
+      <td class="dpo_sections_highlight">3.5.1</td>
+      <td>Effects of temperature and salinity on density</td>
+    </tr>
+    <tr class="dpo_sections_highlight">
+      <td>3.5.2</td>
+      <td>Effect of pressure on density: potential density</td>
+    </tr>
+    <tr class="dpo_sections_highlight">
+      <td>3.5.3</td>
+      <td>Specific volume and specific volume anomaly</td>
+    </tr>
+    <tr class="dpo_sections_highlight">
+      <td>3.5.4</td>
+      <td>Effect of temperature and salinity on compressibility: potential and neutral density</td>
+    </tr>
+    <tr>
+      <td>3.5.5</td>
+      <td>Linearity and nonlinearity in the equation of state</td>
+    </tr>
+    <tr>
+      <td>3.5.6</td>
+      <td>Static stability and Brunt-Väisälä frequency</td>
+    </tr>
+    <tr>
+      <td>3.5.7</td>
+      <td>Freezing point of seawater</td>
+    </tr>
+    <tr>
+      <td>3.6</td>
+      <td>Other characteristic properties of seawater</td>
+    </tr>
+    <tr class="dpo_sections_highlight">
+      <td>3.7</td>
+      <td>Sound in the sea</td>
+    </tr>
+    <tr>
+      <td>3.8</td>
+      <td>Light and the sea</td>
+    </tr>
+    <tr>
+      <td>3.8.1</td>
+      <td>Optical properties</td>
+    </tr>
+    <tr>
+      <td>3.8.2</td>
+      <td>Ocean color</td>
+    </tr>
+    <tr>
+      <td>3.9</td>
+      <td>Ice in the sea</td>
+    </tr>
+    <tr>
+      <td>3.9.1</td>
+      <td>Freezing process</td>
+    </tr>
+    <tr>
+      <td>3.9.2</td>
+      <td>Brine rejection</td>
+    </tr>
+    <tr>
+      <td>3.9.3</td>
+      <td>Density and thermodynamics of sea ice</td>
+    </tr>
+    <tr>
+      <td>3.9.4</td>
+      <td>Mechanical properties of sea ice</td>
+    </tr>
+    <tr>
+      <td>3.9.5</td>
+      <td>Types of sea ice</td>
+    </tr>
+    <tr>
+      <td>3.9.6</td>
+      <td>Polynyas and leads</td>
+    </tr>
+    <tr>
+      <td>3.9.7</td>
+      <td>Ice break-up</td>
+    </tr>
+  </tbody> 
+</table>
+
+{% endblock %}

@@ -1,0 +1,329 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example S6B{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter S6</a><ul><li class="webgen-menu-level3"><a href="s6a.html">Example S6A</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example S6B</span></li><li class="webgen-menu-level3"><a href="s6c.html">Example S6C</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Six Supplement</h1>
+
+</h1>
+
+	<h2>Instruments and Methods</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Six Supplement</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="s6a.html">Example S6A</a></h1><p><a href="s6a.html">Before We Get Started</a></p></li><li><h1><span>Example S6B</span></h1><p><span>A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data</span></p></li><li><h1><a href="s6c.html">Example S6C</a></h1><p><a href="s6c.html">A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example S6B: A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data</h3>
+	
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">A16S_2005_sta085_bottle.joa</span></li>
+  <li><span class="fileName">A16S_2005_sta085_ctd.joa</span></li>
+  <li><span class="fileName">WOA05_to_match_A16S_2005_sta085.joa</span></li>
+</ul>
+
+<p>We have made a few minor alterations to parameter names in some of these data
+files to make comparisons easier, but, otherwise, these are the actual data
+files used in research.</p>
+
+<h3 class="exercise_header" id="exercise_s6b_01">Exercise S6B-01:
+Comparing Data - Opening Multiple Files in a JOA Window</h3>
+
+<p>Open three files into the same JOA data window:</p>
+
+<ul>
+
+	<li>Start JOA</li>
+
+
+	<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr; <span class="fileName">A16S_2005_sta085_bottle.joa</span></li>
+
+
+	<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Add Data</a> &rarr; <span class="fileName">A16S_2005_sta085_ctd.joa</span></li>
+
+
+	<li><b>File</b> &rarr; <b>Add Data</b> &rarr; <span class="fileName">WOA05_to_match_A16S_2005_sta085.joa</span></li>
+
+
+	<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Calculations</a> &rarr;
+		<b>Parameters&hellip;</b>
+	</li>
+
+	<li>Select (click) under <b>Observation calculations</b>:
+
+		<ul>
+			<li><b>Theta (Deg. C)</b></li>
+			<li><b>Sigma 0 (kg/m^2)</b> (This is the same parameter as
+				&#39;sigma-theta&#39; as used in the DPO text)
+			</li>
+
+
+			<li><b>Sigma 4 (kg/m^2)</b></li>
+		</ul>
+
+		<p align="center"><a href="/dpo_examples/images/chS16/figs16b-01.png" rel="lightbox" title="FIG s6b-01 Parameter Calculations dialog box"><img align="middle" alt="target" src="/dpo_examples/images/chS16/figs16b-01s.png" /></a></p>
+		<p class="caption">FIG s6b-01 Parameter Calculations dialog box</p>
+
+		<div class="note_header">NOTE:</div>
+
+		<div class="note">
+			<p>Recall from the DPO text and earlier DPO JOA Examples:
+				sigma-0 is density at sea surface pressure, minus 1000, and
+				sigma-4 is density at 4000 decibars, minus 1000.
+			</p>
+		</div>
+	</li>
+	<li>Click <b>OK</b></li>
+
+</ul>
+<p>The common parameters to all three data files, including those we have just calculated, are:</p>
+
+<ul>
+  
+<li><a class="glossary" href="/dpo_examples/glossary.html#pressure">Pressure</a></li>
+<li>Temperature</li>
+<li>Salinity</li>
+<li>Dissolved oxygen</li>
+<li>Potential temperature</li>
+<li>sigma-0</li>
+<li>sigma-4</li>
+</ul>
+
+<h3 class="exercise_header" id="exercise_s6b_02">Exercise S6B-02:
+Comparing Data - Plotting Multiple Parameters Against
+Pressure</h3>
+
+<p>Use JOA plot tools to create separate plots for each property against pressure.</p>
+<ul>
+
+	<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Plots</a> &rarr; <b>Property-Property&hellip;</b></li>
+
+	<li>Under <b>X-axis parameter</b> select <b>SALT</b></li>
+
+	<li>Under <b>Y-axis parameter</b> select <b>PRES</b></li>
+	<li>Under <b>Options</b> select:
+		<ul>
+			<li><b>Plot current station only</b></li>
+			<li><b>Plot symbols are black</b></li>
+		</ul>
+
+		<p align="center"><a href="/dpo_examples/images/chS16/figs16b-02.png" rel="lightbox" title="FIG s6b-02 Basic panel of the Property-Property Plot ">
+			<img align="middle" alt="target" src="/dpo_examples/images/chS16/figs16b-02s.png" />
+			<p class="caption">FIG s6b-02 Basic panel of the Property-Property Plot</p>
+		</a></p>
+	</li>
+
+	<li>Click <b>Plot</b></li>  
+	<li>Following the previous steps, make another Property-property Plot, this time under <b>Options</b> select:
+		<ul>
+			<li><b>Plot all stations</b> (do not select Plot current station only)</li>
+		</ul>
+	</li>
+
+	<li>The two plots are shown below, the first on the left and the plot on the right showing the profiles from all three data files
+
+		<p align="center"><a href="/dpo_examples/images/chS16/figs16b-03.png" rel="lightbox" title="FIG s6b-03 Property-Property Plots"><img align="middle" alt="target" src="/dpo_examples/images/chS16/figs16b-03s.png" /></a></p>
+
+		<p class="caption">FIG s6b-03 Property-Property Plots</p>
+	</li>
+
+	<li>Follow these steps again, each time changing the <b>X-axis parameter</b> to:
+
+		<ul>
+			<li>Potential temperature</li>
+			<li>Dissolved oxygen</li> 
+			<li>Sigma-0</li>
+			<li>Sigma-4</li>
+		</ul>
+
+		<br />
+
+		<div class="note_header">NOTE:</div>
+
+		<div class="note">
+			<p>You can shift between the data files using the left and
+				right arrow keys on your keyboard. This way, you can
+				separately view the plot for each data file on the left,
+				Plot current station only plot.
+			</p>
+		</div>
+	</li>
+</ul>
+<p><br /></p>
+
+<p>Use JOA's select-redraw feature to examine
+	sub-areas of each of these plots. This way you can enlarge
+	portions of the water column, for example the upper few
+	hundred meters and the regions around extrema:
+</p>
+
+<ul>
+
+	<li>Click-drag-release the cursor over a sub-area of a JOA
+		<b>Property-Property Plot</b>
+	</li>
+
+
+	<li style="list-style: none">
+		<div class="examine_header">Examine:</div>
+
+		<div class="examine">
+			<p>Consider why these three profiles do not completely overlap.</p>
+
+			<ul>
+
+				<li>Small disagreements between the WOA05 profile and the
+					A16_2005 profile certainly can arise due to the
+					averaging-in of other data when the WOA was created.
+					(Plus, the WOA05 grid point is about 50 km from the A16
+					station location.) But the <a class="glossary" href="/dpo_examples/glossary.html#ctd">CTD data</a>
+					and <a class="glossary" href="/dpo_examples/glossary.html#bottle_data">bottle data</a> profiles are from the same
+					station on the 2005 &ldquo;A16&rdquo; cruise from the
+					NOAA research vessel Ron Brown.
+				</li>
+
+
+				<li>Differences between temperature between the A16
+					bottle data and CTD data can arise because the CTD data
+					are from the &ldquo;down&rdquo; cast and the bottle data
+					are from the &ldquo;up&rdquo; cast - this is partly die
+					to the effects of internal waves in the ocean, plus drift
+					of the ship, plus lateral motions of various layers of
+					the water column.
+				</li>
+
+
+				<li>The salinity and oxygen values in the bottle data
+					file are from water samples, whereas the values in the
+					CTD data file are from electronic sensors. The electronic
+					sensor data are corrected/calibrated against the bottle
+					data, but perfect fits are not reasonable.
+				</li>
+			</ul>
+		</div>
+	</li>
+</ul>
+
+<h3 class="exercise_header" id="exercise_s6b_03">Exercise S6B-03:
+Comparing Data - Potential Temperature Versus Salinity in CTD
+Data</h3>
+
+<p>It is useful to examine a potential temperature versus
+salinity plot for the <a class="glossary" href="/dpo_examples/glossary.html#ctd">CTD data</a> in particular.</p>
+
+<ul>
+
+	<li><b>Plots</b> &rarr; <b>Property-Property&hellip;</b></li>
+
+
+	<li>Set up the <b>Basic</b> panel of the <b>Property-Property
+		Plot</b> dialog box as below:
+
+		<p align="center"><a href="/dpo_examples/images/chS16/figs16b-04.png" rel="lightbox" title="FIG s6b-04 Basic panel of the Property-Property Plot dialog box ">
+			<img align="middle" alt="target" src="/dpo_examples/images/chS16/figs16b-04s.png" /><p class="caption">FIG s6b-04 Basic panel of the Property-Property Plot dialog box</p>
+		</a></p>
+
+
+	</li>
+
+
+	<li>Set up the <b>Advanced</b> panel of the
+		<b>Property-Property Plot</b> dialog box as shown below:
+
+		<p align="center"><a href="/dpo_examples/images/chS16/figs16b-05.png" rel="lightbox" title="FIG s6b-05 Advanced panel of the Property-Property Plot dialog box "><img align="middle" alt="target" src="/dpo_examples/images/chS16/figs16b-05s.png" /><p class="caption">FIG s6b-05 Advanced panel of the Property-Property Plot dialog box</p></a></p>
+
+
+	</li>
+
+
+	<li>The resulting plot is shown below:
+
+		<p align="center"><a href="/dpo_examples/images/chS16/figs16b-06.png" rel="lightbox" title="FIG s6b-06 A Property-Property plot "><img align="middle" alt="target" src="/dpo_examples/images/chS16/figs16b-06s.png" /><p class="caption">FIG s6b-06 A Property-Property plot</p></a></p>
+
+
+	</li>
+
+
+	<li style="list-style: none">
+		<div class="examine_header">
+			Examine:
+		</div>
+
+		<div class="examine">
+			<p>Do you recognize the shape of the potential temperature
+				versus salinity relationship at this South Atlantic Ocean
+				location?
+			</p>
+
+			<p class="indent">Warm salty surface waters overlie a cool,
+				fresher layer (with a salinity minimum), in turn overlying
+				a layer of similar temperature which is saltier (with a
+				salinity maximum), and finally the deepest layer is colder
+				and a little fresher.
+			</p>
+
+			<p>Each of these distinctive joint characteristics making
+				up a layer of water is the signature of what oceanographers
+				call a &ldquo;water mass&rdquo;.
+			</p>
+
+			<p>This plot provides information about this layering of
+				water masses:
+			</p>
+
+			<p class="indent">Recall that the <a class="glossary" href="/dpo_examples/glossary.html#ctd">CTD data</a>
+				file contains one data value for each decibar of pressure,
+				and that JOA is plotting each data point. Therefore each
+				tight clustering of data points on the plot indicates a
+				portion of the profile where temperature and/or salinity
+				are more nearly uniform with pressure, whereas a spreading
+				of data points on the plot will indicate where vertical
+				gradients in one or both are higher.
+			</p>
+		</div>
+	</li>
+
+
+	<li>Explore this on the plot by repeatedly click-drag-select
+		portions of the plot to the point where you can see individual
+		&ldquo;1-meter-of-water&rdquo; dots.
+	</li>
+
+
+	<li style="list-style: none">
+		<br />
+
+		<div class="examine_header">Examine:</div>
+		<div class="examine">
+			<p>The dots do cluster and spread. Even on a smaller scale
+				there is some indication that the vertical gradients are
+				not smooth, that there are many &ldquo;layers&rdquo;.
+			</p>
+
+			<p>You may also find portions of the water column where
+				there are small &ldquo;zig-zags&rdquo; - colder fresher
+				layers interleaved with warmer saltier layers. This shows
+				that <a class="glossary" href="/dpo_examples/glossary.html#ctd">CTD data</a>, as compared to 
+				<a class="glossary" href="/dpo_examples/glossary.html#bottle_data">bottle data</a>, may show an abundance of small-scale features in
+				the water column (known as &ldquo;fine structure&rdquo;),
+				features that are completely missed by the much
+				coarser-resolution bottle or multi-year averaged data.
+			</p>
+		</div>
+
+		<br />
+
+		<p>Here are some examples of enlargements made from this plot:
+		</p>
+
+		<p align="center"><a href="/dpo_examples/images/chS16/figs16b-07.png" rel="lightbox" title="FIG s6b-07 Two sample Property-Property plots"><img align="middle" alt="target" src="/dpo_examples/images/chS16/figs16b-07s.png" /><p class="caption">FIG s6b-07 Two sample Property-Property plots</p></a></p>
+
+	</li>
+</ul>
+
+{% endblock %}

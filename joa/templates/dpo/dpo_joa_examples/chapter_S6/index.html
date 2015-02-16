@@ -1,0 +1,328 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Chapter S6{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><span>Chapter S6</span><ul><li class="webgen-menu-level3"><a href="s6a.html">Example S6A</a></li><li class="webgen-menu-level3"><a href="s6b.html">Example S6B</a></li><li class="webgen-menu-level3"><a href="s6c.html">Example S6C</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Six Supplement</h1>
+
+</h1>
+
+	<h2>Instruments and Methods</h2>
+
+
+	<ul id="examples"><li><h1><span>Chapter Six Supplement</span></h1><p><span>Introduction</span></p></li><li><h1><a href="s6a.html">Example S6A</a></h1><p><a href="s6a.html">Before We Get Started</a></p></li><li><h1><a href="s6b.html">Example S6B</a></h1><p><a href="s6b.html">A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data</a></p></li><li><h1><a href="s6c.html">Example S6C</a></h1><p><a href="s6c.html">A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data</a></p></li></ul><div class="clear"></div>
+	
+
+<div id="data-files-supplied">
+<%= data_files_chapter_listing('S6', DpoDataFiles::DATA_FILES, true) %>
+</div>  
+
+<h3 id="goals">Goals:</h3>
+
+<ul>
+  
+<li>Compare CTD and bottle T, S, O2, sigma-0</li>
+  
+<li>Compare a single profile (South Atlantic)</li>
+  
+<li>Compare an entire section</li>
+</ul>
+
+<h3 id="to-accomplish-this-one-will">To accomplish this, one will:</h3>
+
+<ul>
+  
+<li>Use and analyze from various sources:
+    <ul>
+      
+<li>Bottle casts</li>
+      
+<li>CTD casts</li>
+      
+<li>Statistically-compiled multi-year average data WOA05</li>
+    </ul>
+  </li>
+  
+<li>Explore differences in depiction of:
+    <ul>
+      
+<li>Ocean temperature</li>
+      
+<li>Salinity</li>
+      
+<li>Dissolved oxygen</li>
+      
+<li>Density</li>
+    </ul>
+  </li>
+  
+<li>Analyze three data types at one location (one profile per data type)</li>
+  
+<li>Analyze <a class="glossary" href="/dpo_examples/glossary.html#vertical_sections">vertical section</a> plots from three data types</li>
+</ul>
+
+<h3 id="dpo-chapter-s6-sections">DPO Chapter S6 Sections:</h3>
+<div class="dpo_sections_note">DPO JOA examples are available for the following <span class="dpo_sections_highlight">highlighted</span> sections:</div>
+<table class="dpo_sections_table"> 
+  <tbody>   
+    <tr>
+      <td>S6.1</td> 
+      <td>Introduction</td>
+    </tr>
+    <tr>
+      <td>S6.1</td> 
+      <td>The impact of space and time scales on sampling and instrumentation</td>
+    </tr>
+    <tr>
+      <td>S6.2</td> 
+      <td>Platforms</td>
+    </tr>
+    <tr>
+      <td>S6.2.1</td> 
+      <td>Ocean research vessels</td>
+    </tr>
+    <tr>
+      <td>S6.2.2</td> 
+      <td>Propulsion and maneuverability</td>
+    </tr>
+    <tr>
+      <td>S6.2.3</td> 
+      <td>Winches, wires and support systems</td>
+    </tr>
+    <tr>
+      <td>S6.2.4</td> 
+      <td>Workspaces: Dry labs and wet labs</td>
+    </tr>
+    <tr>
+      <td>S6.2.5</td> 
+      <td>Navigation (also section S6.9.13.2)</td>
+    </tr>
+    <tr>
+      <td>S6.2.6</td> 
+      <td>Alternative Sampling Platforms</td>
+    </tr>
+    <tr>
+      <td>S6.2.6.1</td> 
+      <td>Aircraft</td>
+    </tr>
+    <tr>
+      <td>S6.2.6.2</td> 
+      <td>Ships of Opportunity</td>
+    </tr>
+    <tr>
+      <td>S6.2.6.3</td> 
+      <td>Special sampling platforms: FLIP</td>
+    </tr>
+    <tr>
+      <td>S6.3</td> 
+      <td>Depth and pressure measurements</td>
+    </tr>
+    <tr>
+      <td>S6.4</td> 
+      <td>Water property measurements (temperature, salinity, density and tracers)</td>
+    </tr>
+    <tr>
+      <td>S6.4.1</td> 
+      <td>Water-sampling bottles</td>
+    </tr>
+    <tr>
+      <td>S6.4.2</td> 
+      <td>Temperature measurement</td>
+    </tr>
+    <tr>
+      <td>S6.4.2.1</td> 
+      <td>Sea surface temperature</td>
+    </tr>
+    <tr>
+      <td>S6.4.2.2</td> 
+      <td>Mercury reversing thermometers</td>
+    </tr>
+    <tr>
+      <td>S6.4.2.3</td> 
+      <td>Conductivity, temperature and depth profiler (CTD)</td>
+    </tr>
+    <tr>
+      <td>S6.4.2.4</td> 
+      <td>Mechanical Bathythermograph (MBT)</td>
+    </tr>
+    <tr>
+      <td>S6.4.2.5</td> 
+      <td>Expendable bathythermograph (XBT) and expendable CTD (XCTD)</td>
+    </tr>
+    <tr>
+      <td>S6.4.2.6</td> 
+      <td>Subsurface temperature measurements from floating and moored instruments</td>
+    </tr>
+    <tr>
+      <td>S6.4.3</td> 
+      <td>Salinity Measurement</td>
+    </tr>
+    <tr>
+      <td>S6.4.3.1</td> 
+      <td>Salinity measurements using titration</td>
+    </tr>
+    <tr>
+      <td>S6.4.3.2</td> 
+      <td>Salinity measurements using conductivity</td>
+    </tr>
+    <tr>
+      <td>S6.4.3.3</td> 
+      <td>Salinity measurements using refractive index</td>
+    </tr>
+    <tr>
+      <td>S6.4.3.4</td> 
+      <td>Standard Seawater</td>
+    </tr>
+    <tr>
+      <td>S6.4.4</td> 
+      <td>Density measurement</td>
+    </tr>
+    <tr>
+      <td>S6.4.5</td> 
+      <td>Other water properties</td>
+    </tr>
+    <tr>
+      <td>S6.5</td> 
+      <td>Current measurements</td>
+    </tr>
+    <tr>
+      <td>S6.5.1</td> 
+      <td>Lagrangian methods for surface currents</td>
+    </tr>
+    <tr>
+      <td>S6.5.2</td> 
+      <td>Lagrangian methods for subsurface currents</td>
+    </tr>
+    <tr>
+      <td>S6.5.3</td> 
+      <td>Lagrangian methods employing tracers</td>
+    </tr>
+    <tr>
+      <td>S6.5.4</td> 
+      <td>Eulerian current measurement: mechanical sensors</td>
+    </tr>
+    <tr>
+      <td>S6.5.5</td> 
+      <td>Eulerian methods: acoustic and electromagnetic current meters</td>
+    </tr>
+    <tr>
+      <td>S6.5.5.1</td> 
+      <td>Acoustic current measurements</td>
+    </tr>
+    <tr>
+      <td>S6.5.5.2</td> 
+      <td>Electrical and magnetic field current measurements</td>
+    </tr>
+    <tr>
+      <td>S6.5.6</td> 
+      <td>Mooring technology</td>
+    </tr>
+    <tr>
+      <td>S6.5.6.1</td> 
+      <td>Subsurface current meter moorings</td>
+    </tr>
+    <tr>
+      <td>S6.5.6.2</td> 
+      <td>Deep-sea surface moorings</td>
+    </tr>
+    <tr>
+      <td>S6.5.6.3</td> 
+      <td>Large moored buoy programs</td>
+    </tr>
+    <tr>
+      <td>S6.6</td> 
+      <td>Acoustic methods for observing changes in temperature or density</td>
+    </tr>
+    <tr>
+      <td>S6.6.1</td> 
+      <td>Acoustic tomography</td>
+    </tr>
+    <tr>
+      <td>S6.6.2</td> 
+      <td>Inverted Echo Sounder (IES)</td>
+    </tr>
+    <tr>
+      <td>S6.7</td> 
+      <td>Sea-level measurement</td>
+    </tr>
+    <tr>
+      <td>S6.8</td> 
+      <td>Radiation and optical measurements</td>
+    </tr>
+    <tr>
+      <td>S6.9</td> 
+      <td>Satellites</td>
+    </tr>
+    <tr>
+      <td>S6.9.1</td> 
+      <td>Satellite remote sensing</td>
+    </tr>
+    <tr>
+      <td>S6.9.2</td> 
+      <td>Satellite orbits</td>
+    </tr>
+    <tr>
+      <td>S6.9.3</td> 
+      <td>Sensor types</td>
+    </tr>
+    <tr>
+      <td>S6.9.4</td> 
+      <td>SEASAT</td>
+    </tr>
+    <tr>
+      <td>S6.9.5</td> 
+      <td>Sea surface temperature from satellite remote sensing</td>
+    </tr>
+    <tr>
+      <td>S6.9.6</td> 
+      <td>Sea surface salinity</td>
+    </tr>
+    <tr>
+      <td>S6.9.7</td> 
+      <td>Sea ice</td>
+    </tr>
+    <tr>
+      <td>S6.9.8</td> 
+      <td>The Coastal Zone Color Scanner (CZCS) and SeaWiFS</td>
+    </tr>
+    <tr>
+      <td>S6.9.9</td> 
+      <td>Sea surface height: satellite altimetry</td>
+    </tr>
+    <tr>
+      <td>S6.9.10</td> 
+      <td>Wave height and direction</td>
+    </tr>
+    <tr>
+      <td>S6.9.11</td> 
+      <td>Wind speed and direction: scatterometry</td>
+    </tr>
+    <tr>
+      <td>S6.9.12</td> 
+      <td>Other satellite sensors and derived  products</td>
+    </tr>
+    <tr>
+      <td>S6.9.13</td> 
+      <td>Satellite communications and navigation </td>
+    </tr>
+    <tr>
+      <td>S6.9.13.1</td> 
+      <td>Satellite communication</td>
+    </tr>
+    <tr>
+      <td>S6.9.13.2</td> 
+      <td>Satellite navigation</td>
+    </tr>
+    <tr>
+      <td>S6.10</td> 
+      <td>Data archives and data centers</td>
+    </tr>
+  </tbody> 
+</table>
+
+{% endblock %}

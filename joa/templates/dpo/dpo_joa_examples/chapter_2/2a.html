@@ -1,0 +1,225 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 2A{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 2</a><ul><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 2A</span></li><li class="webgen-menu-level3"><a href="2b.html">Example 2B</a></li><li class="webgen-menu-level3"><a href="2c.html">Example 2C</a></li><li class="webgen-menu-level3"><a href="2d.html">Example 2D</a></li><li class="webgen-menu-level3"><a href="2e.html">Example 2E</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Two</h1>
+
+</h1>
+
+	<h2>Ocean dimensions, shapes and bottom materials</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Two</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><span>Example 2A</span></h1><p><span>Dimensions</span></p></li><li><h1><a href="2b.html">Example 2B</a></h1><p><a href="2b.html">Sea-floor Dimensions</a></p></li><li><h1><a href="2c.html">Example 2C</a></h1><p><a href="2c.html">Bathymetry</a></p></li><li><h1><a href="2d.html">Example 2D</a></h1><p><a href="2d.html">DPO Extra Topic&#59; Map Projections</a></p></li><li><h1><a href="2e.html">Example 2E</a></h1><p><a href="2e.html">DPO Extra Topic&#59; Making a .joa file</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 2A: Dimensions</h3>
+	
+
+<p>You can use Java OceanAtlas (JOA) to make global ocean maps similar to those in the DPO text.</p>
+
+<p>JOA needs at least one data point before it will draw a map.  We have provided the data file <span class="fileName">SIO.joa</span>, with one data value at the location of the UCSD Scripps Institution of Oceanography. (You will create the <span class="fileName">mycity.joa</span> file in Example 2E)</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">SIO.joa</span></li>
+  <li><span class="fileName">mycity.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_2a_01">Exercise 2A-01: First Things First - Start JOA and Set JOA Preferences</h3></p>
+
+<p>Java OceanAtlas (JOA) is configured to have a specified appearance and a
+specified result for various actions (such as how it translates data files when
+it opens them), and some JOA features can be enabled/disabled. This
+configuration is handled via the JOA &#8220;Preferences&#8221; dialog box. We
+pre-configured JOA to fit the needs of DPO JOA Examples users. But if you are
+not dealing with a new/fresh copy of JOA, some previous user may have altered
+the pre-set Preferences. Here we will show the Preferences panels in our
+recommended configuration for the DPO JOA Examples, and briefly discuss some of
+the options should you later choose to change the Preferences.</p>
+
+<ul>
+  
+<li>Start JOA by double clicking on the JOA icon, or by whatever other means you start an application on your computer</li>
+
+<div class="note_header">NOTE:</div>
+<div class="note">
+  <p>There is no big JOA window ... all you will see when JOA is first opened is its menu bar, and maybe a blank window for a JOA feature we will ignore here.  The appearance of JOA when you first start it will be slightly different depending on the computer you use, but it will look something like the figure below (on Mac OS X).</p>
+</div>
+
+<p align="center">
+  <a href="/dpo_examples/images/ch2/fig2a-01.png" rel="lightbox" title="FIG 2a-01 JOA Window upon starting. ">
+    <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2a-01s.png" />
+    <p class="caption">FIG 2a-01 JOA Window upon starting.</p>
+  </a>
+</p>
+
+<p>The JOA "Preferences" menu selection is found under the "Java Ocean Atlas" menu:</p>
+
+<p>Java OceanAtlas (JOA) has default actions and appearances that are
+configured via a <b>Preferences</b> dialog box. To edit these go
+to:</p>
+
+<li><b>JavaOceanAtlas</b> (from menu) &rarr; <b>Preferences</b></li>
+  
+<li>Preference changes under the <b>General</b>  panel
+  <p align="center">
+    <a href="/dpo_examples/images/ch2/fig2a-02.png" rel="lightbox" title="FIG 2a-02 The first panel, General, should look like this. ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2a-02s.png" />
+      <p class="caption">FIG 2a-02 The first panel, General, should look like this.</p>
+    </a>
+  </p>
+  <ul>
+    <li>Connect observation line width:
+      <ul>
+        <li>As the value of the selected number increases, so does the width of the line</li>
+      </ul>
+    </li>
+  </ul>
+</li>
+  
+<li>Default autoscale color scheme:
+     <ul>
+    <li>The default color scheme is <b>Rainbow(inv)-32</b></li>
+    <li>The color scheme number refers to the number of divisions/contours in a given color bar</li>
+    <li><b>Blue-White-Red</b> schemes are useful for showing where values are higher and lower than some in-between (white) numerical values</li>
+    <li><b>Rainbows</b> give vivid color ranges </li>
+    <li><b>Rainbow(inv)</b> inverts the order of the colors relative to the order of numerical contour values, compared to <b>Rainbow</b></li>
+    </ul>
+</li>
+
+<li>Preference changes under the <b>CTD Decimation</b> panel:
+  <p align="center">
+    <a href="/dpo_examples/images/ch2/fig2a-03.png" rel="lightbox" title="FIG 2a-03 The CTD decimation of the configure preferences dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2a-03s.png" />
+      <p class="caption">FIG 2a-03 The CTD decimation of the configure preferences dialog box</p>
+    </a>
+  </p>
+  <ul>
+    <li>The <b>CTD Decimation</b> panel is only important when you are importing <a class="glossary" href="/dpo_examples/glossary.html#ctd">CTD data</a> which are not already in a JOA binary data file (JOA binary format files have file extension .joa)
+      <ul>
+        <li>Selecting <b>Constant every 10 (or 20) db</b> is a good choice</li>
+        <li>Select <b>No decimation</b> if you want to import all levels of each new CTD data profile into JOA, This will result in a larger file than if the file were decimated</li>
+        </ul>
+      </li>
+  </ul>
+</li>
+  
+<li>Preference changes under the <b>Import</b> panel:
+  <p align="center">
+    <a href="/dpo_examples/images/ch2/fig2a-04.png" rel="lightbox" title="FIG 2a-04 The import panel of the configure preferences dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2a-04s.png" />
+      <p class="caption">FIG 2a-04 The import panel of the configure preferences dialog box</p>
+    </a>
+  </p>
+  <ul>
+    <li>The <b>Import</b> panel is important if you are importing new data into JOA that are not already in JOA binary format (JOA binary format files have file extension .joa), which is an action not needed for the DPO JOA Examples.  See the JOA User Guide for more information about these</li>
+    <li>The settings tell JOA what to do with various pieces of information in a text data file</li>
+    <li>The default settings are designed to weed out suspicious and bad data</li>
+    <li>JOA users intending to import their own data files should refer to the JOA <b>User Guide</b></li>
+  </ul>
+</li>
+  
+<li>Preference changes under remaining panels:
+  <ul>
+    <li>The remaining <b>Configure Preferences</b> panels are not of direct concern to most working through the DPO JOA Examples</li>
+  </ul>
+</li>
+  
+<li>Remember to <b>Save</b> the changes made to the JOA <b>Configure Preferences</b>, otherwise the settings will revert to the default</li>
+
+<div class="note_header">NOTE:</div>
+<div class="note">
+<p>When you save new or revised JOA preferences (or color bars, or interpolation level files, etc.), JOA will prompt you to save a file in the JOA_Support folder.  If there is already a file of that name in JOA_Support, JOA will ask if you really want to replace the file. Yes, you usually want to replace it. Changes made to JOA Configure Preferences - but not saved - will be enabled only through the current JOA session and then discarded when you quit JOA.  This can be handy if you wish to modify JOA behavior only for one JOA session.</p>
+</div>
+
+</ul>
+
+<p><b>Additional Resources: </b></p>
+
+<p class="list">Java OceanAtlas User Guide can be found in the &lt;%= link_to "JOA application", "/joa" %&gt; tab.
+</p>
+
+<p><br /></p>
+
+<p><h3 class="exercise_header" id="exercise_2a_02">Exercise 2A-02: Ocean Maps - Making a Mercator Map</h3></p>
+
+<ul>
+  
+<li>Start JOA</li>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr;<span class="fileName">SIO.joa</span></li>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Plots</a> &rarr; <b>Map&#133;</b> 
+  <div class="note_header">NOTE:</div>
+  <div class="note"><p>Make sure the data window is open and active to access the <b>Plots</b> menu.</p>
+  </div>
+</li>
+    
+<li>In the <b>General Settings</b> panel set up a <b>Mercator</b> projection map with characteristics of:
+  <p align="center">
+     <a href="/dpo_examples/images/ch2/fig2a-05.png" rel="lightbox" title="FIG 2a-05 Dialog box for Mercator projection map ">
+          <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2a-05s.png" />
+        <p class="caption">FIG 2a-05 Dialog box for Mercator projection map</p>
+    </a>
+  </p>
+  <ul>
+    <li><b>T</b>op: 80 (degrees North)</li>
+    <li><b>B</b>ottom: -80 (degrees South)</li>
+    <li><b>L</b>eft: 120 (degrees East)</li>
+    <li><b>R</b>ight limits: 119.99 (degrees East)</li>
+    <li><a class="glossary" href="/dpo_examples/glossary.html#latitude">Latitude</a> Spacing: 20 (degrees)</li>
+    <li><a class="glossary" href="/dpo_examples/glossary.html#longitude">Longitude</a> Spacing: 30 (degrees)</li>
+  </ul>
+  </li>
+
+<li>The <b>Bathymetry</b> panel should look like this by default; if not, change it to match: 
+  <p align="center">
+    <a href="/dpo_examples/images/ch2/fig2a-06.png" rel="lightbox" title="FIG 2a-06 The Bathymetry panel of the Configure Map Plot panel">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2a-06s.png" />
+      <p class="caption">FIG 2a-06 The Bathymetry panel of the Configure Map Plot panel</p>  
+    </a>
+  </p>
+</li>
+  
+<li>Click on the <b>Plot</b> button and JOA will draw a map plot looking like this:
+  <p align="center">
+      <a href="/dpo_examples/images/ch2/fig2a-07.png" rel="lightbox" title="FIG 2a-07 JOA map plot made with suggested settings">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2a-07s.png" />
+        <p class="caption">FIG 2a-07 JOA map plot made with suggested settings</p>
+      </a>
+    </p>
+</li>
+      
+<p>To change the appearance of this map to look more like the global ocean map figure in Chapter 2 of the DPO textbook:</p>
+      
+<li>With the map plot as the front-most window, bring up the <b>Configure Map Plot</b> dialog box so that you can change the characteristics of the plot.  To bring up the <b>Configure Map Plot</b> dialog box, either:
+  <ul>
+    <li>Double-click or control-click on a map plot </li>
+    <li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when a map plot is the front-most window</li>
+  </ul>
+</li>
+      
+<li>Click on the <b>Bathymetry</b> panel in the dialog box to bring up the <b>Bathymetry</b> panel</li>
+      
+<li>Select the <span class="fileName">ROSE-map-like_cbr.xml</span> color bar under <b>Colorbars:</b></li>
+      
+<li>Click on <b>OK</b> to draw this plot:      
+  <p align="center">
+    <a href="/dpo_examples/images/ch2/fig2a-08.png" rel="lightbox" title="FIG 2a-08 Mercator map plot with ROSE color scheme ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2a-08s.png" />
+      <p class="caption">FIG 2a-08 Mercator map plot with ROSE color scheme</p>  
+    </a>
+  </p>
+</li>
+
+<p>The black dot on southern California is the location of the single coordinate in the <span class="fileName">SIO.joa</span> data file, which is the location of the Scripps Institution of Oceanography.</p>      
+</ul>
+
+<p>We will work more with this map in Exercise 2B.</p>
+
+{% endblock %}

@@ -1,0 +1,374 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 4B{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 4</a><ul><li class="webgen-menu-level3"><a href="4a.html">Example 4A</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 4B</span></li><li class="webgen-menu-level3"><a href="4c.html">Example 4C</a></li><li class="webgen-menu-level3"><a href="4d.html">Example 4D</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Three</h1>
+
+</h1>
+
+	<h2>Typical distributions of water characteristics</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Four</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="4a.html">Example 4A</a></h1><p><a href="4a.html">Before we get started</a></p></li><li><h1><span>Example 4B</span></h1><p><span>Surface properties of world ocean waters</span></p></li><li><h1><a href="4c.html">Example 4C</a></h1><p><a href="4c.html">Vertical Distribution of Water Properties Along South-to-North Transects</a></p></li><li><h1><a href="4d.html">Example 4D</a></h1><p><a href="4d.html">Vertical Distribution of Water Properties Along South-to-North Transects</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 4B: Surface properties of world ocean waters</h3>
+	
+
+<p>DPO textbook references for Surface properties of World Ocean waters:</p>
+
+<div class="indent">
+  <table cellpadding="3">
+    <tr>
+      <td>DPO 4.2.1</td>
+      <td>Surface temperature</td>
+    </tr>
+    <tr>
+      <td>DPO 4.3.1</td>
+      <td>Surface salinity</td>
+    </tr>
+    <tr>
+      <td>DPO 4.4.1</td>
+      <td>Density at the sea surface and in the upper layer</td>
+    </tr>
+    <tr>
+      <td>DPO 4.5</td>
+      <td>Dissolved Oxygen (at surface)</td>
+    </tr>
+    <tr>
+      <td>DPO 4.6</td>
+      <td>Nutrients and other tracers (at surface)</td>
+    </tr>    
+  </table>
+</div>
+
+<p>The DPO maps of surface temperature, salinity, and surface density in winter,
+and surface <a class="glossary" href="/dpo_examples/glossary.html#nitrate">nitrate</a>
+(DPO Figures 4.1, 4.13, 4.16, and 4.22, respectively ) provide a view of the
+global distributions of key ocean surface property distributions. We will use
+JOA to make similar maps, using data from the World Ocean Atlas data
+compilation.</p>
+
+<p>(In the example below, you may wish to occasionally refer to the Chapter 3
+DPO JOA Examples for some of the basics regarding JOA map plots.)</p>
+
+<p>
+  <div class="expand_link_header" id="expand_link_header_04b01"><strong>LEARN MORE ABOUT:</strong><br />
+  <a href="javascript:expand04b01.slideit()">World Ocean Atlas data files</a></div>
+</p>
+
+<div id="expand_link04b01">
+<div id="expand_link">
+    
+  <br />
+
+  <p>There are many vertical profiles of temperature, salinity, oxygen, and nutrients from the World Ocean. Most profiles are of temperature alone. Second after that are profiles with temperature and salinity alone.  Most of these profiles are not full-depth.</p>  
+
+  <p>Some regions, especially in the North Atlantic Ocean and in the Northwest Pacific near Japan, have dense station coverage in both space and time.  Others regions, most notably the far south Pacific and Indian Oceans, have few ocean profile data.</p>  
+
+  <p>In general, vertical profile global coverage has proved sufficient to permit averaging on a latitude-longitude grid.  The general concept used for averaging is that the analyst:</p>
+
+<ul>
+    
+	<li>Collects and quality-controls profile data from a chosen region (for example one ocean basin or the World Ocean) </li>
+    
+	<li>Sometimes sorts them by time (by month and/or year, for example) </li>
+    
+	<li>Interpolates them onto chosen &ldquo;standard levels&rdquo; (for example chosen depths, pressures, or density surfaces) </li>
+    
+	<li>At each level, averages data falling within bounds of some sort of chosen grid spacing</li>
+</ul>
+
+<p>An outstanding example is the one-degree square averages onto standard depth surfaces prepared by Syd Levitus and co-workers at the US National Oceanographic Data Center in their World Ocean Atlas (WOA) compilations. Many 1-degree squares are under-represented in terms of data in WOA, but on a global scale these do not overly bias the results.</p>
+
+<p>The World Ocean Atlas files are updated by NODC, and periodically a new version is disseminated.  There are various WOA products.  We have translated the 2009 version of the multi-year annual average WOA (known as WOA09) into a form usable by Java OceanAtlas and used it to make data files which we provide with these examples.</p>
+
+<p>The profiles in the 2009 version of the multi-year annual average WOA (denoted in these examples as WOA09) contain data values, where ocean depth permits, at 0, 10, 20, 30, 50, 75, 100, 125, 150, 200, 250, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1750, 2000, 2500, 3000, 3500, 4000, 4500, 5000, and 5500 meters.  [WOA09 indexes its data values by depth (Z) instead of <a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a> (P).  </p>
+
+<p>Although Java OceanAtlas works from pressure-indexed data, for convenience, we have read the depths as if they were pressures.  The numerical error (the numerical difference between depths in meters and pressures in decibars) in the upper layers is insignificant; considering the averaging and interpolation going into WOA09, it does not affect interpretation of seawater property distributions significantly at great depth.</p>
+
+<br />
+
+<div class="note_header">NOTE:</div>
+<div class="note">
+	<p>Please keep in mind, however, that when using WOA09 data files in JOA, the &ldquo;pressure&rdquo; data are actually values of &ldquo;depth&rdquo; in the original file from NODC.]</p>
+</div>  
+<br />
+
+<p>It is a challenge to use the full, global WOA09 data set in Java OceanAtlas, at least with the power and memory of a typical laptop computer and the inefficiencies of the Java environment. </p>
+
+<p>Users should expect to experience <b>negative impacts</b> on computer performance when using the 1-degree data set. To reduce the file size of WOA09, we have eliminated from the file: </p>
+
+<ul>
+	<li>Vertical profiles on land</li>
+	<li>All values (always null values) at each profile which are below the depth of the sea floor
+		<ul> 
+			<li>For example, our WOA05 profile at a continental shelf location 223 meters depth would contain data values only for 0, 10, 20, 30, 50, 75, 100, 125, 150, and 200 meters.</li>
+		</ul>  
+	</li>  
+</ul>  
+
+<p>This data file is included with the DPO JOA Examples as a supplementary data file named <span class="fileName">WOA09.joa</span>.  It is a large binary data file that currently will work only on computers with large amounts of RAM available to Java OceanAtlas.</p>
+
+<p>To make a <span class="fileName">WOA09_surface.joa</span> data file we then extracted the surface value only for each one-degree grid point from the edited data set.  This file is still a large data file for some computers to deal with. To make the <span class="fileName">WOA09_surface_reduced.joa</span> data file, we eliminated grid points from <span class="fileName">WOA09_surface.joa</span> according to these rules:</p>
+
+<ul>
+	<li>0.5-59.5  retain all points</li>
+	<li>60.5-74.5  cut out half of <a class="glossary" href="/dpo_examples/glossary.html#longitude">longitudes</a></li>
+	<li>75.5-84.5  cut out another half of longitudes</li>
+	<li>85.5-89.5  cut out another half of longitudes</li>
+</ul>  
+
+<p>Considering that <a class="glossary" href="/dpo_examples/glossary.html#meridian">meridians</a> (lines of longitude) draw closer together poleward, this more or less maintains the distance spacing of the grid points and reduces the file size somewhat.</p>
+
+ <p>To make a WOA09 &ldquo;reduced&rdquo; data set, we started with the 2009 version of WOA and eliminated every second degree of data starting at the equator then followed through, eliminating additional grid points poleward in accord with the rules above.</p>  
+
+<center><p class="expand"><a href="javascript:expand04b01.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expand04b01=new animatedcollapse("expand_link04b01", 2000, true);</script>
+
+<p><br /></p>
+
+<div class="note_header">NOTE:</div>
+<div class="note">
+  <p>Warning: data file may slow your computer!</p>
+  <p>The data file used for these &ldquo;surface properties&rdquo; examples is large relative to the relatively slow speed and relatively large memory usage of the Java environment.</p>  
+</div>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">WOA05_surface.jos</span></li>
+</ul>
+
+<h3 class="exercise_header" id="exercise_4b_01">Exercise 4B-01: Data Files - Importing a Spreadsheet</h3>
+
+<ul>
+  
+	<li>Start JOA</li>
+  
+	<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr; <span class="fileName">WOA05_surface.jos</span>
+	  <p><span class="fileName">WOA05_surface.jos</span> is a text data file. Due to a JOA software limitation they contain too many stations (grid points in this case) to be opened if they are in JOA binary format.</p>
+	</li>
+  
+	<li>JOA will then present you with the JOA <b>Spreadsheet Import Options</b> dialog box:
+	    <p align="center">
+	       <a href="/dpo_examples/images/ch4/fig4b-01.png" rel="lightbox" title="FIG 4b-01 Spreadsheet Import Options dialog box ">
+	         <img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-01s.png" />
+	          <p class="caption">FIG 4b-01 Spreadsheet Import Options dialog box</p>
+	         </a>
+	    </p>
+	
+  <br />
+  
+  <div class="note_header">NOTE:</div>
+  <div class="note">
+
+  <p>Because this <span class="fileName">.jos</span> data file
+  is in tab-delimited format with the default (-99) JOA missing value
+  markers, all you need to do here is to click on <b>OK</b>.  JOA will then open
+  the <span class="fileName">.jos</span> data file into a standard JOA
+  Data Window. </p>
+
+  </div>  
+
+  <div class="note_header">NOTE:</div>
+  <div class="note">
+  <p>If JOA on your computer cannot open the file <span class="fileName">WOA09_surface.jos</span>, or this file severely slows down your computer, you might try opening, instead, the file <span class="fileName">WOA09_surface_reduced.jos</span>, which is somewhat smaller.</p>
+	</div>
+  <br />  
+
+	</li>
+	<li>Click <b>OK</b>
+
+		<p>The resulting JOA <a class="glossary" href="/dpo_examples/glossary.html#data_window">Data Window</a> will look something like this:</p>
+	    <p align="center">
+	      <a href="/dpo_examples/images/ch4/fig4b-02.png" rel="lightbox" title="FIG 4b-02 Java OceanAtlas Data Window ">
+	        <img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-02s.png" />
+	        <p class="caption">FIG 4b-02 Java OceanAtlas Data Window</p>       
+	      </a>
+	    </p>  
+	</li>
+
+</ul>
+<p><br /></p>
+<p>We wish to make maps of the World Ocean onto which we can plot these data.
+At this writing, JOA does not offer the <b>Robinson</b> map projection used to
+make DPO Figures 4.1, 4.9, 4.15, 4.19, and 4.23.  The two global JOA map projections
+- <b>Mercator</b> and <b>Miller Cylindrical</b> - are highly distorted at high
+latitudes.  But JOA can have as many map plots open simultaneously as computer
+resources permit, so here we provide instructions to make two map plots, which
+together cover most of the World Ocean.</p>
+
+<h3 class="exercise_header" id="exercise_4b_02">Exercise 4B-02: Surface Properties - Making a Lambert Azimuthal Equal Area Map Plot</h3>
+
+<ul>
+  
+	<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Plots</a> &rarr; <b>Map&#133;</b></li>
+  
+	<li>Set up a <b>Lambert Azimuthal Equal Area</b> map plot with these settings (note that a <b>Preset Region</b> must be selected, even if it does not match the <b>Custom Region</b> boundaries):
+		<p align="center">
+			<a href="/dpo_examples/images/ch4/fig4b-03.png" rel="lightbox" title="FIG 4b-03 The General Settings panel of the Configure Map Plot dialog box ">
+				<img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-03s.png" />
+				<p class="caption">FIG 4b-03 The General Settings panel of the Configure Map Plot dialog box</p>     
+			</a>
+		</p>
+  
+		<p align="center">
+			<a href="/dpo_examples/images/ch4/fig4b-04.png" rel="lightbox" title="FIG 4b-04 The Bathymetry panel of the Configure Map Plot dialog box ">
+				<img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-04s.png" />
+				<p class="caption">FIG 4b-04 The Bathymetry panel of the Configure Map Plot dialog box </p>        
+			</a>
+		</p>
+	</li>
+  
+	<li>Click <b>Plot</b>
+		<p>The resulting plot will look approximately like this:</p>
+		<p align="center">
+			<a href="/dpo_examples/images/ch4/fig4b-05.png" rel="lightbox" title="FIG 4b-05  Lambert Azimuthal Equal Area map plot ">
+				<img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-05s.png" />
+				<p class="caption">FIG 4b-05 Lambert Azimuthal Equal Area map plot</p>   
+			</a>
+		</p>
+
+		<br />
+
+		<div class="note_header">NOTE:</div>
+		<div class="note">
+			<p>There are many profiles (&ldquo;stations&rdquo; in JOA terminology), on a grid-like pattern covering the World Ocean. </p>
+		</div>  
+
+		<br />  
+	</li>
+  
+	<li><b>Plots</b> &rarr; <b>Map&#133;</b></li>
+  
+	<li>Set up a second <b>Lambert Azimuthal Equal Area</b> map plot with these settings (again noting that a <b>Preset Region</b> must be selected, even if it does not match the <b>Custom Region</b> boundaries):  
+		<p align="center">
+			<a href="/dpo_examples/images/ch4/fig4b-06.png" rel="lightbox" title="FIG 4b-06 The General Settings panel of the Configure Map Plot dialog box ">
+				<img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-06s.png" />
+				<p class="caption">FIG 4b-06 The General Settings panel of the Configure Map Plot dialog box</p>
+			</a>
+		</p>
+	</li>
+  
+	<li>Set up the <b>Bathymetry</b> panel of the <b>Configure Map Plot</b> the same way that you set up that panel for the first map plot
+		<p>  The resulting plot will look approximately like this:</p>
+		<p align="center">
+			<a href="/dpo_examples/images/ch4/fig4b-07.png" rel="lightbox" title="FIG 4b-07 Lambert Azimuthal Equal Area map plot ">
+				<img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-07s.png" />
+				<p class="caption">FIG 4b-07 Lambert Azimuthal Equal Area Map Plot</p>
+			</a>
+		</p>    
+	</li>
+  
+	<li>Now, <u>for each map plot</u>, bring up the <b>Configure Map Plot</b> dialog box:
+		<ul>
+			<li>Double-click or control-click on a map plot </li>
+			<li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when a map plot is the front-most window</li>
+		</ul>    
+	</li>
+  
+	<li>Adjust the <b>Station symbol</b> size to a large enough value that the station symbols just barely merge into a solid sheet of color over most of the map plot area
+		<ul>
+			<li> It is best for this DPO JOA Example if you use a solid square symbol, and for the illustrations here we used the default, size &#61; 3</li>
+		</ul>
+	</li>    
+    
+	<li>Select the <b>Station Colors</b>  panel 
+
+		<br />
+
+		<div class="note_header">NOTE:</div>
+		<div class="note">
+			<p>With a WOA05_surface data file, when you are setting up the <b>Iso-surface value</b> box in the <b>Station Colors</b> window of the <b>Configure Map Plot</b> dialog box, you must select the <b>Min surface only</b> option, or else the station dots on the resulting map plot will all be colored black.  This has to do with a peculiarity of the WOA05_surface data files, which have only a single data level (0) at each grid point.</p>
+		</div>  
+
+		<br />
+	</li>  
+	<li>Set it up as shown here:
+		<p align="center">
+			<a href="/dpo_examples/images/ch4/fig4b-08.png" rel="lightbox" title="FIG 4b-08 The Iso-surface value panel of the Station Colors panel of the Configure Map Plot dialog box">
+				<img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-08s.png" />
+				<p class="caption">FIG 4b-08 The Iso-surface value panel of the Station Colors panel of the Configure Map Plot dialog box</p> 
+			</a>
+		</p>  
+
+		<br />
+
+		<div class="note_header">NOTE:</div>
+		<div class="note">
+			<p>You could have set all three panels of the <b>Configure Map Plot</b> dialog box up in their final configuration the very first time you set up each plot.  We called for sequential steps here to help make it clear which steps contribute which aspects to the two map plots.</p>
+		</div>  
+
+		<br />
+	</li>
+  
+	<li>Click <b>OK</b> for each plot
+		<p>Your map plots will look approximately like these:</p>  
+
+		<p align="center">
+			<a href="/dpo_examples/images/ch4/fig4b-09.png" rel="lightbox" title="FIG 4b-09 Lambert Azimuthal Equal Area map plot">
+				<img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-09s.png" />
+				<p class="caption">FIG 4b-09 Lambert Azimuthal Equal Area map plot</p>
+			</a>
+		</p>  
+
+		<p align="center">
+			<a href="/dpo_examples/images/ch4/fig4b-10.png" rel="lightbox" title="FIG 4b-10 Lambert Azimuthal Equal Area map plot">
+				<img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4b-10s.png" />
+				<p class="caption">FIG 4b-10 Lambert Azimuthal Equal Area map plot</p>
+			</a>
+		</p>
+	</li>
+</ul>
+
+<p>These are maps of salinity at the sea surface (0 meters or 0 decibars) from the
+multi-year average World Ocean Atlas (WOA) data set.</p>
+
+<h3 class="exercise_header" id="exercise_4b_03">Exercise 4B-03: Surface Properties - Examining Lambert Azimuthal Equal Area Map Plots</h3>
+
+<p>Via the <b>Configure Map Plot</b> dialog box&#39;s <b>Station Colors</b> panel,
+you can select any other property and a corresponding color bar.  We suggest
+these pairings to show off World Ocean characteristics:</p>
+
+<table border="0" width="100%">
+  <tr><td>TEMP</td><td class="fileName">TEMP-global_cbr.xml</td></tr>
+  <tr><td>SALT</td><td class="fileName">SALT-global_cbr.xml</td></tr>
+  <tr><td>O2</td><td class="fileName">O2-global_cbr.xml</td></tr>
+  <tr><td>PO4</td><td class="fileName">PO4-global_cbr.xml</td></tr>
+  <tr><td>SIO3</td><td class="fileName">SIO3-global_cbr.xmlv</td></tr>
+  <tr><td>NO3</td><td class="fileName">NO3-global_cbr.xml</td></tr>
+</table>
+
+<p><br /></p>
+
+<div class="note_header">NOTE:</div>
+
+<div class="note">
+  <p>Regarding use of the <span class="fileName">PRES-0-6000_srf.xml</span> Surface on this panel:  In order to plot/color data values at stations, JOA must interpolate data onto surfaces - even if data values are already present in the data file on the desired surface. (Also, in this example, there are data present on only one surface, i.e. 0 dbar).  </p>  
+  <p>Hence one must select a preconfigured Surface onto which JOA interpolates the data.  (See the JOA User Guide in the &lt;%= link_to "JOA application tab", "/joa" %&gt; for instructions on making your own custom preconfigured Surface for interpolations.  You can make Surfaces for any JOA parameter, including parameters in the data file, calculated parameters, and custom-calculated parameters.)</p>
+</div>
+
+<p><br /></p>
+
+<p>Remember, now that you have these map plots ready, you can explore the surface
+ocean with them in multiple ways.</p>
+
+<ul>
+
+	<li>You can click on data points to read and compare data values in the <a class="glossary" href="/dpo_examples/glossary.html#data_window">Data Window</a>.</li>
+
+	<li>You can select sub-areas of plots (via the standard point-click-hold-move-release mouse sequence most computer applications use for selections) and JOA will make those into new plots, which can be reconfigured as you wish.</li> 
+
+	<li>You can change or shift projections.  (Hint: Try the two polar projections.)</li>
+
+	<li>You can even have multiple map plots of the same area, each configured to show a different parameter so that you can explore how the various oceanographic parameters co-relate.</li>
+</ul>
+
+{% endblock %}

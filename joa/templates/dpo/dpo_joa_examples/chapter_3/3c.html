@@ -1,0 +1,147 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 3C{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 3</a><ul><li class="webgen-menu-level3"><a href="3a.html">Example 3A</a></li><li class="webgen-menu-level3"><a href="3b.html">Example 3B</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 3C</span></li><li class="webgen-menu-level3"><a href="3d.html">Example 3D</a></li><li class="webgen-menu-level3"><a href="3e.html">Example 3E</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Three</h1>
+
+</h1>
+
+	<h2>Physical properties of seawater</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Three</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="3a.html">Example 3A</a></h1><p><a href="3a.html">Before we get started</a></p></li><li><h1><a href="3b.html">Example 3B</a></h1><p><a href="3b.html">Physical Properties</a></p></li><li><h1><span>Example 3C</span></h1><p><span>Effect of Temperature and Salinity on Compressibility</span></p></li><li><h1><a href="3d.html">Example 3D</a></h1><p><a href="3d.html">Static Stability and Brunt V&#228;is&#228;l&#228; Frequency</a></p></li><li><h1><a href="3e.html">Example 3E</a></h1><p><a href="3e.html">Sound in the Sea</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 3C: Effect of Temperature and Salinity on Compressibility</h3>
+	
+
+<p>As discussed in DPO 3.5.4, seawater is slightly compressible.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">A16S_2005_sta085_bottle.joa</span></li>
+</ul>
+
+<p><div class="expand_link_header" id="expand_link_header_03c01"><strong>LEARN MORE ABOUT:</strong><br />
+  <a href="javascript:expand03c01.slideit()">Water Compressibility and Density</a></div></p>
+<div id="expand_link03c01">
+<div id="expand_link">
+
+  <p>As a simplification in some aspects of ocean fluid dynamics, seawater can be treated as incompressible. But when one wishes to compare seawater densities carefully, the compressibility of seawater, though very small, can be important.</p>
+
+  <p>That is, if a parcel of seawater were to be displaced adiabatically - without gain or loss of heat - from a lower <a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a> (shallow) to a higher pressure (deep), at the higher pressure its density would be a higher value than it was at the lower pressure. In other words, even when there is no change in the potential temperature or salinity of a seawater parcel, simply by moving it to higher pressure it will become denser because it is more compressed. In addition, as noted in the DPO text, the amount of compression a given parcel undergoes for a specific pressure change depends on its temperature; namely, colder waters are slightly more compressible than warmer waters.</p> 
+  <p>Therefore, consider two parcels of seawater at the sea surface, with equal density at the sea surface, but one is warm and the other is cool.</p>  
+  <ul>
+    
+<li>Note: if they are of equal density of course the warm one must be saltier than the cold one.  If you displace both of the parcels to a higher pressure (deeper) - without loss or change of heat (adiabatically) - the colder one will have compressed more than the warmer seawater parcel.  Down deep, it is now denser than the warmer seawater parcel.</li>
+
+    
+<li>Note: because this process was adiabatic and without mixing, the potential temperature and salinity of each parcel stay exactly the same: on a potential temperature versus salinity X-Y plot the two data points stay at their locations relative to the axes.</li>
+  </ul>
+  
+<center><p class="expand"><a href="javascript:expand03c01.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expand03c01=new animatedcollapse("expand_link03c01", 2000, true);</script>
+
+<p>So now let&#39;s demonstrate this with JOA!</p>
+
+<p><h3 class="exercise_header" id="exercise_3c_01">Exercise 3C-01: Seawater Properties - Compressibility</h3></p>
+<ul>
+  
+<li>Go back to Exercise 3B-01 where you made the temperature versus salinity plot for the 
+    <span class="fileName">A16_2005_sta085_bottle.joa</span> data.</li>
+     
+<li>Make that plot again, but now using potential temperature (THTA) instead of temperature for the Y-axis, and bottle salinity (SALT) instead of CTD salinity for the x-axis.</li>
+     
+<li>Adjust the plot parameters in the <b>Advanced</b> panel of the <a class="glossary_prop" href="/dpo_examples/glossary.html#plots">Property-Property Plot</a> dialog box until it looks like this:
+    <p align="center">
+      <a href="/dpo_examples/images/ch3/fig3c-01.png" rel="lightbox" title="FIG 3c-01 The Advanced panel of the Property-Property Plot dialog box ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3c-01s.png" />
+        <p class="caption">FIG 3c-01 The Advanced panel of the Property-Property Plot dialog box</p>
+      </a>
+    </p>
+  </li>
+  
+<li>Now, when you click <b>OK</b>, you will get this plot:
+    <p align="center">
+      <a href="/dpo_examples/images/ch3/fig3c-02.png" rel="lightbox" title="FIG 3c-02 Property-Property Plot ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3c-02s.png" />
+        <p class="caption">FIG 3c-02 Property-Property Plot</p>  
+      </a>
+    </p>
+  </li>
+  
+<li>Go back to the <b>Property-Property Plot</b> dialog box <b>Advanced</b> page:
+    <ul>    
+      <li>Double-click or control-click on a map plot </li>
+      <li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when a map plot is the front-most window.</li>
+    </ul>
+</li>
+  
+<li>Now, experiment with the <b>isopycnal</b> &ldquo;slider&rdquo; on the bottom of the <b>Advanced</b> page:
+    <p align="center">
+      <a href="/dpo_examples/images/ch3/fig3c-03.png" rel="lightbox" title="FIG 3c-03 Isopycnals A&lt;/a&gt;djuster ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3c-03s.png" />
+        <p class="caption">FIG 3c-03 Isopycnals Adjuster</p>
+      </a>
+    </p>
+  <ul>
+      
+		<li>Try sliding it to 4000 (4000 decibars), while watching the plotted isopycnal lines on the potential temperature 
+        versus salinity plot.  </li>
+      
+		<li>Notice that the numeric isopycnal line label values (these are density-related sigma units as explained in 
+        DPO) both increase with increasing <a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a> (as you slide the slider to the right) and also change their slope. </li>
+         
+		<li>Notice how they appear to flatten as pressure increases?  Compared to the situation which prevails at sea surface pressure 
+        (0 decibars), at 4000 decibars a given change in temperature now has a smaller effect in changing 
+        density.</li>
+  </ul>
+</li>  
+</ul>
+<p>To visualize the deep water at the A16_2007 station 085 <a class="glossary" href="/dpo_examples/glossary.html#bottle_data">bottle data</a> plot, select the deep water portion of your JOA potential temperature versus salinity plot (the part from 0 to 4 &deg;C and salinity 34.5 to 35), i.e. </p>
+<ul>  
+<li>Set up the <b>Advanced</b> panel of the <b>Property-Property Plot</b> dialog box like this:
+    <p align="center">
+      <a href="/dpo_examples/images/ch3/fig3c-04.png" rel="lightbox" title="FIG 3c-04 Advanced panel of the Property-Property Plot ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3c-04s.png" />
+        <p class="caption">FIG 3c-04 Advanced panel of the Property-Property Plot</p>
+      </a>
+    </p>
+  </li>
+  
+<li>After you click on <b>OK</b>, you should see this plot:
+    <p align="center">
+      <a href="/dpo_examples/images/ch3/fig3c-05.png" rel="lightbox" title="FIG 3c-05 JOA Property-Property plot for station 85 set up as in FIg 3c-04 ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3c-05s.png" />
+        <p class="caption">FIG 3c-05 JOA Property-Property plot for station 85 set up as in FIg 3c-04</p>
+      </a>
+    </p>
+  </li>
+  
+<li>Note that the coldest (and deepest) waters have a lower density, expressed as sigma-0, than the warmer (and somewhat shallower) 
+    waters immediately above.  
+    <p>Now try going back and forth between the dialog box and the plot to try different reference pressures for the <a class="glossary" href="/dpo_examples/glossary.html#isopycnals">isopycnals</a>.  You 
+      will see that the apparent instability (apparent dense water on top of less dense water) in the deep water when 0 decibars was 
+      used for the isopycnal reference pressure goes away when an appropriate deep reference pressure (ca. 4000 decibars) is 
+      used.</p>
+  </li>
+          
+</ul>
+<p><br /></p>
+<div class="examine_header">Examine:</div>
+<div class="examine">
+    <p>Notice that at A16_2007 station 085, in the deeper layers there is a relative salinity maximum  near 2000 meters which, at ca. 3.2 &deg;C, is significantly warmer than the relatively fresh, cold bottom waters underneath.</p>  
+    <p>This particular layering of deep temperature and salinity is characteristic of the Atlantic Ocean, and presents very well the 
+      relative layer-to-layer change of temperature and salinity needed to best highlight the importance of using an appropriate 
+      reference pressure to examine deep water density.  In later exercises, we will contrast the layering in the other oceans.</p>
+  </div>
+
+
+{% endblock %}

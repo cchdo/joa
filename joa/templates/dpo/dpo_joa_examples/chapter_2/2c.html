@@ -1,0 +1,215 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 2C{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 2</a><ul><li class="webgen-menu-level3"><a href="2a.html">Example 2A</a></li><li class="webgen-menu-level3"><a href="2b.html">Example 2B</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 2C</span></li><li class="webgen-menu-level3"><a href="2d.html">Example 2D</a></li><li class="webgen-menu-level3"><a href="2e.html">Example 2E</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Two</h1>
+
+</h1>
+
+	<h2>Ocean dimensions, shapes and bottom materials</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Two</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="2a.html">Example 2A</a></h1><p><a href="2a.html">Dimensions</a></p></li><li><h1><a href="2b.html">Example 2B</a></h1><p><a href="2b.html">Sea-floor Dimensions</a></p></li><li><h1><span>Example 2C</span></h1><p><span>Bathymetry</span></p></li><li><h1><a href="2d.html">Example 2D</a></h1><p><a href="2d.html">DPO Extra Topic&#59; Map Projections</a></p></li><li><h1><a href="2e.html">Example 2E</a></h1><p><a href="2e.html">DPO Extra Topic&#59; Making a .joa file</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 2C: Bathymetry</h3>
+	
+
+<p>
+  <div class="expand_link_header" id="expand_link_header_02c01"><strong>LEARN MORE ABOUT:</strong><br />
+  <a href="javascript:expand02c01.slideit()">Gridded Bathymetry and Elevations in JOA</a></div>
+</p>
+
+<div id="expand_link02c01">
+<div id="expand_link">
+  <dl>
+    <dt><u>Gridded bathymetry and elevations:</u></dt> 
+    <dd>JOA can illustrate land elevations and ocean depths using a digitized elevation/depth data set called <b>ETOPO-N</b>, where N is the corresponding resolution of the ETOPO data set. 
+    <ul>
+      
+<li class="indent">For example, N=60 is an elevation/depth data set with one value ever 60 minutes (60 minutes = 1 degree) of <a class="glossary" href="/dpo_examples/glossary.html#latitude">latitude</a> and <a class="glossary" href="/dpo_examples/glossary.html#longitude">longitude</a>. </li>
+    </ul>
+    To view the gridded bathymetry and elevations at higher resolution select <span class="fileName">etopo20.nc</span> instead of <span class="fileName">etopo60.nc</span>. This can be carried out in  various methods: 
+      <ul>        
+        <li>With the map plot as the front-most window, bring up the <b>Configure Map Plot</b> dialog box so that you can change the characteristics of the plot.  To bring up the <b>Configure Map Plot</b> dialog box, either:
+          <ul>
+            <li>Double-click or control-click on a map plot </li>
+            <li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when a map plot is the front-most window.</li>
+          </ul>
+        </li>
+      
+        <li>Then in the <b>Bathymetry</b> panel, under <b>Bathymetry files</b>, choose <span class="fileName">etopo20.nc</span>.</li>
+      </ul>
+    </dd><br />
+  </dl>
+  
+  <div class="note_header">NOTE:</div>
+  <div class="note">Compared to plots with 60-minute bathymetry/elevation data, using <span class="fileName">Etopo20.nc</span> will provide triple the bathymetry resolution, but at the cost of using 9 times more data.  This can make for a significantly longer plot draw and re-draw time.
+  </div>
+
+  <dl>
+    <dt><u>Bathymetric contour lines:</u></dt>
+    <dd>JOA can alternatively and/or concurrently plot contours of bottom depth.  (Refer to the upper panel of the <b>Bathymetry</b> panel of the <b>Configure Map Plot</b> dialog box.)  In this case JOA is not actively contouring a data set such as the ETOPO; instead, it is adding a contour line that is stored in memory.  (These contour lines were supplied to JOA courtesy of Professor Joseph Reid of the UCSD Scripps Institution of Oceanography.)</dd>
+  </dl>  
+  
+<center><p class="expand"><a href="javascript:expand02c01.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expand02c01=new animatedcollapse("expand_link02c01", 2000, true);</script>
+
+<p><br /></p>
+
+<p>The bathymetry of the oceans - the areal configuration of the ocean bottom -
+is not only interesting, but it is also crucial to ocean circulation and
+mixing.  It is important to gain a basic understanding of the principal
+features of the sea floor.  Java OceanAtlas offers several features to help
+visualize ocean bathymetry.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">SIO.joa</span></li>
+  <li><span class="fileName">mycity.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_2c_01">Exercise 2C-01: Bathymetry - Illustrating Bathymetry</h3></p>
+
+<p>Continue from 2B-03:</p>
+
+<p>When <b>Color Fill Bathymetry</b> is selected on the <b>Bathymetry</b> page
+of the <b>Configure Map Plot</b> dialog box, the ETOPO-60 (or ETOPO-20)
+bathymetric grid data points are each colored on the JOA map plot based upon
+their elevation or depth, via the color scheme used in the chosen ROSE color
+bar.  Thus these yield one view of land elevations and ocean bathymetry
+(combining &#39;bathy&#39; - deep, of the sea depths - with &#39;meter&#39;
+- measure). </p>
+
+<div class="note_header">NOTE:</div>
+<div class="note">
+ROSE color bars are meant for coloring bathymetry and elevation.  If you
+were to create your own bathymetry/elevation color bar, the name you assign it should follow the conventions used for the names of the ROSE color bars included with JOA.
+</div>
+
+<p>To more accurately assess the configuration of the bottoms of the
+oceans, you can add isobaths (&#39;iso&#39; - constant) to the map
+plot.</p>
+
+<ul>
+  
+<li> Bring up the <b>Configure Map Plot</b> dialog box:
+  <ul>
+    <li>Double-click or control-click on a map plot </li>
+    <li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when a map plot is the front-most window.</li>
+  </ul>
+</li>
+  
+<li>Select the <b>Bathymetry</b> tab</li>
+  
+<li>Add the 500 meter isobath to the map plot by clicking on the <b>500</b> box on the <b>Isobaths</b> list  
+  <ul>
+  <li>To have the isobath colored in some color other than black it is also necessary click on one of the three color ramp choices underneath the isobath choices</li>  
+  <li>Clicking on the rainbow is a good choice - in this case it will color the 500 meter contour red</li>
+  </ul>
+</li>
+<li>Click <b>OK</b>  
+  <p>Your plot should look like this (or with multi-colored pixels if you had used the <span class="fileName">ROSE-map-like_cbr.xml</span> bathymetry/elevation color bar instead of the <span class="fileName">ROSE-grayscale_cbr.xml</span> color bar):</p>
+  <p align="center">
+    <a href="/dpo_examples/images/ch2/fig2c-01.png" rel="lightbox" title="FIG 2c-01 JOA Mercator world map with grayscale ETOPO-60 bathymetry and 500-meter isobath in red ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2c-01s.png" />
+      <p class="caption">FIG 2c-01 JOA Mercator world map with grayscale ETOPO-60 bathymetry and 500-meter isobath in red</p>
+    </a>
+  </p>
+</li>
+
+
+<div class="examine_header">Examine:</div>
+<div class="examine">
+  <p>The position of the 500 meter isobath might be used as a proxy for the edge of the continental shelf.  (Actually the 200 meter isobath is a better choice for this purpose but JOA does not yet have a built in 200 meter contour.)  Thus the resulting plot will help one to visualize the varying extent of the continental shelf in different ocean regions.</p>  
+</div>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_2c_02">Exercise 2C-02: Bathymetry - Configuration of the Ocean Bottom</h3></p>
+
+<p>In Java OceanAtlas the user can click-drag to select any region (true in general for any portion of most plots), which will, on release of the mouse button, automatically place the selected region into a new map plot window.  (In order to keep the screen tidy, close unneeded windows after examining them, retaining only the main world map.)</p>
+
+<p>For the following steps, use this technique:</p>
+
+<ul>
+  
+<li>Compare the relationship of the 500 meter isobath to the coastline on the east coasts of North and South American versus the west coasts
+    <ul>
+      
+<li>Where in the Americas is the continental shelf consistently wide?</li>
+      
+<li>Where in the Americas is the continental shelf consistently narrow?</li>
+    </ul>  
+</li>
+  
+<li>Compare the relationship of the 500 meter isobath to the coastline in the region near the Bering Strait (the passage between Siberia and Alaska) and the ocean passages between Greenland and England  
+    <ul>
+      
+<li>Does the configuration of the land masses and 500 meter isobath in these regions provide any clues about the connections of the waters lying below 500 meters within the Arctic polar region to those of the rest of the waters at similar levels in the remainder of the World Ocean?</li>
+    </ul>
+</li>  
+  
+<li>One at a time, progressively add the 1000, 1500, 2000, 2500, 3000, and 3500 meter isobaths to the main <b>Mercator</b> world map plot window by making multiple returns to the <b>Configure Map Plot</b> window (each time by double-clicking on the map plot)</li>
+  <br />  
+  <div class="note_header">NOTE:</div>
+  <div class="note">
+      Don&#39;t forget to click on the color ramp button each time to reset the ramp for the new number of isobaths.  Take time to look at the map plot at each iteration, perhaps enlarging, via selection, areas of interest.  In the end all 7 of these isobaths will be plotted.
+  </div>
+  <br />
+  
+<li>With all 7 isobaths plotted on the world map, compare/contrast the principal bathymetric features of the Atlantic, Pacific, and Indian Oceans</li>
+  <br />
+  <div class="note_header">NOTE:</div>
+  <div class="note">
+      Do not pay too much attention to the high latitudes, north and south, with the Mercator projection.  The high latitudes will be examined later under Map Projections.
+  </div>
+  <br />
+  
+<li>Find:
+    <ul>
+      
+<li>chains of seamounts and islands</li>
+      
+<li>submarine ridges</li>
+      
+<li>major sub-basins of each ocean</li>
+      
+<li>inter-basin sills, i.e. the deepest connections between basins</li>
+      
+<li>fracture zones</li>
+      
+<li>trenches</li>
+    </ul>
+</li>
+  
+<li>When the 3000 and 3500 meter isobaths were added, what major feature of the bottom of the World Ocean became distinct?</li>  
+  
+<li>Now:
+  <ul>
+    
+    <li>Add all the remaining isobaths on the list; </li>
+    
+    <li>Click on the color ramp button to reset the color ramp list for the newly-added isobaths;</li>
+    
+    <li>Click <b>OK</b></li>
+  </ul>
+</li>
+<div class="examine_header">Examine:</div>
+<div class="examine">
+  <p>The resulting <b>World Map</b> with 12 different isobaths is a bit of a mess, isn't it?  But you can click-drag on any sub-region to plot its bathymetry in a separate window, thereby enlarging it.</p>
+
+  <p>Try making an enlargement of the ocean region from Indonesia to northern Japan on the south and north, and from China to the mid-Pacific on the west and east.  This will enable the visualization of geographic features described in the text, such as island arcs, chains of islands, semi-enclosed marginal seas, and so forth. </p>
+</div>
+
+<li>Try the same exercise in other regions to get a better feel for the lay of the ocean</li>
+
+</ul>
+
+{% endblock %}

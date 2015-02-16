@@ -1,0 +1,123 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 9-14D{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapters 9-14</a><ul><li class="webgen-menu-level3"><a href="intro_a.html">Example 9-14A</a></li><li class="webgen-menu-level3"><a href="intro_b.html">Example 9-14B</a></li><li class="webgen-menu-level3"><a href="intro_c.html">Example 9-14C</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 9-14D</span></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapters Nine through Fourteen</h1>
+
+</h1>
+
+	<h2>Chapters Nine through Fourteen Intro</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapters Nine through Fourteen</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="intro_a.html">Example 9-14A</a></h1><p><a href="intro_a.html">Before we get started</a></p></li><li><h1><a href="intro_b.html">Example 9-14B</a></h1><p><a href="intro_b.html">Introduction to JOA Maps</a></p></li><li><h1><a href="intro_c.html">Example 9-14C</a></h1><p><a href="intro_c.html">Extracting Data Subsets from Map Plots &amp; Advanced JOA Tools for Working with Basin-Scale Data Sets</a></p></li><li><h1><span>Example 9-14D</span></h1><p><span>Using Data Subsets &amp; Advanced JOA Tools</span></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 9-14D: Using Data Subsets &amp; Advanced JOA Tools</h3>
+	
+
+<div class="indent">
+
+
+<p>The following exercises are an application of the techniques from Example Intro-C. We will be using the WOA09 file associated with the Atlantic Ocean, but the exercises can be repeated using any basin.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">WOA05_atlantic.jos</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_9d_01">Exercise IntroD-01: Map Plots - Using Data Subsets</h3></p>
+
+<p>Continue from IntroC-01:</p>
+
+<ul>    
+  
+<p>Below is an example of creating a new Java OceanAtlas section from a South Atlantic gridded data map plot: </p>
+<p align="center">
+  <a href="/dpo_examples/images/ch9/fig9c-03.png" rel="lightbox" title="Fig 9d-01 A layout of a Map Plot, Section Editor and Data Window">
+  <img align="middle" alt="target" src="/dpo_examples/images/ch9/fig9c-03s.png" />
+  <p class="caption">Fig 9d-01 A layout of a Map Plot, Section Editor and Data Window</p>
+  </a>
+</p>
+<p>To make this particular example:</p>
+
+
+<li>Choose the <b>Section Selection Tool</b>
+  <ul>
+     <li>Drag-click from South American to Africa along a three segment user-defined path</li>
+    <li>Double-click at the end of the third segment to end section selection</li>
+  </ul>
+</li>
+<li>In the <b>Section Editor</b> dialog box 
+  <ul>
+    <li>select <b>W&rarr;E</b> sorting</li>
+    <li>Click <b>Sort</b> button</li> 
+    <li>Click <b>Create</b> 
+  
+</li>
+<li>A new <b>Data Window</b> displays (right image) </li>
+  
+  
+<p>The exact results will depend on the path chosen and the Section width setting in effect when the section selection tool was selected on the map plot.  Wider section widths will pick up more stations along the path.</p>  
+    
+<br />
+<div class="note_header">NOTE:</div>
+<div class="note">
+  <p>Java OceanAtlas is using the center of each station symbol, not the full size of enlarged symbols.  The section tool takes a bit of practice to use, the feel of which may be affected by the mouse (or equivalent) settings for your particular computer.</p>
+</div>
+<br />
+</ul>  
+
+<p><h3 class="exercise_header" id="exercise_9d_02">Exercise IntroD-02: Using Far-Field Interpolation to Enhance Contour Plots Made From Sparse Data</h3></p>
+
+
+<p>Typically, JOA vertical section data from oceanographic research cruises have some parameters (such as CFCs, helium,  tritium) available at only relatively sparse horizontal resolution compared to the underlying temperature, salinity, oxygen, and nutrient profile data (parameters whose measurement is sometimes collectively known as &quot;routine hydrography&quot;).  When contouring data in a default JOA Contour plot, JOA uses a vertical interpolation scheme based on all the water samples in the vertical at each station, and the closest samples horizontally.  So when making a Contour plot of a horizontally sparsely-sampled parameter - for example, CFCs are often sampled in deep Pacific Ocean waters at only every second or third station - JOA frequently runs into what it perceives as missing data, leaving many parts of the resulting contoured vertical section blank.</p>
+
+<p>For example, below is a plot of CFC-12 made from the "P16_clean_bottle.joa" data set with the default JOA "vertical interpolation" choice for "missing value options" (usually the default setting in a copy of JOA) and a custom color bar generated to highlight low CFC-12 data values:  </p>
+
+<p align="center">
+  <a href="/dpo_examples/images/ch9/fig9d-02.png" rel="lightbox" title="Fig 9d-02 CFC Contour Plot">
+  <img align="middle" alt="target" src="/dpo_examples/images/ch9/fig9d-02s.png" />
+  <p class="caption">Fig 9d-02 CFC Contour Plot</p>
+  </a>
+</p>
+
+<p>But this plot can be made more appealing if JOA is set to look horizontally past stations missing data for the parameter being contoured - what is called "far field interpolation" in JOA.  Thus, when setting up the Contour plot in such a situation, after selecting a "Parameter" to contour and a choice from "Interpolation surfaces" onto which to interpolate the parameter to be contoured, select the Interpolations Options button, which brings up the Interpolations Options dialog box, from which you can select "far field" interpolation, as in this example:</p>
+
+<p align="center">
+  <a href="/dpo_examples/images/ch9/fig9d-03.png" rel="lightbox" title="Fig 9d-03 Interpolations Options dialog box">
+  <img align="middle" alt="target" src="/dpo_examples/images/ch9/fig9d-03s.png" />
+  <p class="caption">Fig 9d-03 Interpolations Options dialog box</p>
+  </a>
+</p>
+
+
+<p>Now, when the CFC-12 Contour Plot is redrawn (using the same data set, interpolation surface, and custom color/contour bar as previously), the deep water CFC-12 field is much more readily visualized:</p>
+
+<p align="center">
+  <a href="/dpo_examples/images/ch9/fig9d-04.png" rel="lightbox" title="Fig 9d-04 CFC Contour plot with far field interpolation">
+  <img align="middle" alt="target" src="/dpo_examples/images/ch9/fig9d-04s.png" />
+  <p class="caption">Fig 9d-04 CFC Contour plot with far field interpolation</p>
+  </a>
+</p>
+
+
+<p>The far field interpolation technique is not needed when making vertical sections from WOA data, because the WOA data have been interpolated onto all of the grid points.  But many of the ocean vertical section data from research cruises used in the DPO Examples are more sparsely sampled laterally in some parameters than others, in which case JOA far-field interpolations can be useful for making contour sections of the sparsely sampled parameters, as they were in this example.</p>
+
+<p>Reminder: the Interpolation Options button in the Contour Plot dialog box is activated only after first selecting a "Parameter" to contour and also a choice from "Interpolation surfaces" onto which to interpolate the parameter to be contoured.</p>
+
+
+
+
+
+
+
+  
+
+</li></ul></div>
+
+{% endblock %}

@@ -1,0 +1,131 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Chapter Eleven{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><span>Chapter 11</span></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Eleven</h1>
+
+</h1>
+
+	<h2>Indian Ocean</h2>
+
+
+	
+	
+
+<div id="data-files-supplied">
+<%= data_files_chapter_listing('11', DpoDataFiles::DATA_FILES, true) %>
+</div>
+
+<h3 id="goals">Goals:</h3>
+
+<ul>
+<li>Understand the water masses, circulation and other aspects of descriptive
+physical oceanography of the Indian Ocean &amp; its marginal seas</li>
+</ul>
+
+<h3 id="to-accomplish-this-one-will">To accomplish this, one will:</h3>
+
+<ul>
+<li>Learn to extract data subsets from map plots</li>
+<li>Learn how to use advanced JOA tools for working with basin-scale data sets</li>
+</ul>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+<li>JOA Section Editor</li>
+<li>Interpolations Options dialog box</li>
+</ul>
+
+<p align="center">
+  <a href="/dpo_examples/images/ch9/map_ind.png" rel="lightbox" title="Fig 11i-01 Indian sections map">
+  <img align="middle" alt="target" src="/dpo_examples/images/ch9/map_inds.png" />
+  <p class="caption">Fig 11i-01 Indian sections map</p>
+  </a>
+</p>
+
+<h3 id="dpo-chapter-11-sections">DPO Chapter 11 Sections:</h3>
+<div class="dpo_sections_note">DPO JOA examples are available for the following <span class="dpo_sections_highlight">highlighted</span> sections:</div>
+<table class="dpo_sections_table"> 
+	<tbody>
+		<tr class="dpo_sections_highlight"> 
+			<td>11.1</td>
+			<td>Introduction and overview</td>
+		</tr>
+		<tr>
+			<td>11.2</td>
+			<td>Wind and buoyancy forcing</td>
+		</tr>
+		<tr>
+			<td>11.2.1</td>
+			<td>Mean wind forcing</td>
+		</tr>
+		<tr>
+			<td>11.2.2</td>
+			<td>Monsoonal wind forcing</td>
+		</tr>
+		<tr>
+			<td>11.2.3</td>
+			<td>Buoyancy forcing</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.3</td>
+			<td>Monsoonal and tropical ocean circulation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.4</td>
+			<td>South Indian Ocean subtropical circulation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.4.1</td>
+			<td>Subtropical gyre</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.4.2</td>
+			<td>Agulhas Current and Retroflection</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.4.3</td>
+			<td>Leeuwin Current</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.5</td>
+			<td>Indonesian Throughflow</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.6</td>
+			<td>Red Sea and Persian Gulf outflows</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.7</td>
+			<td>Intermediate and deep circulation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.8</td>
+			<td>Water masses</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.8.1</td>
+			<td>Upper ocean</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.8.2</td>
+			<td>Intermediate waters</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>11.8.3</td>
+			<td>Deep and bottom waters</td>
+		</tr>
+		<tr>
+			<td>11.9</td>
+			<td>Climate and the Indian Ocean</td>
+		</tr>
+	</tbody> 
+</table>
+{% endblock %}

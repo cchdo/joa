@@ -1,0 +1,183 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 9-14C{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapters 9-14</a><ul><li class="webgen-menu-level3"><a href="intro_a.html">Example 9-14A</a></li><li class="webgen-menu-level3"><a href="intro_b.html">Example 9-14B</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 9-14C</span></li><li class="webgen-menu-level3"><a href="intro_d.html">Example 9-14D</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapters Nine through Fourteen</h1>
+
+</h1>
+
+	<h2>Chapters Nine through Fourteen Intro</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapters Nine through Fourteen</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="intro_a.html">Example 9-14A</a></h1><p><a href="intro_a.html">Before we get started</a></p></li><li><h1><a href="intro_b.html">Example 9-14B</a></h1><p><a href="intro_b.html">Introduction to JOA Maps</a></p></li><li><h1><span>Example 9-14C</span></h1><p><span>Extracting Data Subsets from Map Plots &amp; Advanced JOA Tools for Working with Basin-Scale Data Sets</span></p></li><li><h1><a href="intro_d.html">Example 9-14D</a></h1><p><a href="intro_d.html">Using Data Subsets &amp; Advanced JOA Tools</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 9-14C: Extracting Data Subsets from Map Plots &amp; Advanced JOA Tools for Working with Basin-Scale Data Sets</h3>
+	
+
+<p>If you have worked through these DPO JOA Examples using Java OceanAtlas, you now have most of the tools you need to use JOA to view and explore seawater properties in each ocean yourself.  There are, however, a few useful JOA map tools that have not yet been introduced.
+</p>
+<p>Java OceanAtlas map plots include features that permit the user to extract station subsets or new sections using a set of graphical tools.  These tools complement the Station Filters available via the Filters menu.
+</p>
+
+<p>For the following exercises we will be using the WOA09 file associated with the Atlantic Ocean, but the exercises can be repeated using any basin.
+</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+	<li><span class="fileName">WOA05_atlantic.jos</span></li>
+</ul>
+
+<h3 class="exercise_header" id="exercise_9c_01">Exercise IntroC-01: Map Plots - How-to: Extracting Data Subsets</h3>
+
+<ul>
+
+	<li>Start JOA</li>
+
+	<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open</a> &rarr;<span class="fileName"> WOA05_atlantic.jos</span></li>
+
+	<li>Click <b>OK</b> in the import dialog box</li>
+
+	<li>Make a <b>Lambert Azimuthal Equal Area</b> Map Plot (refer to Exercise <a href="../chapter_4/4b.html#exercise_4b_02">4B-02</a>) with the following choices in the <b>iso-surface value</b> box in the <b>Station Colors</b> window of the <b>Configure Map Plot</b> dialog box:
+		<ul>
+			<li><b>O2</b> selected for <b>Parameter</b></li>
+			<li><span class="fileName">O2__-global_cbr.xml</span> colorbar </li>
+			<li><span class="fileName">PRES-0-6000_srf.xml</span> interpolation surface</li>
+		</ul>
+
+		<p align="center">
+			<a href="/dpo_examples/images/ch9/fig9c-01.png" rel="lightbox" title="Fig 9c-01 A map plot ">
+				<img align="middle" alt="target" src="/dpo_examples/images/ch9/fig9c-01s.png" />
+				<p class="caption">Fig 9c-01 A map plot</p>
+			</a>
+		</p> 
+	</li> 
+
+</ul>
+<p>Now we can create subsets using the four icons in the upper left of a Java OceanAtlas map plot:</p>
+<ul>
+	<li class="joa-bullet" style="list-style-image: url('../../images/ch9/icon-1.png');"><p>The pointer-arrow tool (left-most button) is used to zoom a map to a new range or create a new map window of the selected range.</p>
+
+		<div class="note_header">NOTE:</div>
+		<div class="note">
+			<p>Using this tool to select a sub-area of a Java OceanAtlas map plot will create a subset of the main map itself, not a filtered subset of the data used to make the map.</p>
+		</div>
+	</li>  
+	<li class="joa-bullet" style="list-style-image: url(../../images/ch9/icon-2.png); "><p>The pointed-finger tool (2nd button from left) is used to select stations on the map.  Using it does not change the latitude/longitude limits of the map.  This tool operates in two modes:</p>
+		<ul>
+
+			<li>Dragging a selection region around a set of stations in a map plot will display that subset in the Section Editor window (see below).  By leaving the Section Editor window open and repeating selections, additional sub-areas of stations can be selected. New selections will also be displayed in the Section Editor window.</li>  
+
+			<li>As a single station selection tool it can be clicked on any given station symbol, which will then show up in the Section Editor window (see below).  By leaving the Section Editor window open, additional stations can be selected by holding down the shift key when clicking on a station symbol.</li>
+		</ul>
+	</li>  
+
+	<li class="joa-bullet" style="list-style-image: url(../../images/ch9/icon-3.png);"><p>The narrow divided-rectangle (3rd button from left) is the section selection tool: First, if needed, type in a new Section width. The section width is the swath width of the tool--stations that fall within the tool&#39;s boundary will be selected.  The default of 200 km is useful mostly for large basin-scale sections.  Often a smaller width is desired.  (Experience will show what swath width works best for a given data set.)  Section selections are made using the following steps:</p>
+		<ul>
+
+			<li>Click once at the beginning of the desired section.</li>  
+
+			<li>Drag the mouse to enclose the stations to be part of the sections. (Extra stations or duplicates can be discarded later.) 
+				<div class="note_header">NOTE:</div>
+				<div class="note">
+					<p>The width of the section band on the screen may change according to latitude and the map projection.</p>
+				</div>
+			</li>
+
+			<li>Click the mouse to end a section segment and begin a new segment.</li>
+
+			<li>Double-click to end section selection.</li>    
+		</ul>
+	</li>
+
+	<li class="joa-bullet" style="list-style-image: url(../../images/ch9/icon-4.png);"><p>The irregular-area (polygon) selection tool (4th button from left) works somewhat like the section tool. Polygon selections are made using the following steps:  </p>
+		<ul>
+
+			<li>Click once to start the first side of the polygon</li>  
+
+			<li>Drag the mouse to enclose the stations to be part of the selection. (Extra stations or duplicates can be discarded later.)</li>
+
+			<li>Click the mouse to end a side and begin a new side</li>
+
+			<li>Double-click to end polygon selection.</li>    
+		</ul>
+	</li>
+</ul>
+
+<p>The result of successful applications of choice 2, 3, or 4 above should be the Section Editor window popping up:</p>
+<p align="center">
+	<a href="/dpo_examples/images/ch9/fig9c-02.png" rel="lightbox" title="Fig 9c-02 A Section Editor">
+		<img align="middle" alt="target" src="/dpo_examples/images/ch9/fig9c-02s.png" />
+		<p class="caption">Fig 9c-02 A Section Editor</p>
+	</a>
+</p>
+<p>In the Section Editor window, Java OceanAtlas presents a list of all the stations it found inside the selection(s) or along the section track. We will learn about editing this list in the following exercise, and apply these methods in Example Intro-D.</p>
+
+<p><br /></p>
+<div class="note_header">NOTE:</div>
+<div class="note">
+	<p>Java OceanAtlas does not pre-sort the selected stations - the list presents the stations as they are found in the data file(s). In addition, the list may include unwanted or duplicate stations.</p>
+</div>
+<p><br /></p>
+
+<p><h3 class="exercise_header" id="exercise_9c_02">Exercise IntroC-02: Map Plots - How-to: Editing Data Subsets</h3></p>
+
+<p>The list can be edited in two ways: </p>
+<ul>
+	<li>Individual stations can be moved or deleted in the list</li>  
+	<li>The entire list of stations can be sorted by location, station number, or date</li>
+</ul>
+
+<ul>
+	<p>To move or delete stations in the <b>Section Editor</b>:</p>
+	<li>From the station list under <b>Selected Stations</b>:
+		<ul>
+			<li>click - individual station</li>
+			<li>shift-click - adjacent groups of stations</li>
+			<li>[ctrl/cmd]-click - individual stations or groups of non-adjacent stations</li>
+		</ul>
+	</li>
+	<li> Use the five buttons to the immediate right of the station list to:
+		<ul> 
+			<li><img src="/dpo_examples/images/ch9/editor-1.png" /> Move to the top of the list</li>
+			<li><img src="/dpo_examples/images/ch9/editor-2.png" /> Move up one step (per click) in the list </li>
+			<li><img src="/dpo_examples/images/ch9/editor-3.png" /> Move down one step (per click) in the list </li>
+			<li><img src="/dpo_examples/images/ch9/editor-4.png" /> Move to the bottom of the list</li>
+			<li><img src="/dpo_examples/images/ch9/editor-5.png" /> Discard</li>
+		</ul>
+	</li>
+
+	<p>To sort a list of stations in the <b>Section Editor</b>:</p>
+
+	<li>Under <b>Sorting</b> select a radial button:
+		<ul>
+			<li><b>None</b> (default) - No sorting, keeps the order in which the stations are found in the data file</li>
+			<li><b>S&rarr;N</b> - By location South to North</li>
+			<li><b>N&rarr;S</b> - By location North to South</li>
+			<li><b>E&rarr;W</b> - By location East to West</li>
+			<li><b>W&rarr;E</b> - By location West to East</li>
+			<li><b>Stn. number (dsc)</b> - By station number highest to lowest</li>
+			<li><b>Stn. number (asc)</b> - By station number lowest to highest</li>
+			<li><b>Date (dsc)</b> - By date later to earlier</li>
+			<li><b>Date (asc)</b> - earlier to later</li>
+		</ul>
+	</li>
+	<li>Click <b>Sort</b></li>
+
+	<p>For both methods:</p>
+	<li>When you are ready to create the new section, type in a name for the new section.</li>
+	<li>Click <b>Create</b></li>
+	<p>The Data Window for the new section should appear, ready for plotting just like the original.</p>  
+	<li><b>File</b> &rarr; <b>Save As&#133;</b> to create a new data file of the newly created subset</li>
+
+</ul>
+
+<p>We will apply these techniques in Example Intro-D.</p>
+<p><br /></p>
+
+{% endblock %}

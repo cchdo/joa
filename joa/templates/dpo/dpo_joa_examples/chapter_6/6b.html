@@ -1,0 +1,270 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 6B{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 6</a><ul><li class="webgen-menu-level3"><a href="6a.html">Example 6A</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 6B</span></li><li class="webgen-menu-level3"><a href="6c.html">Example 6C</a></li><li class="webgen-menu-level3"><a href="6d.html">Example 6D</a></li><li class="webgen-menu-level3"><a href="6e.html">Example 6E</a></li><li class="webgen-menu-level3"><a href="6f.html">Example 6F</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Six</h1>
+
+</h1>
+
+	<h2>Data analysis concepts and observational methods</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Six</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="6a.html">Example 6A</a></h1><p><a href="6a.html">Sections with Vertical Axes other than Pressure (or Depth)</a></p></li><li><h1><span>Example 6B</span></h1><p><span>Sections with horizontal axis other than distance</span></p></li><li><h1><a href="6c.html">Example 6C</a></h1><p><a href="6c.html">Exploiting some of JOA&#39;s Mapping Features</a></p></li><li><h1><a href="6d.html">Example 6D</a></h1><p><a href="6d.html">Maps of Properties on Density and Other Surfaces</a></p></li><li><h1><a href="6e.html">Example 6E</a></h1><p><a href="6e.html">Maps of Properties on Extrema</a></p></li><li><h1><a href="6f.html">Example 6F</a></h1><p><a href="6f.html">Plotting Map of Average of Properties Between Two Surfaces</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 6B: Sections with horizontal axis other than distance</h3>
+	
+
+<p>We have plotted <a class="glossary" href="/dpo_examples/glossary.html#vertical_sections">vertical sections</a> with horizontal axes based on space -
+either distance or <a class="glossary" href="/dpo_examples/glossary.html#latitude">latitude</a> (or <a class="glossary" href="/dpo_examples/glossary.html#longitude">longitude</a>).  What if one wanted to examine changes over
+time with JOA?</p>
+
+<p>Oceanographers are interested to learn more about how the ocean varies over
+time. With the advent of satellite remote sensed data, it has become possible
+to obtain approximately daily global coverage of some parameters - for example
+ocean surface temperature. Satellite-based observations cannot observe the
+ocean interior.</p>
+
+<p>Various drifting or moored instruments can provide ocean interior data over the
+lifetime of the instruments, or the span of the lifetimes of their
+replacements.  But the parameters these can sample are limited, though the list
+is continually growing.</p>
+
+<p>Repeated hydrographic observations are an expensive and time-consuming, but
+potentially quite valuable, method of observing variations in the ocean
+interior over a wide range of parameters.</p>
+
+<p>Currently the International Ocean Carbon Coordination Project (IOCCP; <a class="webLink" href="http://www.ioccp.org/">http://www.ioccp.org/</a>) is
+carrying out repeats of selected basin-scale transects at approximately
+ten-year intervals.  Some nations carry out annual or seasonal occupations of
+somewhat shorter, but valuable transects (for example, see the Pacific Ocean
+PR17 or the A01/AR07 listings at <a class="webLink" href="http://cchdo.ucsd.edu">http://cchdo.ucsd.edu</a>).</p>
+
+<p>At a few key locations, oceanographers and national organizations have worked
+to provide ca. monthly observations.  One of these is the Hawaii Ocean
+Time-series (HOT) measurements (see <a class="webLink" href="http://hahana.soest.hawaii.edu/hot/hot_jgofs.html">http://hahana.soest.hawaii.edu/hot/hot_jgofs.html</a>).  We
+have downloaded and prepared for JOA some of the HOT Station Aloha <a class="glossary" href="/dpo_examples/glossary.html#bottle_data">bottle data</a> in the
+upper 300 meters, and provide these as the data file <span class="fileName">HOT_bottle_nutrient_data.joa</span>.</p>
+
+<div class="expand_link_header" id="expand_link_header_06b01">
+<strong>LEARN MORE ABOUT:</strong><br />
+<a href="javascript:expand06b01.slideit()">How the <span class="fileName">HOT_bottle_nutrient_data.joa</span> data file was prepared:</a>
+</div>
+<div id="expand_link06b01">
+<div id="expand_link">
+<br />
+  <p>Some data files take a bit of work to get into Java OceanAtlas.  To give you an idea of how a slightly problematic downloaded 
+    text data file is prepared for JOA and these exercises, here is a pr&#232;cis of the steps the author (Swift) went through to 
+    create the <span class="fileName">HOT_bottle_nutrient_data.joa</span> data file (excluding trial and error mistakes):</p>
+
+<ul>
+  
+<li>Go to the HOT website 
+    (<a class="webLink" href="http://hahana.soest.hawaii.edu/hot/hot_jgofs.html">http://hahana.soest.hawaii.edu/hot/hot_jgofs.html</a>)</li>
+  
+<li>Go to the <b>Interactive Access</b> to <b>HOT</b> data page</li>
+  
+<li>Select <a class="glossary_prop" href="/dpo_examples/glossary.html#bottle_data">Bottle Data</a> from the <b>Data Extraction List</b>  (this puts one at <a class="webLink" href="http://hahana.soest.hawaii.edu/hot/hot-dogs/bextraction.html">
+      http://hahana.soest.hawaii.edu/hot/hot-dogs/bextraction.html</a>) </li>
+  
+<li>For Station Aloha choose the maximum date range (at time this was written this range was October 1, 1988 through December 3, 
+    2006)</li>
+  
+<li>Type 0 for <b>Starting Depth</b></li>
+  
+<li>Type 300 for <b>Ending Depth</b></li>
+  
+<li>Choose parameters <b>Potential Temperature</b>, <b>CTD Salinity</b>, <b>Bottle Dissolved Oxygen</b>, <b>Phosphate</b>, 
+    <b>Silicate</b>, and <b><a class="glossary" href="/dpo_examples/glossary.html#nitrate">Nitrate</a>+Nitrite</b></li>
+  
+<li>Click the <b>Submit</b> button</li>
+  
+<li><b>Select all</b> to select all the data</li>
+  
+<li>Paste the data into a text editor (e.g., MS Word)</li>
+  
+<li>Save as a <span class="fileName">.txt</span> plain text file</li>
+  
+<li>Open the file in a table editor (e.g., MS Excel), choosing <b>comma</b> for the file delimiter</li>
+  
+<li>Delete columns <b>cbotid</b> and <b>time</b></li>
+  
+<li>Change headings press, theta, csal, boxy, phos, nit, sil to PRES, THTA, SALT, O2, PO4, NO3, and SIO3, respectively</li>
+  
+<li>Delete the units row (but remember the units)</li>
+  
+<li>Create two new columns on left side</li>
+  
+<li>Label first new column SECTION, use &ldquo;HOT&rdquo; for the first data entry, and fill-down that (HOT) to fill out the 
+    SECTION column</li>
+  
+<li>Copy the DATE column and paste it into the second new column</li>
+  
+<li>Select the column and play with the <b>cells...</b> choices under Excel&#39;s <b>Format</b> menu to convert the dates into some sort of unique numeric identifier</li>
+  
+<li>Re-label this column &ldquo;STATION&rdquo;
+    <br />
+    <div class="note_header">NOTE:</div>
+    <div class="note">
+      <p>The problem we are trying to solve here is how to come up with unique station numbers for each of the many HOT cruises to the Aloha site over the years, with ascending numbers</p>  
+    </div>
+    <br />
+  </li>
+  
+<li>Add two new columns to the right of the STATION column</li>
+  
+<li>Label the first <a class="glossary_prop" href="/dpo_examples/glossary.html#latitude">LATITUDE</a> and the second <a class="glossary_prop" href="/dpo_examples/glossary.html#longitude">LONGITUDE</a></li>
+  
+<li>In the first row underneath each write 22.75 (for 22&deg; 45&#39; N, the HOT station Aloha latitude; from the HOT web site) and -158 (for 158&deg;W, the HOT station Aloha longitude) and fill-down both columns</li>
+  
+<li>Select all the data and sort them by NO3 (ascending)</li>
+  
+<li>Delete all rows (at the top of the list, excluding the header) with missing (&ldquo;-9&rdquo;) NO3</li>
+  
+<li>Re-sort data by station (ascending) and by PRES (ascending)</li>
+  
+<li>Select the original DATE column and via the <b>cells...</b> choice under Excel&#39;s <b>Format</b> menu change the date format to dd-MMM-yyyy</li>
+  
+<li>Save the file as a tab-delimited-text file (.txt) named <span class="fileName">HOT_bottle_nutrient_data.txt</span></li>
+  
+<li>Quit Excel</li>
+  
+<li>Open <span class="fileName">HOT_bottle_nutrient_data.txt</span> in MS Word</li>
+  
+<li>Using Word&#39;s <b>replace</b> function, change all &ldquo;Jan&rdquo; to &ldquo;01&rdquo;, all &ldquo;Feb&rdquo; to &ldquo;02&rdquo;, and so forth for all 12 months of the year</li>
+  
+<li>Turn on Word&#39;s show all non-printing characters&#39; feature and eliminate all instances of tabs immediately preceding end-of-line characters (there were ca. 15 of these extra tab characters after the author downloaded the data; no idea why these were there, but they are fatal to JOA data import)</li>
+  
+<li>Save the file as a plain text file</li>
+  
+<li>Change the suffix from <span class="fileName">.txt</span> to <span class="fileName">.jos</span> (this is what Java OceanAtlas expects for a tab-delimited plain text spreadsheet data file)</li>
+  
+<li>Here is how the first 4 rows of the file looked (rows are wrapped-around here):
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6b-01.png" rel="lightbox" title="Fig 6b-01 Tab-delimited plain text spreadsheet data file ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6b-01s.png" />
+      <p class="caption">Fig 6b-01 Tab-delimited plain text spreadsheet data file</p>
+      </a>
+    </p>
+  </li>      
+</ul>  
+
+<p><u>Loading the text file into Java OceanAtlas</u></p>
+<ul>
+  
+<li>Start JOA</li>
+  
+<li>In <b>Preferences</b> under the Java OceanAtlas menu, on the <b>General</b> panel be sure the date format is set to dd-MM-yyyy</li>
+  
+<li>On the <b>Import</b> panel of <b>Preferences</b> de-select <b>Convert temperatures from ITS90 to IPTS68</b> (because the HOT data are already ITS90 temperatures); select <b>Convert from mass to volume units</b> and select <b>Translate parameter names on read and import</b></li>
+  
+<li>Now, from the JOA <b>Open&#133;</b> command, open the file <span class="fileName">HOT_bottle_nutrient_data.jos</span></li>
+  
+<li>This will bring up the JOA <b>Spreadsheet Import Options</b> dialog box, which you should set up as follows:
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6b-02.png" rel="lightbox" title="Fig 6b-02 Spreadsheet Import Options dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6b-02s.png" />
+      <p class="caption">Fig 6b-02 Spreadsheet Import Options dialog box</p>
+      </a>
+    </p>  
+  </li>
+  
+<li>Clicking <b>OK</b> should result in the file being imported</li>
+  
+<li>Save the file as <span class="fileName">HOT_bottle_nutrient_data.joa</span></li>
+  
+<li>Open</li>
+</ul>  
+    
+<center><p class="expand"><a href="javascript:expand06b01.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expand06b01=new animatedcollapse("expand_link06b01", 2000, true);</script>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">HOT_bottle_nutrient_data.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_6b_01">Exercise 6b-01: Other Plots - Using Time As the X-Axis on a Contour (Vertical Section) Plot</h3></p>
+<ul>
+  
+<li>Start JOA</li>
+  
+<li><p><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr; <span class="fileName">HOT_bottle_nutrient_data.joa</span></p>
+     <p>The JOA <a class="glossary" href="/dpo_examples/glossary.html#data_window">Data Window</a> default station display (at the bottom of the Data Window) is normally set to offset successive stations by distance, but since the HOT data are all at the same location, the display shows little.  </p></li>
+  
+<li>Double-click on the station display at the bottom of the data window, which brings up the <b>Configure Cross Section</b> dialog box</li> 
+<li>Set up the <b>Configure Cross Section</b> panel as seen below:
+  <p align="center">
+    <a href="/dpo_examples/images/ch6/fig6b-03.png" rel="lightbox" title="Fig 6b-03 Configure Cross Section panel ">
+    <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6b-03s.png" />
+    <p class="caption">Fig 6b-03 Configure Cross Section panel</p>
+    </a>
+  </p>  
+</li>
+  
+<li><p>After clicking <b>OK</b> the Data Window should appear like this:</p>
+     <p align="center">
+       <a href="/dpo_examples/images/ch6/fig6b-04.png" rel="lightbox" title="Fig 6b-04 Station panel ">
+       <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6b-04s.png" />
+       <p class="caption">Fig 6b-04 Station panel</p>
+       </a>
+     </p>
+     <p>You can see that the HOT bottle nutrient data set contains many successive re-occupations of the same site, with somewhat uneven sampling in the upper 300 meters from one occupation to the next.</p>
+  </li>
+
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Plots</a> &rarr; <b>Contour&#133;</b> </li>  
+<li>Set up a JOA vertical section (Contour) plot of salinity in the upper 300 meters by choosing <span class="fileName">PRES-0-300_srf.xml</span> under <b>Interpolation surfaces</b> and <b>Time</b> under <b>Offset</b> as shown below:
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6b-05.png" rel="lightbox" title="Fig 6b-05 Primary Contours panel of the Contour Plot dialog box ">
+      <img align="middle" alt="target}" src="/dpo_examples/images/ch6/fig6b-05s.png" />
+      <p class="caption">Fig 6b-05 Primary Contours panel of the Contour Plot dialog box</p>
+      </a>
+    </p>  
+  </li>  
+  
+<li>Create a custom salinity color bar:
+  <ul>
+    <li>With the <span class="fileName">SALT-Global_cbr.xml</span> color bar chosen under <b>Colorbars:</b></li>
+    <li>Double-click on the color bar to the right to bring up the <b>Colorbar Editor</b></li>
+    <li>Change the lower and upper limits to 34.3 and 35.4, respectively </li>
+    <li>Click on the linear ramp generator after <b>Create with shape:</b></li>
+    <li>Click <b>OK</b></li>
+  </ul>
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6b-06.png" rel="lightbox" title="Fig 6b-06 Colorbar Editor panel ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6b-06s.png" />
+      <p class="caption">Fig 6b-06 Colorbar Editor panel</p>
+      </a>
+    </p>    
+  </li>
+  
+<li>When you click <b>Plot</b> in the <b>Contour Plot</b> dialog box, you get this section of salinity versus time in the upper 300 meters at the HOT site (we stretched the section by click-dragging the re-size icon on its lower right):
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6b-07.png" rel="lightbox" title="Fig 6b-07 Contour Plot">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6b-07s.png" />
+      <p class="caption">Fig 6b-07 Contour Plot</p>
+      </a>
+    </p>  
+  </li>  
+</ul>
+<p><br /></p>
+
+<div class="note_header">NOTE:</div>
+
+<div class="note">
+
+<p>Note that over the years there are fluctuations in salinity in the upper 300
+meters at this site, for example a fresher period ca.  1996-1997 and some salty
+years during 1999-2003.  Plus there are fluctuations at shorter time scales,
+perhaps seasonal and/or interannual.</p>
+
+</div>
+
+{% endblock %}

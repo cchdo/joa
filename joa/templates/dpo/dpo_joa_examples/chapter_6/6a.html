@@ -1,0 +1,409 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 6A{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 6</a><ul><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 6A</span></li><li class="webgen-menu-level3"><a href="6b.html">Example 6B</a></li><li class="webgen-menu-level3"><a href="6c.html">Example 6C</a></li><li class="webgen-menu-level3"><a href="6d.html">Example 6D</a></li><li class="webgen-menu-level3"><a href="6e.html">Example 6E</a></li><li class="webgen-menu-level3"><a href="6f.html">Example 6F</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Six</h1>
+
+</h1>
+
+	<h2>Data analysis concepts and observational methods</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Six</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><span>Example 6A</span></h1><p><span>Sections with Vertical Axes other than Pressure (or Depth)</span></p></li><li><h1><a href="6b.html">Example 6B</a></h1><p><a href="6b.html">Sections with horizontal axis other than distance</a></p></li><li><h1><a href="6c.html">Example 6C</a></h1><p><a href="6c.html">Exploiting some of JOA&#39;s Mapping Features</a></p></li><li><h1><a href="6d.html">Example 6D</a></h1><p><a href="6d.html">Maps of Properties on Density and Other Surfaces</a></p></li><li><h1><a href="6e.html">Example 6E</a></h1><p><a href="6e.html">Maps of Properties on Extrema</a></p></li><li><h1><a href="6f.html">Example 6F</a></h1><p><a href="6f.html">Plotting Map of Average of Properties Between Two Surfaces</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 6A: Sections with Vertical Axes other than Pressure (or Depth)</h3>
+	
+
+<p>From experience with the Examples for previous DPO chapters, you should now be
+familiar with <a class="glossary" href="/dpo_examples/glossary.html#vertical_sections">vertical sections</a> using <a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a> as the
+vertical axis, and know how to use them to illustrate the distributions of
+seawater properties in the X-Z plane. In some cases use of a vertical axis
+instead of pressure can best illuminate aspects of section data.</p>
+
+<p>JOA has few limits on the choice of vertical axis parameter, though some
+choices are more relevant than others.  Here we will explore two alternatives,
+using:</p>
+
+<ul>
+  
+<li>A Pacific <a class="glossary" href="/dpo_examples/glossary.html#meridional_section">meridional section</a> of a commonly-measured &ldquo;nutrient&rdquo; - <a class="glossary" href="/dpo_examples/glossary.html#nitrate">nitrate</a> - for which we will plot a traditional pressure-axis vertical section</li>
+  
+<li>A section with a density parameter (sigma-0) as the vertical axis.</li>
+  
+<li>A section with another nutrient - <a class="glossary" href="/dpo_examples/glossary.html#phosphate">phosphate</a> - as the vertical axis.</li>
+</ul>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">P16_2005_2006_bottle_clean.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_6a_01">Exercise 6A-01: Vertical Sections - Contour Plots with Sigma-0 as the Vertical Axis</h3></p>
+<ul>
+  
+<li>Start JOA</li>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr; <span class="fileName">P16_2005_2006_bottle_clean.joa</span></li>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Plots</a> &rarr; <b>Contour&#133;</b> </li>
+  
+<li>Set up the <b>Primary Contours</b> panel (as shown below) with these parameters: 
+  <ul>
+    <li>Under <b>Interpolation surfaces</b> select <span class="fileName">PRES-0-6000_srf.xml</span></li>
+    <li>Under <b>Colorbars</b> select <span class="fileName">NO3 -global_cbr.xml</span></li>
+    <li>Under <b>Contour Style</b> select (click) <b>filled w/ lines</b> </li>
+    <li>Under <b>Offset</b> select (click) <a class="glossary_prop" href="/dpo_examples/glossary.html#latitude">Latitude</a></li>
+  </ul>        
+        
+  <p align="center">
+    <a href="/dpo_examples/images/ch6/fig6a-01.png" rel="lightbox" title="Fig 6a-01 Primary Contours panel of the Contour Plot dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-01s.png" />
+      <p class="caption">Fig 6a-01 Primary Contours panel of the Contour Plot dialog box</p>
+    </a>
+  </p>
+</li>  
+  
+<li>The plot produced is shown below: 
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-02.png" rel="lightbox" title="Fig 6a-02 Contour plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-02s.png" />
+      <p class="caption">Fig 6a-02 Contour plot</p>
+      </a>
+    </p>  
+    <p>Remember from earlier discussion in the DPO JOA Examples that south (the Antarctic region in this case) is on the left and 
+      north (Kodiak Island) is on the right.  The section itself mostly follows the 150&deg;W <a class="glossary" href="/dpo_examples/glossary.html#meridian">meridian</a>.</p>
+  </li>
+  
+<li><b>Plots</b> &rarr; <b>Contour&#133;</b></li>
+  
+<li>Set up the <b>Primary Contours</b> panel with these parameters (the same as the previous plot, but now with sigma-0 as the 
+    vertical axis):   
+    <ul>
+      
+<li>Under <b>Interpolation surfaces</b> select <span class="fileName">SIG0-global_srf.xml</span></li>
+      
+<li>Under <b>Colorbars</b> select <span class="fileName">NO3 -global_cbr.xml</span></li>
+      
+<li>Under <b>Contour Style</b> select (click) <b>filled w/ lines</b> </li>
+      
+<li>Under <b>Offset</b> select (click) <a class="glossary_prop" href="/dpo_examples/glossary.html#latitude">Latitude</a></li>    
+    </ul>  
+  </li>
+  <div class="note_header">NOTE:</div>
+  <div class="note"><p>JOA will calculate SIG0 automatically for this plot</p>
+  </div>  
+<li>The plot produced is shown below:
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-03.png" rel="lightbox" title="Fig 6a-03 Contour plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-03s.png" />
+      <p class="caption">Fig 6a-03 Contour plot</p>
+      </a>
+    </p>      
+  </li>
+  
+<li>Compare the two plots:
+    
+    <br />
+    
+    <div class="examine_header">Examine:</div>
+    <div class="examine">
+      <p>You can see that most of the deeper water (the higher NO3, deeper purple layer) lies in a relatively small range of 
+        density (relatively small range of sigma-0).</p>
+      <p>Indeed, most of the variation in potential density (pressure-compensated density) in most ocean regions takes place in 
+        the upper 1000 meters.</p>
+    </div>
+  </li>    
+  
+<li>To adjust the vertical axis range in the sigma-0-based vertical section:    
+    <ul>
+      
+<li>Bring up the <b>Configure Contour Plot</b> dialog box:
+  <ul>  
+    <li>Double-click or control-click on the plot </li>
+    <li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when the plot is the front-most window.</li>
+  </ul>
+</li>
+      
+<li>In the resulting <b>Configure Contour Plot</b> dialog box change the Y-Axis minimum, maximum, increment, and number of 
+        minor ticks to suit your needs, for example:
+        <p align="center">
+          <a href="/dpo_examples/images/ch6/fig6a-04.png" rel="lightbox" title="Fig 6a-04 Y Axis adjustment panel in the Configure Contour ">
+            <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-04s.png" />
+            <p class="caption">Fig 6a-04 Y Axis adjustment panel in the Configure Contour</p>
+          </a>
+        </p>
+      </li>
+    </ul>      
+  </li>
+  
+<li>The plot produced is shown below:    
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-05.png" rel="lightbox" title="Fig 6a-05 Contour plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-05s.png" />
+      <p class="caption">Fig 6a-05 Contour plot</p>
+      </a>
+    </p>
+  
+    <div class="examine_header">Examine:</div>
+    <div class="examine">  
+      <p>These two plots - nitrate versus pressure and nitrate versus density - provide an interesting view of Pacific Ocean nitrate distributions. For example, the very low nitrate concentrations in the upper layers of the subtropical gyres in the South and North Pacific, evidence of equatorial upwelling, and the broad deep tongue of high concentrations extending south from the North Pacific.</p>
+    </div>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<div id="definition_link_header">Nitrate and Phosphate:<br />
+<p class="definition_list">Nitrate and phosphate are seawater nutrients heavily involved in ocean biochemical cycles <a href="javascript:definition4.slideit()">Click for an expanded definition</a></p>
+</div>
+<div id="definition_link4">
+<div id="definition_link">
+<p class="definition_list">  
+  <p>Phytoplankton require nitrogen and obtain it from nitrate when it is available. This depletes nitrate in areas where photosynthetic production is or was recently active. And when organic matter in the oceans decays (in a biochemical process called respiration), oxygen is used up and the nutrients are released into the water. This partly explains some aspects of the origin of the deep broad tongue of high nitrate seawater in the section plot: this is related to zones where organic matter has sunk into the deeper water and decayed. In some very low-oxygen waters, the bacteria which are decaying the organic matter must obtain oxygen from nitrate to continue respiration. This locally denitrifies the seawater.</p>
+
+  <p>Phosphate is another nutrient heavily involved in ocean biochemical cycles. Its uptake in photosynthesis and release in respiration are usually so closely tied to those of nitrate that their ratio of variability is quite close to constant, especially in a single ocean region. But in low-oxygen waters, the bacteria which are decaying the organic matter, when obtaining oxygen from nitrate, do not, to first order, obtain oxygen from phosphate to continue respiration. Thus the ratio of phosphate to nitrate can be altered in those circumstances.</p>
+</p>  
+<center><p class="definition"><a href="javascript:definition4.slideup()">CLOSE DEFINITION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var definition4=new animatedcollapse("definition_link4",2000, true);</script>
+
+<p><h3 class="exercise_header" id="exercise_6a_02">Exercise 6A-02: Making a Property-Property Plot with Nitrate and Phosphate</h3></p>
+<p>To examine the relationship between nitrate versus phosphate in the Pacific Ocean, we will use the <b class="fileName">P16_2005_2006_bottle_clean.joa</b> to make a <b>Property-Property</b> plot of the nitrate versus phosphate.</p>
+<ul>
+  
+<li><b>Plots</b> &rarr; <b>Property-Property...</b> 
+  <ul>
+    
+<li>Set up the <b>Basic</b> panel of the <a class="glossary_prop" href="/dpo_examples/glossary.html#plots">Property-Property Plot</a> dialog box as shown below: 
+      <p align="center">
+        <a href="/dpo_examples/images/ch6/fig6a-06.png" rel="lightbox" title="Fig 6a-06 Basic panel of the Property-Property plot ">
+          <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-06s.png" />
+          <p class="caption">Fig 6a-06 Basic panel of the Property-Property plot</p>
+        </a>
+      </p>
+    </li>
+  </ul>          
+  </li>  
+  
+<li>Set up the <b>Advanced</b> panel the <b>Property-Property Plot</b> dialog box as shown below: 
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-07.png" rel="lightbox" title="Fig 6a-07 Advanced panel of the Property-Property plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-07s.png" />
+      <p class="caption">Fig 6a-07 Advanced panel of the Property-Property plot</p>
+      </a>
+    </p>  
+  </li>    
+  
+<li>The plot produced is shown below:  
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-08.png" rel="lightbox" title="Fig 6a-8 Property-Property plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-08s.png" />
+      <p class="caption">Fig 6a-08 Property-Property plot</p>
+      </a>
+    </p>  
+  
+    <div class="examine_header">Examine:</div>
+    <div class="examine">
+      <p>You can observe from the plot that phosphate is indeed linearly related to nitrate.  </p>
+      <p>The information from the color bar shows that most of the deep water in this data set falls within a relatively small 
+        range of high concentrations of both nitrate and phosphate. You can also see that the relationship has variations.</p> 
+      <p>For example, look at the range of nitrate values for PO4 = 1.5 &mu;mol/l. While the bulk of the data have nitrate 
+        values near ca. 22-23    &mu;mol/l for this value of phosphate, some have nitrate values as low as ca. 16 &mu;mol/l. 
+        That water has been denitrified by bio-geochemical processes.</p>
+    </div>
+  </li>
+</ul>
+<p><h3 class="exercise_header" id="exercise_6a_03">Exercise 6A-03: Vertical Sections - Making a Phosphate Based Interpolation Surface</h3></p>
+<p>Examine the spatial variability of the nitrate versus phosphate distribution in the Pacific Ocean by plotting a horizontal section of nitrate, with phosphate as the vertical axis.</p>
+<p>You may recall that to plot a <a class="glossary_prop" href="/dpo_examples/glossary.html#plots">Contour Plot</a>, JOA interpolates the data onto predefined standard levels of the parameter chosen for the vertical axis.  (That parameter is most commonly pressure and we just did a plot with sigma-0 as the vertical axis.)  </p>
+<p>Here you will need a file with standard levels of phosphate, but your copy of JOA might not have a pre-made interpolation surface for phosphate (PO4).  No problem - you can make one if there is no PO4-based interpolation surface to your liking:</p>
+<ul>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Resources</a> &rarr; <b>Surface Manager&#133;</b> </li>
+  
+<li>Click <b>New&#133;</b> 
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-09.png" rel="lightbox" title="Fig 6a-09 Surface Manager ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-09s.png" />
+      <p class="caption">Fig 6a-09 Surface Manager</p>
+      </a>
+    </p>  
+  </li>    
+  
+<li>This will bring up the <b>Interpolation Surface Editor</b> dialog box, which is shown below with entries already made as 
+    follows:<br />
+    <table bgcolor="" border="0" bordercolor="" width="100%">
+      <tr>
+        <td>Parameter:</td>
+        <td>PO4</td>
+      </tr>
+      <tr>
+        <td>Title:</td>
+        <td>0-3.4</td>
+      </tr>
+      <tr>
+        <td>Number of levels:</td>
+        <td>64</td>
+      </tr>
+      <tr>
+        <td>First level:</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Last level:</td>
+        <td>3.4</td>
+      </tr>
+    </table><br />
+  </li>
+  
+<li>Then click the linear (left-most) <b>Create with shape:</b> button and the dialog box will look like this:
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-10.png" rel="lightbox" title="Fig 6a-10 Interpolation Surface Editor ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-10s.png" />
+      <p class="caption">Fig 6a-10 Interpolation Surface Editor</p>
+      </a>
+    </p>      
+  </li>
+  
+<li><p>Click <b>Save&#133;</b> to save your new interpolation surface and then close the dialog box.</p>
+      <p>Now when you set up a <b>Contour Plot</b> under the JOA <b>Plots</b> menu, your new interpolation surface will be 
+    available.</p>
+  </li>
+<li><b>Plots</b> &rarr; <b>Contour&#133;</b></li>  
+<li>Set up a <b>Contour Plot</b> of nitrate on standard phosphate surfaces. Set up the <b>Primary Contours</b> panel of the 
+    <b>Contour Plot</b> dialog box as shown below:  
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-11.png" rel="lightbox" title="Fig 6a-11 Primary Contours panel of the Contour Plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-11s.png" />
+      <p class="caption">Fig 6a-11 Primary Contours panel of the Contour Plot</p>
+      </a>
+    </p>      
+  </li>      
+  
+<li>The plot produced is shown below:     
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-12.png" rel="lightbox" title="Fig 6a-12 Contour Plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-12s.png" />
+      <p class="caption">Fig 6a-12 Contour Plot</p>
+      </a>
+    </p>      
+  
+  <p>The plot is &ldquo;upside down&rdquo; with respect to true vertical:  lowest nitrates and phosphates - at the bottom of this plot - are from the surface waters; i.e. the surface waters appear here at the bottom of the plot.</p>
+  </li>
+  
+  <div class="examine_header">Examine:</div>
+  <div class="examine">  
+    <p>There are a lot of &ldquo;wiggles&rdquo; - how should these be interpreted?</p>  
+    <p>Data noise may contribute to smaller scale features in the plot, but the largest pattern of variation suggests that in the <a class="glossary" href="/dpo_examples/glossary.html#latitude">latitude</a> range 10-15&deg;N nitrate values for a given phosphate concentration are low.  There are other similar incidences near 3-8&deg;S and 52&deg;N.  These must be signatures of denitrification.</p>
+  </div>
+  <br />
+
+  
+<li>If you find the small &ldquo;wiggles&rdquo; distracting in the P16_2005_2006_botclean data section plot of nitrate versus phosphate, you might try making these same Pacific nitrate sections with the <span class="fileName">WOA09_P16.joa</span> data file.  The averaging which takes places during preparation of the World Ocean Atlas annual average 1-degree data files results in distinctly &ldquo;smoother&rdquo; contour lines. 
+    <p>For example, here is the plot immediately above, but made with the  <span class="fileName">WOA09_P16.joa</span> data file:</p>
+
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-13.png" rel="lightbox" title="Fig 6a-13 Contour Plot ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-13s.png" />
+        <p class="caption">Fig 6a-13 Contour Plot</p>
+      </a>
+    </p>
+  </li>  
+</ul>
+<div class="note_header">NOTE:</div>
+<div class="note">
+  <p>Recalling that in the Pacific there are deep extrema for each nutrient, and that here JOA was carrying out an interpolation, how did JOA handle the extrema?  If, when setting up a Contour Plot, and after you have selected an interpolation surface, you click on the Interpolation Options&#133; button, you will see in the resulting Interpolation Options dialog box two choices for Interpolation direction: Top down and Bottom up.  </p>  
+  <p>When doing an interpolation, JOA chooses the first occurrence of each standard level it encounters.  So when interpolating &ldquo;top down&rdquo; (default) onto phosphate surfaces in the Pacific, it finds the nitrate value at the deep phosphate surface on the top of the deep phosphate maximum.  If the &ldquo;bottom up&rdquo; choice is selected, then it would find the nitrate value at the bottom of the deep phosphate maximum.</p>
+</div>
+<p><h3 class="exercise_header" id="exercise_6a_04">Exercise 6A-04: Vertical Sections - Making a Contour Section With the Mean Subtracted</h3></p>
+<p>Java OceanAtlas can also be used to calculate and plot the variations of a parameter from the mean (average).  For example, when you are making a JOA <b>Contour</b> (vertical section) <b>Plot</b>, you can use the <b>Interpolation Options</b> dialog box to specify that along each standard level (in the case above, along each value of phosphate), that the mean value of the plotted property (nitrate in this case) should be calculated and subtracted from each data value. The resulting plot will then show the relative highs and lows of the plotted property on each level(on each standard surface).</p>
+<ul>
+  
+<li><b>File</b> &rarr; <b>Open&#133;</b> &rarr; <span class="fileName">WOA05_P16.joa</span></li>
+  
+<li><b>Plots</b> &rarr; <b>Contour</b> </li>
+  
+<li>Set up the <b>Primary Contours</b> panel of the <b>Contour Plot</b> dialog box as shown below: 
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-14.png" rel="lightbox" title="Fig 6a-14 Primary Contours panel of the Contour Plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-14s.png" />
+      <p class="caption">Fig 6a-14 Primary Contours panel of the Contour Plot</p>
+      </a>
+    </p>      
+  </li>      
+  
+<li>Click on the <b>Interpolation Options</b> button in this dialog box, and set up the <b>Interpolation Options</b> as shown 
+    below:
+    <br />
+    <div class="note_header">NOTE:</div>
+    <div class="note">
+      <p>To select all the stations in the data file, as shown below, you must click on the check-mark button just to the right 
+        of the list of stations.</p>  
+    </div>
+    <br />
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-15.png" rel="lightbox" title="Fig 6a-15 Interpolation Options panel ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-15s.png" />
+      <p class="caption">Fig 6a-15 Interpolation Options panel</p>
+      </a>
+    </p>      
+  </li>
+  
+<li>When you click <b>OK</b> you will be back in the <b>Contour Plot</b> dialog box.  Note that because you are now looking at 
+    differences from the mean, the default color/contour bar is no longer applicable. To fix it, you need to create a new color 
+    bar.</li>
+  
+<li>First select the <b>Red-White-Blue-32</b> color bar under the <b>Create autoscale colorbar</b> sub-panel of the <b>Contour 
+    Plot</b> dialog box.</li>
+  
+<li>Then click on the linear ramp in that same sub-panel.  Your new color bar appears as shown below:
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-16.png" rel="lightbox" title="Fig 6a-16 Colorbars panel">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-16s.png" />
+      <p class="caption">Fig 6a-16 Colorbars panel</p>
+      </a>
+    </p>      
+  </li>    
+  
+<li>It is not centered on zero (oceanographically because there is some fairly depleted nitrate values in this data set).  To 
+    center the new color bar on zero, double-click on the color bar to bring up the JOA <b>Colorbar Editor</b> dialog box </li>
+  
+<li>Set up the dialog box as shown below and then click on the linear ramp after <b>Create with Shape:</b>
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-17.png" rel="lightbox" title="Fig 6a-17 Colorbar Editor panel">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-17s.png" />
+      <p class="caption">Fig 6a-17 Colorbar Editor panel</p>
+      </a>
+    </p>      
+  </li>          
+  
+<li>Now when you click <b>OK</b>, your new zero-centered color bar will appear in the <b>Contour Plot</b> dialog box as shown 
+    below:  
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-18.png" rel="lightbox" title="Fig 6a-18 Primary Contours panel of the Contour Plot 
+      dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-18s.png" />
+      <p class="caption">Fig 6a-18 Primary Contours panel of the Contour Plot dialog box</p>
+      </a>
+    </p>  
+  </li>
+  
+<li>And when you click on <b>Plot</b>, you should get this plot:  
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6a-19.png" rel="lightbox" title="Fig 6a-19 Contour plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6a-19s.png" />
+      <p class="caption">Fig 6a-19 Contour plot</p>
+      </a>
+    </p>  
+  </li>
+</ul>
+<p>This plot makes it relatively easy to pick out the zones with denitrified waters.</p>
+
+{% endblock %}

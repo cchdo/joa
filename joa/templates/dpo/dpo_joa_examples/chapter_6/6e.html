@@ -1,0 +1,87 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 6E{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 6</a><ul><li class="webgen-menu-level3"><a href="6a.html">Example 6A</a></li><li class="webgen-menu-level3"><a href="6b.html">Example 6B</a></li><li class="webgen-menu-level3"><a href="6c.html">Example 6C</a></li><li class="webgen-menu-level3"><a href="6d.html">Example 6D</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 6E</span></li><li class="webgen-menu-level3"><a href="6f.html">Example 6F</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Six</h1>
+
+</h1>
+
+	<h2>Data analysis concepts and observational methods</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Six</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="6a.html">Example 6A</a></h1><p><a href="6a.html">Sections with Vertical Axes other than Pressure (or Depth)</a></p></li><li><h1><a href="6b.html">Example 6B</a></h1><p><a href="6b.html">Sections with horizontal axis other than distance</a></p></li><li><h1><a href="6c.html">Example 6C</a></h1><p><a href="6c.html">Exploiting some of JOA&#39;s Mapping Features</a></p></li><li><h1><a href="6d.html">Example 6D</a></h1><p><a href="6d.html">Maps of Properties on Density and Other Surfaces</a></p></li><li><h1><span>Example 6E</span></h1><p><span>Maps of Properties on Extrema</span></p></li><li><h1><a href="6f.html">Example 6F</a></h1><p><a href="6f.html">Plotting Map of Average of Properties Between Two Surfaces</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 6E: Maps of Properties on Extrema</h3>
+	
+
+<p>Sometimes one wants to explore the distribution of property maxima or minima
+(collectively known as &ldquo;extrema&rdquo;) in a data file.  Java OceanAtlas
+can locate and plot values of extrema.  Of course multiple extrema can exist in
+one vertical profile, so JOA does not always return the expected result, but
+the results can nonetheless still be instructive.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">WOA05_NorthAtlantic_square.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_6e_01">Exercise 6e-01</h3></p>
+<p>Continue from 6D-01:</p>
+<p>To locate and plot the salinity minimum at each of the stations in the <span class="fileName">WOA05_NorthAtlantic.joa</span> data file:</p>
+
+<ul>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Calculations</a> &rarr; <b>Station Parameters</b> &rarr; <b>Extrema&#133;</b></li>
+  
+<li>Set up (as shown below) for a calculation of the <b>Min</b> (minimum) in <b>SALT</b> (salinity) over each profile 
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6e-01.png" rel="lightbox" title="Fig 6e-01 Station Extrema Calculations dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6e-01s.png" />
+      <p class="caption">Fig 6e-01 Station Extrema Calculations dialog box</p>
+      </a>
+    </p>
+  </li>
+  
+<li>Click <b>OK</b>, the result will appear in the Data Window</li>
+  
+<li>With the open <b>Orthographic Map Plot</b> in the foreground, bring up the <b>Configure Map Plot</b> dialog box:
+  <ul>
+    <li>Double-click or control-click on a map plot </li>
+    <li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when a map plot is the front-most window</li>
+  </ul>
+</li>  
+  
+<li>Select the <b>Station calculation values</b> sub-panel of the <b>Station Colors</b> tab </li>
+  
+<li>A list of all available station calculations will be shown.  Here we have just the <b>Min of SALT</b> calculation.  Select it, and then select the <span class="fileName">SALT-global_cbr.xml</span> color bar, as shown below:
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6e-02.png" rel="lightbox" title="Fig 6e-02 Station Calculation Values sub-panel of Station Colors panel of the Configure Map Plot dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6e-02s.png" />
+      <p class="caption">Fig 6e-02 Station Calculation Values sub-panel of Station Colors panel of the Configure Map Plot dialog box</p>
+      </a>
+    </p>
+  </li>
+  
+<li>Now when you click <b>OK</b>, you should see this plot:
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6e-03.png" rel="lightbox" title="Fig 6e-03 Orthographic plot ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6e-03s.png" />
+      <p class="caption">Fig 6e-03 Orthographic plot</p>
+      </a>
+    </p>
+  </li>  
+</ul>
+
+<div class="examine_header">Examine:</div>
+
+<div class="examine">  
+<p>This is another interesting plot, though a bit tricky to interpret in places.  Start by looking at the freshest (bluest) areas.  Can you find the areas where the Mississippi, Amazon, and Congo rivers enter the oceans?  See how the fresh Baltic Sea outflows are swept northward into the Arctic?  See how the fresh Arctic outflows hug the eastern boundary of North America but also spread into the interior between Canada and Greenland and north of Iceland?</p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,196 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example S6C{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter S6</a><ul><li class="webgen-menu-level3"><a href="s6a.html">Example S6A</a></li><li class="webgen-menu-level3"><a href="s6b.html">Example S6B</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example S6C</span></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Six Supplement</h1>
+
+</h1>
+
+	<h2>Instruments and Methods</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Six Supplement</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="s6a.html">Example S6A</a></h1><p><a href="s6a.html">Before We Get Started</a></p></li><li><h1><a href="s6b.html">Example S6B</a></h1><p><a href="s6b.html">A Vertical Profile Visualized from CTD, Bottle, and Multi-year Averaged Data</a></p></li><li><h1><span>Example S6C</span></h1><p><span>A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data</span></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example S6C: A Vertical Section Visualized from CTD, Bottle, and Multi-year Averaged Data</h3>
+	
+
+<p>It is worthwhile to compare a vertical section made from three different data types:</p>
+
+<ul>
+  
+<li><a class="glossary" href="/dpo_examples/glossary.html#bottle_data">Bottle data</a></li>
+  
+<li>Decimated <a class="glossary" href="/dpo_examples/glossary.html#ctd">CTD data</a></li>
+  
+<li>Multi-year averaged data</li>
+</ul>
+
+<p>The bottle and CTD data come from the 2003 and 2005 &ldquo;A16&rdquo;
+expeditions for the US Global Ocean Carbon and Repeat Hydrography program, so
+match up station to station.</p>
+
+<p>The multi-year averaged data come from the World Ocean Atlas 2005 (WOA05)
+annual average data, which are available at 1-degree intervals of <a class="glossary" href="/dpo_examples/glossary.html#latitude">latitude</a> and <a class="glossary" href="/dpo_examples/glossary.html#longitude">longitude</a> over the
+World Ocean - we picked off the data points that are closest to the A16
+track.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">A16_2003_2005_bottle_clean.joa</span></li>
+  <li><span class="fileName">A16_2003_2005_ctd_decimated.joa</span></li>
+  <li><span class="fileName">WOA05_A16.joa</span></li>
+  <li><span class="fileName">A16_2003_2005_CTD_undecimated.joa</span></li>
+</ul>
+
+<div class="note_header">NOTE:</div>
+
+<div class="note">
+<p>We have changed the parameter names in the CTD data file from CTDS to SALT
+and from CTDO to O2 to make it easier for you to use the same contour/color
+bars for plots from all three data sets.</p>
+</div>
+
+<p>
+  <div class="expand_link_header" id="expand_link_header_s6c01"><strong>LEARN MORE ABOUT:</strong><br />
+<a href="javascript:expands6c01.slideit()">Decimated CTD data</a></div></p>
+
+<div id="expand_links6c01">
+<div id="expand_link">
+<br />
+  <p>A long section of stations, such as the meridional &ldquo;A16&rdquo; Antarctic-to-Iceland section, may contain more than 100 
+    profiles (161 in the case of A16). There are typically ca. 24-36 water samples (from water sample bottles) collected during 
+    each profile, totaling approximately 5000 water samples. </p> 
+  <p>Although the Java environment is not an efficient one from the standpoint of use of computer resources, that 5000-sample data volume, typical of a long <a class="glossary" href="/dpo_examples/glossary.html#bottle_data">bottle data</a> section, is not a challenge for most computers using JOA.  But the original processed A16 <a class="glossary" href="/dpo_examples/glossary.html#ctd">CTD data</a> were reported to the data center at 1 decibar intervals, or about 5000 records per profile, totaling about 800,000 CTD data values for each parameter. That does slow down JOA on the computers available at the time the DPO JOA Examples were written.  This alone provides one rationale for using a well-chosen subset of the CTD data for JOA plotting.</p>
+  <p>Regarding plotting full-resolution CTD data using JOA there are other considerations.  For example, on JOA property-property and profile plots (see the JOA Plots menu), the application does show every data value.  Therefore on those two plot types, the full resolution of the data can be visualized.</p>  
+  <p>But on JOA contour plots (oceanographers call these <a class="glossary" href="/dpo_examples/glossary.html#vertical_sections">vertical section</a> plots), the JOA application grids the data values onto a pre-selected set of surfaces, most often onto a set of pressure surfaces.</p>  
+  <p>At this writing, JOA has an internal hard limit of 128 surfaces per set.  Therefore, for example, over the full <a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a> range of the <span class="fileName">PRES-0-6000_srf.xml</span> interpolation surface, a maximum of only 128 surfaces could be specified (actually, the number is 64 for that particular interpolation surface), so fine-structure details in the data, which fall between interpolation levels, cannot be shown on a JOA contour (section) plot.</p>
+  <p>JOA provides via its Preferences window (accessed under the Java OceanAtlas menu), the means for a user to specify if and how CTD data are to be decimated when originally imported into JOA, for example, from the original &ldquo;WHP Exchange&rdquo; CTD data format  (see <a class="webLink" href="http://cchdo.ucsd.edu">http://cchdo.ucsd.edu</a>).</p>  
+  <p>For many uses, it is wise when importing CTD data to use one of the decimation choices.  We did this when we prepared the <b class="fileName">A16S_2003_2005_ctd_decimated.joa</b> data file using a Custom decimation table created by DPO JOA Examples author Swift.</p>  
+  <p>But if one wishes to explore the full resolution of a CTD data set when importing data, the <b>No decimation</b> choice should be selected.  We did that when we prepared the <span class="fileName">A16_2003_2005_ctd_undecimated.joa</span> data file (which is nearly 18-times larger than the decimated version of the same data).</p>
+  <p>We note that for some calculations and visualizations, it can be crucial to think through the issue of CTD data decimation. The data set should be imported at a vertical resolution appropriate to the intended interpretation.  For example, if you wish to calculate vertical gradients (this is possible via JOA&#39;s <b>Custom Parameter…</b> dialog box under the <b>Calculations</b> menu), you probably want CTD data at equal intervals of pressure, and at an interval size appropriate to your intent.</p>
+
+<center><p class="expand"><a href="javascript:expands6c01.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expands6c01=new animatedcollapse("expand_links6c01", 2000, true);</script>
+
+<p><h3 class="exercise_header" id="exercise_6sc_01">Exercise S16C-01: Comparing Data - Multiple Data Types (CTD, Bottle, and Multi-year Averaged Data)</h3></p>
+<ul>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr; <span class="fileName">A16S_2003_2005_bottle_clean.joa</span></li>
+  
+<li><b>File</b> &rarr; <b>Open&#133;</b> &rarr; <span class="fileName">A16S_2003_2005_ctd_decimated.joa</span> (Do not <b>Add</b>)</li>
+  
+<li><b>File</b> &rarr; <b>Open&#133;</b> &rarr; <span class="fileName">WOA05_A16.joa</span> (Do not <b>Add</b>)</li>
+  To calculate potential temperature (&ldquo;theta&rdquo;), sigma-0, and sigma-4 for each data file:
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Calculations</a> &rarr; <b>Parameters...</b> </li>
+  
+<li>Select (<b>theta</b>), sigma-0, and sigma-4</li>
+</ul>
+<p>The parameters in common to all three data files are now <a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a>, temperature, salinity, dissolved oxygen, potential temperature, sigma-0, and sigma-4.</p>
+<p>Make contoured <a class="glossary" href="/dpo_examples/glossary.html#vertical_sections">vertical sections</a> from each of the three A16-related data files of:</p>
+<ul>
+  
+<li>Potential temperature</li>
+  
+<li>Salinity</li> 
+  
+<li>Sigma-0</li> 
+  
+<li>Sigma-4</li> 
+  
+<li>oxygen</li> 
+</ul>
+<p>Compare:</p>
+<ul>
+  
+<li>The appearance of the south-to-north and vertical distributions of these parameters when represented by time-averaged 
+    bottle-like data, single-expedition bottle data, and single-expedition <a class="glossary" href="/dpo_examples/glossary.html#ctd">CTD data</a>.</li>
+  
+<li>The time-averaged versus single-expedition silicate, <a class="glossary" href="/dpo_examples/glossary.html#nitrate">nitrate</a>, and <a class="glossary" href="/dpo_examples/glossary.html#phosphate">phosphate</a> data.</li>
+</ul>
+<p>We show the three potential temperature sections below.</p>
+<p align="center">
+  <a href="/dpo_examples/images/chS16/figs16c-01.png" rel="lightbox" title="FIG s6c-01 Three potential temperature sections">
+    <img align="middle" alt="target" src="/dpo_examples/images/chS16/figs16c-01s.png" />
+    <p class="caption">FIG s6c-01 Three potential temperature sections</p>
+  </a>
+</p>
+<div class="examine_header">Examine:</div>
+<div class="examine">
+  <p>The sections with an eye to how the different data types represent the distributions of seawater properties.</p>  
+  <p>The &ldquo;big picture&rdquo; is clearly the same in all three data files, but there are clear differences between the visualizations provided by the A16 bottle, A16 CTD, and WOA05 data files.</p>  
+  <p>But remember, due to the method that JOA uses to plot a contoured vertical section, you cannot see details of smaller vertical extent than allowed by the choice of JOA interpolation surface, so the visual difference between the A16 bottle and CTD vertical sections does not reflect the full difference in resolution of the data files.</p>  
+</div>
+
+<p><br /></p>
+
+<div class="note_header">NOTE:</div>
+
+<div class="note">
+  <p>On a JOA vertical section (&ldquo;contour&rdquo;) plot you can select a subset of the plot by click-drag-releasing the mouse.</p>
+  <p>The subset of a Contour plot section is a magnification of the same features in the full-range section.</p>
+</div>
+
+<p><br /></p>
+
+<p><h3 class="exercise_header" id="exercise_6sc_02">Exercise 6SC-02: High-Resolution Contoured CTD Sections</h3></p>
+<p>CTD data almost always have significantly greater vertical resolution than do any existing JOA interpolation surfaces, and so you cannot easily visualize the full vertical resolution of CTD data on a JOA Contour (vertical section) plot.</p>
+<div class="joa_note_header">JOA NOTE:</div>
+<div class="joa_note">
+<p>Here we will demonstrate how you can use a custom interpolation surface with levels onto which the data can be interpolated that match or more closely match the vertical resolution of the CTD data.  At this writing JOA has a built-in limit of 128 levels per interpolation surface.  Therefore, for example, if you wish to plot a contoured section of CTD data with 2-decibar vertical resolution, you will be restricted to a 254-decibar range of pressure, for example you could make a custom interpolation surface to look at the range 960-1214 decibars.</p>
+ 
+<p>You can learn more about making custom interpolation surfaces in the JOA User Guide, or simply go to &rdquo;Surface Manager&ldquo; under the JOA Resources menu and give it a try.</p>
+</div>
+<p>As an example, we have supplied a custom interpolation surface with 128 levels covering 0-254 decibars at even 2-decibar intervals, which you can use with undecimated CTD data to examine fine structure in the upper layer.</p>
+<p>We supply an undecimated CTD data file (<span class="fileName">A16_2003_2005_clean_CTD_undecimated.joa</span>) for those who wish to take a close look at CTD data near or at the vertical resolution the data were reported to the data center:</p>
+<ul>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr;<span class="fileName">A16_2003_2005_CTD_undecimated.joa</span></li>       
+  
+<li>Prepare a contoured/colored vertical section, choosing the <span class="fileName">"PRES-0-254_srf.xml"</span> interpolation surface, along with whichever parameter to plot - and corresponding color bar - you wish.  
+    <p>See note below for instructions on easy methods to make temporary custom color/contour bars for JOA Contour vertical section plots. </p>
+  </li>
+  <br />
+  <div class="note_header">NOTE:</div>
+  <div class="note">
+    <p>Drawing the plot may seriously slow some computers, due to the combination of data file size and computation intensity.</p> 
+    <p>You may note that the resulting contoured section plot is not all that different in appearance from that of the same pressure range.</p>
+  </div>
+  <br />
+    
+  
+<li>Making a temporary custom color bar for a JOA <a class="glossary_prop" href="/dpo_examples/glossary.html#plots">Contour Plot</a> (vertical section plot) is deliberately made as simple as we 
+    could manage, in order that users could most easily explore a data set:
+    <ul>
+      
+<li>Double-clicking on any JOA color bar - one in a dialog box, on any plot, in the Data Window, etc. - will bring 
+        up the JOA <b>Colorbar Editor</b> dialog box, from which you can set new ranges and/or a new &ldquo;shape&rdquo; 
+        (interval distribution scheme) for the color bar.
+        <p align="center">
+          <a href="/dpo_examples/images/chS16/figs16c-02.png" rel="lightbox" title="FIG s6c-02 The Colorbar Editor dialog box">
+            <img align="middle" alt="target" src="/dpo_examples/images/chS16/figs16c-02s.png" />
+            <p class="caption">FIG s6c-02 The Colorbar Editor dialog box</p>
+          </a>
+        </p>
+      </li>  
+      
+<li>Experimenting with the various &ldquo;shapes&rdquo; will help you decide if you want an alternative to the 
+        often-best-choice linear shape.</li>  
+      
+<li>The dark gray histogram in the graph-like area of the <b>Colorbar Editor</b> dialog box is meant to act as a guide to 
+        the relative frequency of occurrence of data inside the overall data range in the Y-axis of the graphic.</li>
+      <p>(To achieve a custom distribution of color ranges such as the one shown in the above example, you must use the 
+        <b>Contour Manager...</b> under the JOA Resources menu.)</p>  
+    </ul>
+  </li>
+</ul>
+
+{% endblock %}

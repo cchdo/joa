@@ -1,0 +1,147 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 4D{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 4</a><ul><li class="webgen-menu-level3"><a href="4a.html">Example 4A</a></li><li class="webgen-menu-level3"><a href="4b.html">Example 4B</a></li><li class="webgen-menu-level3"><a href="4c.html">Example 4C</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 4D</span></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Three</h1>
+
+</h1>
+
+	<h2>Typical distributions of water characteristics</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Four</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="4a.html">Example 4A</a></h1><p><a href="4a.html">Before we get started</a></p></li><li><h1><a href="4b.html">Example 4B</a></h1><p><a href="4b.html">Surface properties of world ocean waters</a></p></li><li><h1><a href="4c.html">Example 4C</a></h1><p><a href="4c.html">Vertical Distribution of Water Properties Along South-to-North Transects</a></p></li><li><h1><span>Example 4D</span></h1><p><span>Vertical Distribution of Water Properties Along South-to-North Transects</span></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 4D: Vertical Distribution of Water Properties Along South-to-North Transects</h3>
+	
+
+<div class="indent">
+  <table cellpadding="3">
+    <tr>
+      <td>DPO 4.7</td>
+      <td>Age of ocean water</td>
+    </tr>
+  </table>
+</div>
+
+<p>In DPO 4.7 the concept of using ocean tracers to determine aspects of the &ldquo;age&rdquo; of ocean waters is discussed. We have provided a data file you can use with JOA to make an Atlantic Ocean companion to the Pacific 150&deg;W CFC-11 section shown in DPO Figure 4.24.</p>
+
+<p>Ocean CFC data are usually sparser than those averaged in the WOA05 suite of parameters (WOA05 contains vertical distributions of temperature, salinity, dissolved oxygen, silicate, <a class="glossary" href="/dpo_examples/glossary.html#nitrate">nitrate</a>, and <a class="glossary" href="/dpo_examples/glossary.html#phosphate">phosphate</a>), are sometimes noisier, and often contain more values known to be in error (so-called &ldquo;bad data&rdquo;, often left in data files but with a &ldquo;data quality code&rdquo; left in the file to indicate the value is suspect or bad).  </p>
+
+<p>To prepare contoured section plots, JOA interpolates the profile data onto an X-Z grid.  Where grid values are missing, JOA sometimes has trouble &ldquo;connecting the lines&rdquo; when it draws color/contours.  Hence even though we have done some cleaning of missing and bad values when we prepared the <span class="fileName">A16_2003_2005_clean_cfc.joa</span> data file, in order to produce a pleasant-looking contour section plot with JOA, we will use some of JOA&#39;s optional plot features.  This will also provide an opportunity for you to extend your JOA section-plotting skills.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">A16_2003_2005_botclean_cfc.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_4d_01">Exercise 4D-01: Vertical Sections - Making a CFC Contour Plot</h3></p>
+<ul>
+  
+<li>Start JOA</li>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr; <span class="fileName">A16_2003_2005_clean_cfc.joa</span></li>
+
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Plots</a> &rarr; <b>Contour&#133;</b>  </li>
+  
+<li>In the <a class="glossary_prop" href="/dpo_examples/glossary.html#plots">Contour Plot</a> dialog box select <b>F11</b> from the <b>Parameter</b> list, and <span class="fileName">PRES-0-6000_srf.xml</span> from the <b>Interpolation surfaces</b> list</li>
+  
+<li>Click on the <b>Interpolations Options&#133;</b> button in the <b>Contour Plot</b> <b>Primary Contours</b> dialog box, and set up a <a class="glossary" href="/dpo_examples/glossary.html#farfield">far-field interpolation</a> 
+    <p>We suggest settings such as these (we show only part of the <b>Interpolation Options</b> dialog box here):</p>
+
+    <p align="center">
+      <a href="/dpo_examples/images/ch4/fig4d-01.png" rel="lightbox" title="FIG 4d-01 Interpolation Options dialog box ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4d-01s.png" />
+        <p class="caption">FIG 4d-01 Interpolation Options dialog box</p>
+      </a>
+    </p>
+  </li>
+  
+<li>Click <b>OK</b> in the <b>Interpolation Options</b> dialog box to return to the <b>Contour Plot</b> dialog box</li>
+  
+<li>Under <b>Colorbars:</b> scroll through the list to see if your copy of JOA already has a color bar for F11.  If it does, just select it.  If not, here is how you can create an F11 colorbar on the fly:
+    <ul>
+      
+      <li>In the <b>Primary Contours</b> window of the <b>Contour Plot</b> dialog box, see the <b>Create autoscale colorbar</b> 
+              sub-panel.      
+              <p align="center">
+              <a href="/dpo_examples/images/ch4/fig4d-02.png" rel="lightbox" title="FIG 4d-02 Create autoscale colorbar sub-panel">
+                <img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4d-02s.png" />
+                <p class="caption">FIG 4d-02 Create autoscale colorbar sub-panel</p>
+              </a>
+            </p> 
+      </li>  
+      
+      <li>With the palette <b>Rainbow(inv)-32</b> selected (see to the right of <b>Using:</b>) click on the left-most of the 
+              four choices of ramp for the new color bar.
+    
+            <p>This will provide 32 contours at equal intervals of CFC-11 from the lowest value <u>in the interpolated data set</u> to 
+              the highest value <u>in the interpolated data set</u>.</p>
+      </li> 
+      <div class="note_header">NOTE:</div>
+      <div class="note">
+      <p>We underlined &ldquo;in the interpolated data set&rdquo; to emphasize that if the interpolated data set for some reason 
+        contains values outside the upper and lower limits of the original data set - JOA might autoscale a color bar in an 
+        unrealistic way.</p>
+      </div>
+      
+      <li>To work around this, after you have autoscaled the color bar, just double-click on the color bar, which will bring up 
+              the JOA <b>Colorbar Editor</b>.</li>  
+      
+      <li>For this CFC-oriented data set, we suggest that in the JOA <b>Colorbar Editor</b> you type in &ldquo;0&rdquo; for the 
+              <b>Start value:</b>, &ldquo;6&rdquo; for the <b>End value:</b>, and then click on the left-most (linear) <b>Create 
+                with shape:</b> ramp.  
+              <p>The <b>Colorbar Editor</b> will then look like this:</p>
+    
+              <p align="center">
+                <a href="/dpo_examples/images/ch4/fig4d-03.png" rel="lightbox" title="FIG 4d-03 Colorbar Editor dialog box">
+                  <img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4d-03s.png" />
+                  <p class="caption">FIG 4d-03 Colorbar Editor dialog box</p>
+                </a>
+              </p>
+            </li>
+      
+      <li>After you click on <b>OK</b> in the <b>Colorbar Editor</b>, JOA will return you to the <b>Contour Plot</b> dialog box, 
+              where your new color bar will be ready to use. </li>
+    </ul>    
+  </li>    
+  
+  
+<li>We suggest that for the other settings in the <b>Contour Plot</b> dialog box you set up as in this example:  
+    
+  <p align="center">
+    <a href="/dpo_examples/images/ch4/fig4d-04.png" rel="lightbox" title="FIG 4d-04 Primary Contour panel or the Contour Plot dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4d-04s.png" />
+      <p class="caption">FIG 4d-04 Primary Contour panel of the Contour Plot dialog box</p>
+    </a>
+  </p>
+  </li>    
+  
+<li>Now, when you click on the <b>Plot</b> button, JOA will draw this CFC-11 section:  
+    
+  <p align="center">
+    <a href="/dpo_examples/images/ch4/fig4d-05.png" rel="lightbox" title="FIG 4d-05  CFC-11 section ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch4/fig4d-05s.png" />
+      <p class="caption">FIG 4d-05 CFC-11 section</p>
+    </a>
+  </p>
+  
+  
+
+  <div class="examine_header">Examine:</div>
+  <div class="examine">
+  <p>What are the primary differences in the CFC-11 distributions between Fig. 4.23 (Pacific Ocean) and the section drawn from the 
+    A17_2003_2005 data file?</p>  
+  <p>Considering that CFCs are anthropogenic (man-made) gases that enter the oceans through dissolution at the sea surface, what 
+      might be an explanation for these Pacific versus Atlantic CFC-11 distribution differences?</p>
+  </div>
+</li>
+</ul>
+
+{% endblock %}

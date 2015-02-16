@@ -1,0 +1,145 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 2E{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 2</a><ul><li class="webgen-menu-level3"><a href="2a.html">Example 2A</a></li><li class="webgen-menu-level3"><a href="2b.html">Example 2B</a></li><li class="webgen-menu-level3"><a href="2c.html">Example 2C</a></li><li class="webgen-menu-level3"><a href="2d.html">Example 2D</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 2E</span></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Two</h1>
+
+</h1>
+
+	<h2>Ocean dimensions, shapes and bottom materials</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Two</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="2a.html">Example 2A</a></h1><p><a href="2a.html">Dimensions</a></p></li><li><h1><a href="2b.html">Example 2B</a></h1><p><a href="2b.html">Sea-floor Dimensions</a></p></li><li><h1><a href="2c.html">Example 2C</a></h1><p><a href="2c.html">Bathymetry</a></p></li><li><h1><a href="2d.html">Example 2D</a></h1><p><a href="2d.html">DPO Extra Topic&#59; Map Projections</a></p></li><li><h1><span>Example 2E</span></h1><p><span>DPO Extra Topic&#59; Making a .joa file</span></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 2E: DPO Extra Topic&#59; Making a .joa file</h3>
+	
+
+<div class="expand_link_header" id="expand_link_header_02e01"><strong>LEARN MORE ABOUT:</strong><br />
+  <a href="javascript:expand02e01.slideit()">JOA Data Files</a></div>
+<div id="expand_link02e01">
+  <div id="expand_link">
+    <br />
+    <p>Key facts about valid JOA data files: </p>
+    <ul>
+      
+<li>Java OceanAtlas recognizes several types of data files. The simplest to create is a Java OceanAtlas text (spreadsheet) data file.</li>
+      
+<li>A Java OceanAtlas text (spreadsheet) data file begins with one line of tab-delimited header names and continues with N 
+        lines of tab-delimited data (each line with one value for each header category).  The file must be saved as plain text 
+        (ASCII) and the file name must end with <span class="fileName">.jos</span>.</li>
+      
+<li>A Java OceanAtlas text (spreadsheet) data file must have at least one line of data in addition to the header line.</li>
+      
+<li>In a Java OceanAtlas text (spreadsheet) data file, the minimum content of the header line is a <a class="glossary" href="/dpo_examples/glossary.html#stations">station</a> number 
+        (<b>STATION</b>), <a class="glossary" href="/dpo_examples/glossary.html#latitude">latitude</a> (<b>LATITUDE</b>), <a class="glossary" href="/dpo_examples/glossary.html#longitude">longitude</a> (<b>LONGITUDE</b>) and <a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a> (<b>PRES</b>), each separated by a standard character, usually a tab character.</li>
+      
+<li>Java OceanAtlas utilizes positions expressed in decimal degrees, with negative for south latitudes and for west 
+        longitudes.</li>
+      
+<li>Java OceanAtlas works with any <b>pressure</b>-sequenced data.  Pressure (abbreviated PRES in Java OceanAtlas) is used 
+        because it is now more commonly measured than depth as the vertical index when water samples are collected.</li>
+      
+<li>Normally the pressures used by Java OceanAtlas are meant to be the pressure values at the level of each set of property 
+        measurements at that station.  In most cases there are also headers and data for the water properties measured at the 
+        pressures/levels for each measurement, such as temperature (<b>TEMP</b>) or salinity (<b>SALT</b>).  There 
+        may be one to several thousand pressures/levels at each station.  JOA does not, however, require that there be more than 
+        one station with one level (one pressure), and JOA does not require that there be any measured data, other than pressure, 
+        at the level(s) of measurement.</li>
+    </ul>
+
+    <br />
+    
+    <center><p class="expand"><a href="javascript:expand02e01.slideup()">CLOSE SECTION</a></p></center>
+
+  </div>
+</div>
+<script type="text/javascript">var expand02e01=new animatedcollapse("expand_link02e01", 2000, true);</script>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">mycity.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_2e_01">Exercise 2E-01: Ocean Maps - Plot Your City's Location</h3></p>
+<p>Here we show you how to make your own JOA data file, similar to <span class="fileName">SIO.joa</span>, yet in this case a data file with the location of your choice city. </p>
+<ul>
+  
+<li>Look up the latitude and longitude of a city either with a global map or online resource. See <a href="/dpo_examples/resources.html"> Resources</a> for helpful links.  For example, see <a class="webLink" href="http://go.hrw.com/atlas/norm_htm/oceans.htm">http://go.hrw.com/atlas/norm_htm/oceans.htm</a></li>
+  
+<li>Convert the latitude and longitude to decimal degrees, using the JOA sign conventions. For example, the latitude 13&deg; 43.7&#39; 
+    S will be written as -13.72 in decimal degrees with this convention.  </li>
+  
+<li>Substitute the name of the city, its latitude, and its longitude, for &#39;SANDIEGO&#39;, &#39;32.74&#39;, and 
+    &#39;-117.16&#39;, respectively, in the example below, writing these lines into any text/word processor:
+    <p class="indent">STATION &lt;tab&gt; LATITUDE &lt;tab&gt; LONGITUDE &lt;tab&gt; PRES &lt;carriage return&gt; 
+    SANDIEGO &lt;tab&gt; 32.74 &lt;tab&gt; -117.16 &lt;tab&gt; 1.0 &lt;carriage return&gt;</p>
+    <p class="indent">The use of &lt;tab&gt; in the above denotes a tab character and &lt;carriage return&gt; denotes a carriage     
+    return.</p>
+  </li>  
+  
+<li>Save this two-line file as a plain text file with the name <span class="fileName">mycity.jos</span>, or any other name with the suffix <span class="fileName">.jos</span>.</li>
+  
+<li>Start Java OceanAtlas (on most computers by double-clicking on its icon).</li>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr; <span class="fileName">mycity.jos</span> </li>
+  
+<li>The Java OceanAtlas <b>Spreadsheet Import Options</b> dialog box will open up, and look approximately like this:
+    <p align="center">
+      <a href="/dpo_examples/images/ch2/fig2e-01.png" rel="lightbox" title="FIG 2e-01 Java OceanAtlas Spreadsheet Import Options dialog box">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2e-01s.png" />
+        <p class="caption">FIG 2e-01 Java OceanAtlas Spreadsheet Import Options dialog box</p>
+      </a>
+    </p>
+    </li>
+  
+<li>You can simply click on <b>OK</b>, because the JOA default settings are fine for this data file.  After clicking on 
+    <b>OK</b>, the JOA <a class="glossary" href="/dpo_examples/glossary.html#data_window">Data window</a> will open up.  It will look approximately like this:
+    <p align="center">
+      <a href="/dpo_examples/images/ch2/fig2e-02.png" rel="lightbox" title="FIG 2e-02 Java OceanAtlas Data Window ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2e-02s.png" />
+        <p class="caption">FIG 2e-02 Java OceanAtlas Data Window</p>
+      </a>
+    </p>
+  </li>
+  <div class="note_header">NOTE:</div>
+  <div class="note">The JOA Data Window contains:
+    <ul>
+      
+<li>A data display of all measured and calculated data (keyed to current x-z location in the data)</li>
+      
+<li>The current color bar (with arrow indicating color for current x-z location)</li>
+      
+<li>A section display illustrating all data points in current section(s)</li>
+    </ul>
+  </div>
+  
+<li>You are now ready to work with this simple data set in Java OceanAtlas!</li>
+
+<li>To save your new data file, select <b>Save As&#133;</b> under the JOA <b>File</b> menu, and use the <b>Save data as:</b> dialog box to rename your file (if you wish) and save it to whatever location on your computer you wish.</li>
+    
+<li>Following the instructions in Exercise <a href="./2a.html#exercise_2a_02">2A-02</a> for starting JOA, opening a data file, and making a Mercator world map, make a map plot showing the location of your chosen city.</li>
+</ul>
+<p><br /></p>
+<pre><code>&lt;p&gt;This exercise of making your own JOA text data file, opening it in JOA, and making a map from it may help you to understand the essential elements of a JOA text data file.  In the JOA User Guide (found in the &lt;%= link_to &quot;JOA application&quot;, &quot;/joa&quot; %&gt; tab) you will find further information about making your own data files that JOA can read.&lt;/p&gt;
+</code></pre>
+<p><br /></p>
+<pre><code>&lt;p&gt;&lt;b&gt;Additional Resources: &lt;/b&gt;&lt;/p&gt;
+</code></pre>
+<p class="list">Holt, Rinehart and Winston maps: 
+    <a class="webLink" href="http://go.hrw.com/atlas/norm_htm/oceans.htm">http://go.hrw.com/atlas/norm_htm/oceans.htm</a>
+  </p>
+<p class="list">Google Earth application: 
+    <a class="webLink" href="http://earth.google.com/">http://earth.google.com/</a>
+  </p>
+<p class="list">Astro Dienst (Find longitude &amp; latitude of a city): 
+    <a class="webLink" href="http://www.astro.com/atlas">http://www.astro.com/atlas</a>
+  </p>
+
+
+{% endblock %}

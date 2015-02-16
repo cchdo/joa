@@ -1,0 +1,151 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 3A{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 3</a><ul><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 3A</span></li><li class="webgen-menu-level3"><a href="3b.html">Example 3B</a></li><li class="webgen-menu-level3"><a href="3c.html">Example 3C</a></li><li class="webgen-menu-level3"><a href="3d.html">Example 3D</a></li><li class="webgen-menu-level3"><a href="3e.html">Example 3E</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Three</h1>
+
+</h1>
+
+	<h2>Physical properties of seawater</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Three</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><span>Example 3A</span></h1><p><span>Before we get started</span></p></li><li><h1><a href="3b.html">Example 3B</a></h1><p><a href="3b.html">Physical Properties</a></p></li><li><h1><a href="3c.html">Example 3C</a></h1><p><a href="3c.html">Effect of Temperature and Salinity on Compressibility</a></p></li><li><h1><a href="3d.html">Example 3D</a></h1><p><a href="3d.html">Static Stability and Brunt V&#228;is&#228;l&#228; Frequency</a></p></li><li><h1><a href="3e.html">Example 3E</a></h1><p><a href="3e.html">Sound in the Sea</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 3A: Before we get started</h3>
+	
+
+<p><div class="expand_link_header" id="expand_link_header_03a01">
+<strong>LEARN MORE ABOUT:</strong><br />
+<a href="javascript:expand03a01.slideit()">Oceanographic profile data and Java OceanAtlas</a>
+</div></p>
+<div id="expand_link03a01">
+<div id="expand_link">
+<p>Oceanographic <a class="glossary" href="/dpo_examples/glossary.html#profile">profile</a> data are data collected at one location - one geographic coordinate - in the vertical, typically from the sea surface to some subsurface depth, in some cases to just above the ocean bottom.</p>
+
+<p>Profiles are often collected from a ship which stopped at that location to collect the profile. Those stops are called <a class="glossary" href="/dpo_examples/glossary.html#stations"><em>stations</em></a>, and so the word <em>station</em> is sometimes used instead of <em>profile</em>, although it is not necessary to make a station stop to obtain a profile:  for example eXpendable BathyThermograph - &#39;XBT&#39; - temperature vs. depth profiles are often collected from moving ships, or even from airplanes and submarines.</p>
+
+<p>Two principal types of profile data from oceanographic stations are <a class="glossary" href="/dpo_examples/glossary.html#bottle_data"><em>bottle</em> data</a> and <em><a class="glossary" href="/dpo_examples/glossary.html#ctd">CTD data</a></em>.</p>
+
+<p>Many seawater characteristics cannot be sampled, or sampled at high enough quality, by electronic sensors.</p>
+<p>Bottle data originate from water sample bottles attached to a lowered wire or group-mounted on a frame (called a &ldquo;rosette&rdquo; water sampler) attached to a lowered wire, which are closed at chosen levels, isolating water samples then subsampled shipboard for various parameters such as salinity, dissolved oxygen &#40;or other dissolved gasses&#41;, dissolved inorganic nutrients, or many other substances.</p>
+
+<p>From one water bottle brought up from the deep, subsamples can be drawn for many different seawater characteristics.</p>
+<p>  
+<a href="/dpo_examples/images/CTD_dataprocessing/ctd-03.png" rel="lightbox[CTD_dataprocessing]" title="Watching the CTD computer during a cast ">
+  <img align="middle" alt="target" src="/dpo_examples/images/CTD_dataprocessing/ctd-03s.png" /></a>
+<a href="/dpo_examples/images/ctd.jpg" rel="lightbox[CTD]" title="Rosette frame, bottles, and CTD ">
+  <img align="middle" alt="target" src="/dpo_examples/images/i_ctd.jpg" /></a>
+<a href="/dpo_examples/images/ctd2.jpg" rel="lightbox[CTD]" title="Retrieving the rosette ">
+  <img align="middle" alt="target" src="/dpo_examples/images/i_ctd2.jpg" /></a>
+<a href="/dpo_examples/images/CTD-sampling/ctd-samp06.png" rel="lightbox[CTD_sampling]" title="The water samplers at work after a rossette cast ">
+  <img align="middle" alt="target" src="/dpo_examples/images/CTD-sampling/ctd-samp06s.png" /></a>
+<a href="/dpo_examples/images/CTD-sampling/ctd-samp01.png" rel="lightbox[CTD_sampling]" title="Drawing a CFC sample from a rossette bottle ">
+  <img align="middle" alt="target" src="/dpo_examples/images/CTD-sampling/ctd-samp01s.png" /></a>  
+<a href="/dpo_examples/images/CTD-sampling/ctd-samp05.png" rel="lightbox[CTD_sampling]" title="Obtaining water samples from CTDs ">
+  <img align="middle" alt="target" src="/dpo_examples/images/CTD-sampling/ctd-samp05s.png" /></a>
+<a href="/dpo_examples/images/CTD_dataprocessing/ctd-01.png" rel="lightbox[CTD_dataprocessing]" title="Susan Becker (SIO) and the nutrient auto analyzer ">
+  <img align="middle" alt="target" src="/dpo_examples/images/CTD_dataprocessing/ctd-01s.png" /></a>
+</p>
+<p>Physical oceanographers have found that it is useful to obtain water samples for determination of dissolved oxygen concentration and the concentrations of the inorganic &#39;nutrients&#39; <a class="glossary" href="/dpo_examples/glossary.html#nitrate">nitrate</a> (NO3), <a class="glossary" href="/dpo_examples/glossary.html#phosphate">phosphate</a> (PO4), and silicate (SiO3).  Beginning primarily in the 1970s global measurements of other natural and anthropogenic dissolved substances began to be feasible and useful, for example components of the CO2 system, radiocarbon, helium, tritium, and, beginning in the 1980s, CFCs.</p>
+
+<p>CTD data originate from semi-continuous sampling electronic profilers, which are lowered into the ocean, recording output typically from <a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a>, conductivity, temperature sensors, and sometimes other sensors as well.</p>
+
+<p>The sensors in a CTD provide measurements of conductivity, temperature, and <a class="glossary" href="/dpo_examples/glossary.html#pressure">pressure</a>. The salinity profile from a CTD is calculated from C, T, and P by a computer. A non-ocean-experienced engineer might call the instrument a &#39;CTP&#39; for what it measures, or an &#39;STP&#39; for the parameters in its processed data stream, but oceanographers use the traditional designation &#39;CTD&#39;.</p>
+<p>For convenience, oceanographers sometimes (in informal non-research publications) interchange the words &#39;depth&#39; and &#39;pressure&#39; due to the similarity of depth expressed in meters and pressure expressed in decibars.</p>
+<p>Oceanographers rarely use conductivity data themselves in ocean water mass and circulation studies because the vertical variation of conductivity is a strong function of temperature and pressure.  By using the calculated property &#39;salinity&#39; the oceanographer has a valuable parameter whose values are essentially independent of pressure and temperature.  </p>
+
+<p>Most modern bottle data include data parameters from the CTD sensors recorded at the time the bottle was closed.  An <a class="glossary" href="/dpo_examples/glossary.html#oceanographic_section">oceanographic <em>section</em></a> is composed of a series of profiles/stations across an oceanographic region or feature.  Oceanographers most often use sections from single ship transects, called quasi-synoptic sections, but useful sections may also be pieced together from various data.</p>
+
+<center><p class="expand"><a href="javascript:expand03a01.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expand03a01=new animatedcollapse("expand_link03a01",2000, true);</script>
+
+<p><div class="expand_link_header" id="expand_link_header_03a02"><strong>LEARN MORE ABOUT:</strong><br />
+<a href="javascript:expand03a02.slideit()">Optimal Data for Use with Java Ocean Atlas</a></div></p>
+<div id="expand_link03a02">
+<div id="expand_link">
+  
+<p>Java OceanAtlas is optimized for working with ocean section data because (1) sections provide an oceanographically useful way of visualizing ocean features and (2) there are many section data.  Also, for ocean profile data it is easier to make visually-appealing plots from ocean sections (X &amp; Z axes) than it is from mapped station data (X &amp; Y axes).  The reasoning behind this point can be understood by considering that to study the water properties and circulation of typical deep ocean regions requires that station (profile) separation be no more than ca. 50 km in the interior of the region and ca. 8-12 km across boundary currents at the edges.  Thus, while one basin-spanning section could be used to examine circulation and fluxes across the X-Z plane, to <em>map</em> the X-Y patterns of flow at that resolution would require many sections, spaced no more than 50 km apart.  The realities of shipborne logistics make this impossible for large regions.  Of course satellite data can provide superb maps but are restricted to a very few parameters at the sea surface.</p>  
+
+<p>While it is difficult to make persuasive, appealing, yet accurate, computer-contoured maps from miscellaneous profile data, such as from a typical collection of stations and sections, it is possible to make good-quality maps from pre-gridded data. These can be made from X-Y-Z gridded compilations of oceanographic data or output from computer models of the ocean (which are typically received as gridded data).  In these DPO JOA Examples we will use pre-gridded statistical compilations of data from the World Ocean Atlas 2005 (from Syd Levitus and colleagues at the US National Oceanic and Atmospheric Administration's National Oceanographic Data Center.</p>
+<p>Additional references: <a class="webLink" href="http://www.nodc.noaa.gov/OC5/WOA05/pubwoa05.html">http://www.nodc.noaa.gov/OC5/WOA05/pubwoa05.html</a>).</p>
+
+
+<center><p class="expand"><a href="javascript:expand03a02.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expand03a02=new animatedcollapse("expand_link03a02",2000, true);</script>
+
+<p><div class="expand_link_header" id="expand_link_header_03a03"><strong>LEARN MORE ABOUT:</strong><br />
+<a href="javascript:expand03a03.slideit()">The Origin of the <b>A16_2005_sta085_bottle.joa</b> data file</a></div></p>
+<div id="expand_link03a03">
+<div id="expand_link">
+  
+<p>During the <a class="glossary" href="/dpo_examples/glossary.html#woce">World Ocean Circulation Experiment (WOCE)</a> in the 1990s, a comprehensive One-Time global survey was made of a broad suite of water properties along a planned set of oceanographic transects.</p>  
+<p>A subset of these transects was subsequently chosen by oceanographers to be re-occupied (re-measured) approximately decadally (some more often, some less often).</p>  
+<p>One of these transects we will use in the DPO JOA Examples is the &ldquo;A16&rdquo; meridional (south-to-north; as opposed to zonal, or west-to-east) Atlantic Ocean transect from the Southern Ocean, near the South Shetland Islands, north to Iceland.  This original WOCE transect was re-occupied during two cruises: the northern part in 2003 and the southern part in 2005, as part of the US Global Ocean Carbon and Repeat Hydrography program.</p> 
+<p>In this chapter we will use <a class="glossary" href="/dpo_examples/glossary.html#bottle_data">bottle data</a> from one station from the 2005 South Atlantic Ocean &ldquo;A16S&rdquo; cruise to investigate the properties of seawater and their vertical variation at the location of this station.</p>  
+
+<center><p class="expand"><a href="javascript:expand03a03.slideup()">CLOSE SECTION</a></p></center>
+</div>
+</div>
+<script type="text/javascript">var expand03a03=new animatedcollapse("expand_link03a03", 2000, true);</script>
+
+<p>Files that may be needed or created in this example:</p>
+
+<ul>
+  <li><span class="fileName">A16S_2005_sta085_bottle.joa</span></li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_3a_01">Exercise 3A-01: Seawater Properties - The JOA Data Window</h3></p>
+
+<ul>
+  
+<li>Start JOA</li>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a></li>
+  
+<li>Locate the data file <span class="fileName">A16S_2005_sta085_bottle.joa</span>
+and <b>Open</b>. The JOA <a class="glossary" href="/dpo_examples/glossary.html#data_window">Data window</a> should look like this:
+    <p align="center">
+  <a href="/dpo_examples/images/ch3/fig3a-01.png" rel="lightbox" title="FIG 3a-01 Java OceanAtlas Data Window with descriptions ">
+    <img align="middle" alt="target" src="/dpo_examples/images/ch3/fig3a-01s.png" />
+    <p class="caption">FIG 3a-01 Java OceanAtlas Data Window with descriptions</p>
+  </a>
+</p>
+  </li>
+</ul>
+
+<p>Here is a summary of the various parameters in this data file (all parameters
+not explicitly described because CTD parameters are from analyses of water
+samples drawn from the water bottle after the sampler was brought on board
+after the cast):</p>
+
+<table border="0" width="100%">
+<tr><td>PRES</td><td>CTD pressure at the time the bottle was closed</td></tr>
+<tr><td>TEMP</td><td>CTD temperature (&ldquo;in situ&rdquo;) at the time the bottle was closed</td></tr>
+<tr><td>CTDS</td><td>CTD salinity at the time the bottle was closed</td></tr>
+<tr><td>SALT</td><td>bottle salinity</td></tr>
+<tr><td>CTDO</td><td>CTD dissolved oxygen at the time the bottle was closed</td></tr>
+<tr><td>O2</td><td>bottle dissolved oxygen</td></tr>
+<tr><td>SIO3</td><td>silicate</td></tr>
+<tr><td>PO4</td><td>phosphate</td></tr>
+<tr><td>F11</td><td>CFC-11 (&ldquo;Freon 11&rdquo;)</td></tr>
+<tr><td>F12</td><td>CFC-12 (&ldquo;Freon 12&rdquo;)</td></tr>
+<tr><td>F113</td><td>CFC-113</td></tr>
+<tr><td>CCL4</td><td>carbon tetrachloride</td></tr>
+<tr><td>PCO2</td><td>partial pressure of CO2</td></tr>
+<tr><td>PH</td><td>pH</td></tr>
+<tr><td>TALK</td><td>total alkalinity</td></tr>
+<tr><td>TCO2</td><td>total inorganic carbon</td></tr>
+<tr><td>SAMP&#35;</td><td>the sampler number written on the rosette bottle</td></tr>
+</table>
+
+{% endblock %}

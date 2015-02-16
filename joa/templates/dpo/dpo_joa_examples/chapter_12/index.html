@@ -1,0 +1,140 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Chapter Twelve{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><span>Chapter 12</span></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Twelve</h1>
+
+</h1>
+
+	<h2>The Arctic Ocean and Nordic Seas</h2>
+
+
+	
+	
+
+<div id="data-files-supplied">
+<%= data_files_chapter_listing('12', DpoDataFiles::DATA_FILES, true) %>
+</div>
+
+<h3 id="goals">Goals:</h3>
+
+<ul>
+<li>Understand the water masses, circulation and other aspects of descriptive
+physical oceanography of the Arctic and Northern Polar Oceans &amp; marginal seas</li>
+</ul>
+
+<h3 id="to-accomplish-this-one-will">To accomplish this, one will:</h3>
+
+<ul>
+<li>Learn to extract data subsets from map plots</li>
+<li>Learn how to use advanced JOA tools for working with basin-scale data sets</li>
+</ul>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+<li>JOA Section Editor</li>
+<li>Interpolations Options dialog box</li>
+</ul>
+
+<p align="center">
+  <a href="/dpo_examples/images/ch9/map_arc.png" rel="lightbox" title="Fig 12i-01 Arctic and Northern Polar sections map">
+  <img align="middle" alt="target" src="/dpo_examples/images/ch9/map_arcs.png" />
+  <p class="caption">Fig 12i-01 Arctic and Northern Polar sections map</p>
+  </a>
+</p>
+
+<h3 id="dpo-chapter-12-sections">DPO Chapter 12 Sections:</h3>
+<div class="dpo_sections_note">DPO JOA examples are available for the following <span class="dpo_sections_highlight">highlighted</span> sections:</div>
+<table class="dpo_sections_table"> 
+	<tbody>
+		<tr class="dpo_sections_highlight"> 
+			<td>12.1</td> 
+			<td>Introduction</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.2</td> 
+			<td>The Nordic Seas</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.2.1</td> 
+			<td>Nordic Seas circulation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.2.2</td> 
+			<td>Nordic Seas water masses</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.2.3</td> 
+			<td>Vertical convection in the Nordic Seas and dense water formation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.3</td> 
+			<td>Baffin Bay and Hudson Bay</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.4</td> 
+			<td>Arctic Ocean: circulation and ice drift</td>
+		</tr>
+		<tr>
+			<td>12.4.1</td> 
+			<td>Ice drift and wind forcing</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.4.2</td> 
+			<td>Upper layer circulation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.4.3</td> 
+			<td>Intermediate and deep circulation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.5</td> 
+			<td>Arctic Ocean water masses</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.5.1</td> 
+			<td>Surface and near-surface waters</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.5.2</td> 
+			<td>Atlantic Water</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.5.3</td> 
+			<td>Deep and Bottom Water</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.6</td> 
+			<td>Arctic Ocean transports and budgets</td>
+		</tr>
+		<tr>
+			<td>12.7</td> 
+			<td>Sea ice in the Arctic</td>
+		</tr>
+		<tr>
+			<td>12.7.1</td> 
+			<td>Distribution of Arctic sea ice</td>
+		</tr>
+		<tr>
+			<td>12.7.2</td> 
+			<td>Build-up and break-up of Arctic sea ice; polynyas</td>
+		</tr>
+		<tr>
+			<td>12.7.3</td> 
+			<td>Arctic icebergs</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>12.8</td> 
+			<td>Climate variations and the Arctic</td>
+		</tr>
+	</tbody> 
+</table>
+
+{% endblock %}

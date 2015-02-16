@@ -1,0 +1,55 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Data Files{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu"><a href="dpo_joa_examples/index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="dpo_joa_examples/chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+<h1>Data Files</h1>
+
+</h1>
+
+<h2>Download here</h2>
+
+
+<p>Click on a chapter below to download a zip file containing that chapter’s data
+files. Save these files to your computer’s hard drive, then open from with in
+JOA. With JOA open, you can do this by selecting 
+<a class="glossary_prop" href="../../glossary.html#menu_bar">File → Open</a>
+from the JOA menu bar, then selecting the appropriate file.</p>
+
+{%- for key, value in data.iteritems() recursive%}
+  {%-if value is mapping %}
+    {%- if loop.depth == 1 %}
+    <h3><a href="/zipped/dpo/{{key}}/DPO_data_chapter_{{key}}.zip">Chapter {{key}} Data Files</a></h3>
+    {%- elif loop.depth > 2 %}
+    <ul>
+      <li>{{key}}  →
+    {%- endif %}
+    {{loop(value.iteritems())}}
+    {%- if loop.depth == 1 %}
+    {%- else %}
+    </li>
+    </ul>
+    {%- endif %}
+  {%- else  %}
+  {%- if loop.depth > 2 %}
+  <ul><li>{{key}}  →
+  {%- endif %}
+  {%- if value is iterable %}
+  <ul>
+    {%- for v in value %}
+    <li>{{v|dpo_data_links|safe}}<br />
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+  {%- if loop.depth > 2 %}
+    </li></ul>
+  {%- endif %}
+  {%- endif %}
+{%- endfor%}
+
+{% endblock %}

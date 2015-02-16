@@ -1,0 +1,230 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Chapter Ten{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><span>Chapter 10</span></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Ten</h1>
+
+</h1>
+
+	<h2>Pacific Ocean</h2>
+
+
+	
+	
+
+<div id="data-files-supplied">
+<%= data_files_chapter_listing('10', DpoDataFiles::DATA_FILES, true) %>
+</div>
+<h3 id="goals">Goals:</h3>
+
+<ul>
+<li>Understand the water masses, circulation and other aspects of descriptive
+physical oceanography of the Pacific Ocean &amp; its marginal seas</li>
+</ul>
+
+<h3 id="to-accomplish-this-one-will">To accomplish this, one will:</h3>
+
+<ul>
+<li>Learn to extract data subsets from map plots</li>
+<li>Learn how to use advanced JOA tools for working with basin-scale data sets</li>
+</ul>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+<li>JOA Section Editor</li>
+<li>Interpolations Options dialog box</li>
+</ul>
+
+<p align="center">
+  <a href="/dpo_examples/images/ch9/map_pac.png" rel="lightbox" title="Fig 10i-01 Pacific sections map">
+  <img align="middle" alt="target" src="/dpo_examples/images/ch9/map_pacs.png" />
+  <p class="caption">Fig 10i-01 Pacific sections map</p>
+  </a>
+</p>
+
+<h3 id="dpo-chapter-10-sections">DPO Chapter 10 Sections:</h3>
+<div class="dpo_sections_note">DPO JOA examples are available for the following <span class="dpo_sections_highlight">highlighted</span> sections:</div>
+<table class="dpo_sections_table"> 
+	<tbody> 
+		<tr class="dpo_sections_highlight">
+			<td>10.1</td> 
+			<td>Introduction and overview  </td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.2</td> 
+			<td>Wind and buoyancy forcing</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3</td> 
+			<td>North Pacific circulation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.1</td> 
+			<td>Subtropical circulation </td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.1.1</td> 
+			<td>General description</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.1.2</td> 
+			<td>The Kuroshio and Kuroshio Extension</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.1.3</td> 
+			<td>North Pacific Current and mid-latitude fronts</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.1.4</td> 
+			<td>California Current System</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.1.5</td> 
+			<td>North Equatorial Current</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.1.6</td> 
+			<td>Depth dependence of the subtropical circulation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.2</td> 
+			<td>Subpolar circulation </td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.2.1</td> 
+			<td>General description  </td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.2.2</td> 
+			<td>Subpolar western boundary currents</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.3.2.3</td> 
+			<td>Circulation in the Gulf of Alaska</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.4</td> 
+			<td>South Pacific circulation </td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.4.1</td> 
+			<td>Subtropical circulation</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.4.1.1</td> 
+			<td>East Australian Current</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.4.1.2</td> 
+			<td>South Pacific Current and Subtropical Front</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.4.1.3</td> 
+			<td>Northward flow of the subtropical gyre and the Peru-Chile Current System</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.4.1.4</td> 
+			<td>South Equatorial Current</td>
+		</tr>
+		<tr>
+			<td>10.5</td> 
+			<td>Pacific Ocean mesoscale eddy variability</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.6</td> 
+			<td>Depth dependence of the Pacific Ocean circulation and meridional overturn</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.7</td> 
+			<td>Tropical Pacific circulation and water properties </td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.7.1</td> 
+			<td>Introduction</td>
+		</tr>
+		<tr>
+			<td>10.7.2</td> 
+			<td>Tropical wind and buoyancy forcing</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.7.3</td> 
+			<td>Equatorial Pacific current structure </td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.7.3.1</td> 
+			<td>Zonal currents and associated mid-ocean meridional flows</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.7.3.2</td> 
+			<td>Zonal structure of the equatorial currents</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.7.3.3</td> 
+			<td>Equatorial upwelling and biological productivity</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.7.4</td> 
+			<td>Low latitude western boundary currents</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.7.5</td> 
+			<td>Equatorial property distributions</td>
+		</tr>
+		<tr>
+			<td>10.7.6</td> 
+			<td>Intraseasonal and seasonal variability</td>
+		</tr>
+		<tr>
+			<td>10.8</td> 
+			<td>El Niño/ La Niña and the Southern Oscillation (ENSO)</td>
+		</tr>
+		<tr>
+			<td>10.8.1</td> 
+			<td>El Niño/La Niña description</td>
+		</tr>
+		<tr>
+			<td>10.8.2</td> 
+			<td>ENSO mechanisms</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.9</td> 
+			<td>Pacific Ocean water masses</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.9.1</td> 
+			<td>Pacific Ocean upper waters</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.9.2</td> 
+			<td>Intermediate waters</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.9.2.1</td> 
+			<td>North Pacific Intermediate Water</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.9.1.2</td> 
+			<td>Antarctic Intermediate Water</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.9.3</td> 
+			<td>Deep waters</td>
+		</tr>
+		<tr class="dpo_sections_highlight">
+			<td>10.9.4</td> 
+			<td>Bottom water (Lower Circumpolar Deep Water)</td>
+		</tr>
+		<tr>
+			<td>10.10</td> 
+			<td>Decadal climate variability and climate change</td>
+		</tr>
+	</tbody> 
+</table>
+{% endblock %}

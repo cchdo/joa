@@ -1,0 +1,203 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 9-14B{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapters 9-14</a><ul><li class="webgen-menu-level3"><a href="intro_a.html">Example 9-14A</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 9-14B</span></li><li class="webgen-menu-level3"><a href="intro_c.html">Example 9-14C</a></li><li class="webgen-menu-level3"><a href="intro_d.html">Example 9-14D</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapters Nine through Fourteen</h1>
+
+</h1>
+
+	<h2>Chapters Nine through Fourteen Intro</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapters Nine through Fourteen</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="intro_a.html">Example 9-14A</a></h1><p><a href="intro_a.html">Before we get started</a></p></li><li><h1><span>Example 9-14B</span></h1><p><span>Introduction to JOA Maps</span></p></li><li><h1><a href="intro_c.html">Example 9-14C</a></h1><p><a href="intro_c.html">Extracting Data Subsets from Map Plots &amp; Advanced JOA Tools for Working with Basin-Scale Data Sets</a></p></li><li><h1><a href="intro_d.html">Example 9-14D</a></h1><p><a href="intro_d.html">Using Data Subsets &amp; Advanced JOA Tools</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 9-14B: Introduction to JOA Maps</h3>
+	
+
+<div class="indent">
+    
+<p>Your work with data for each ocean region will likely involve working with JOA maps.  It is not difficult to edit the region covered by a JOA map to obtain a map covering only the region of immediate interest.</p>  
+<p>For example, when you set up a map plot in JOA with the <b>Configure Map Plot</b> dialog box, <u><b>after</b> you choose a Projection</u> you can choose a preconfigured Preset Region from the &#39;Select Map Region&#39; list:</p>
+<p align="center">
+  <a href="/dpo_examples/images/ch9/fig9b-01.png" rel="lightbox" title="Fig 9b-01 Projection/Region section of the Configure Map Plot dialog box ">
+  <img align="middle" alt="target" src="/dpo_examples/images/ch9/fig9b-01s.png" />
+  <p class="caption">Fig 9b-01 Projection/Region section of the Configure Map Plot dialog box</p>
+  </a>
+</p>  
+<p>It is also easy to set up a new map or revise an existing one via the &#39;Custom Region&#39; choices.</p>
+    
+<br />
+<div class="note_header">NOTE:</div>
+<div class="note">
+  <p>Remember that JOA uses negative latitudes for &ldquo;south&rdquo; latitudes and negative longitudes for &ldquo;west&rdquo; longitudes.</p>
+</div>
+<br />
+
+<p>We supply below some suggestions for Custom Region entries for whole-basin map plots.  The maps will include principal marginal seas as well as the main basins.  The table lists the source, region, and names of the data files, along with suggested <b>B</b>ottom, <b>T</b>op, <b>L</b>eft, and <b>R</b>ight JOA &#39;custom region&#39; map boundaries for each.</p>  
+    
+<table id="box-table-a">
+  <thead>
+      <tr>
+        <th>Source</th>
+        <th>WOA09 <br /> <span class="smaller">(undecimated)</span></th>
+        <th>WOA09 <br /> <span class="smaller">(lightly decimated)</span></th>
+        <th>WOA98 <br /> <span class="smaller">(heavily decimated)</span></th>
+        <th colspan="4">Suggested JOA custom region map boundaries</th>
+      </tr>
+      <tr>
+        <th>Ocean Region</th>
+        <th />
+        <th />
+      <th />
+        <th class="boundary">B</th>
+        <th class="boundary">T</th>
+        <th class="boundary">L</th>
+        <th class="boundary">R</th>
+      </tr>  
+    </thead>  
+    <tbody>
+    <tr>  
+      <td>North Atlantic</td>
+      <td>WOA09_N_Atlantic.joa</td>
+      <td>WOA09_N_Atlantic_decimated.joa</td>
+      <td />
+      <td class="boundary">0</td>
+      <td class="boundary">80</td>
+      <td class="boundary">-100</td>
+      <td class="boundary">30</td>
+      </tr>
+      <tr>
+      <td>South Atlantic</td>
+      <td>WOA09_S_Atlantic.joa</td>
+      <td>WOA09_S_Atlantic_decimated.joa</td>
+      <td />
+      <td class="boundary">-80</td>
+      <td class="boundary">0</td>
+      <td class="boundary">-80</td>
+      <td class="boundary">30</td>
+      </tr>
+      <tr>
+      <td>Atlantic</td>
+      <td>WOA09_Atlantic.joa</td>
+      <td>WOA09_Atlantic_decimated.joa</td>
+      <td>WOA98_heavy_decimated_Atlantic.poa</td>
+      <td class="boundary">-80</td>
+      <td class="boundary">80</td>
+      <td class="boundary">-100</td>
+      <td class="boundary">30</td>
+      </tr>
+      <tr>
+
+      <td>Indian</td>
+      <td>WOA09_Indian.joa</td>
+      <td>WOA09_Indian_decimated.joa</td>
+      <td>WOA98_heavy_decimated_Indian.poa</td>
+      <td class="boundary">-75</td>
+      <td class="boundary">30</td>
+      <td class="boundary">15</td>
+      <td class="boundary">130</td>
+      </tr>
+      <tr>
+      <td>North Pacific</td>
+      <td>WOA09_N_Pacific.joa</td>
+      <td>WOA09_N_Pacific_decimated.joa</td>
+      <td />
+      <td class="boundary">0</td>
+      <td class="boundary">70</td>
+      <td class="boundary">100</td>
+      <td class="boundary">-75</td>
+      </tr>
+      <tr>
+      <td>South Pacific</td>
+      <td>WOA09_S_Pacific.joa</td>
+      <td>WOA09_S_Pacific_decimated.joa</td>
+      <td />
+      <td class="boundary">-80</td>
+      <td class="boundary">0</td>
+      <td class="boundary">120</td>
+      <td class="boundary">-60</td>
+      </tr>
+      <tr>
+    <td>Pacific</td>
+      <td>WOA09_Pacific.joa</td>
+      <td>WOA09_Pacific_decimated.joa</td>
+      <td>WOA98_heavy_decimated_Pacific.poa</td>
+      <td class="boundary">-80</td>
+      <td class="boundary">70</td>
+      <td class="boundary">100</td>
+      <td class="boundary">-60</td>
+      </tr>
+      <tr>
+      <td>Arctic-1</td>
+      <td>WOA09_Arctic_1.joa</td>
+      <td>WOA09_Arctic_1_decimated.joa</td>
+      <td>WOA98_heavy_decimated_Arctic.poa</td>
+      <td class="boundary">50</td>
+      <td class="boundary">90</td>
+      <td class="boundary">-180</td>
+      <td class="boundary">180</td>
+      </tr>
+      <tr>
+      <td>Arctic-2</td>
+      <td>WOA09_Arctic_2.joa</td>
+      <td>WOA09_Arctic_2_decimated.joa</td>
+      <td />
+      <td class="boundary">65</td>
+      <td class="boundary">90</td>
+      <td class="boundary">-180</td>
+      <td class="boundary">180</td>
+      </tr>
+      <tr>
+      <td>Southern </td>
+      <td>WOA09_Southern.joa</td>
+      <td>WOA09_Southern_decimated.joa</td>
+      <td>WOA98_heavy_decimated_Southern.poa</td>
+      <td class="boundary">-90</td>
+      <td class="boundary">-30</td>
+      <td class="boundary">-180</td>
+      <td class="boundary">180</td>
+      </tr>
+      <tr>
+      <td>Antarctic</td>
+      <td>WOA09_Antarctic.joa</td>
+      <td>WOA09_Antarctic_decimated.joa</td>
+      <td />
+      <td class="boundary">-90</td>
+      <td class="boundary">-60</td>
+      <td class="boundary">-180</td>
+      <td class="boundary">180</td>
+      </tr>
+      <tr>
+      <td>World Ocean</td>
+      <td>WOA09_World_Ocean.joa</td>
+      <td>WOA09_World_Ocean_decimated.joa</td>
+      <td>WOA98_heavy_decimated_World_Ocean.poa</td>
+      <td class="boundary">-80</td>
+      <td class="boundary">80</td>
+      <td class="boundary">20</td>
+      <td class="boundary">19.9</td>
+      </tr>
+  </tbody>  
+</table>  
+    
+<br />
+<div class="note_header">NOTE:</div>
+<div class="note">
+  <p>For the Arctic and Southern region map plots, use the appropriate polar map projections, i.e. &ldquo;North Pole&rdquo; or &ldquo;South Pole&rdquo;.  &ldquo;Arctic-1&rdquo; includes waters of the Bering Sea, and &ldquo;Arctic-2&rdquo; covers the Arctic Ocean and some of the Nordic Seas.</p>
+  <p>For the World Ocean map plots, in the 2008 version of JOA one is restricted to use either the Mercator or Miller projections only</p>
+  <p>The custom region map boundaries which cover the largest areas (e.g., all-Pacific and all-Atlantic) work better with some Map Projections than others.  The &ldquo;Mollweide&rdquo; projection in particular often works well.</p>
+</div>
+<br />  
+  
+<p class="bold">Hint:</p>  
+<p>In Java OceanAtlas, you can &#39;open&#39; one data file and then &#39;add&#39; another to it, in order to make data files that combine or bridge these data sets.</p>
+
+</div>
+
+{% endblock %}

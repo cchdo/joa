@@ -1,0 +1,158 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 6C{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 6</a><ul><li class="webgen-menu-level3"><a href="6a.html">Example 6A</a></li><li class="webgen-menu-level3"><a href="6b.html">Example 6B</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 6C</span></li><li class="webgen-menu-level3"><a href="6d.html">Example 6D</a></li><li class="webgen-menu-level3"><a href="6e.html">Example 6E</a></li><li class="webgen-menu-level3"><a href="6f.html">Example 6F</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Six</h1>
+
+</h1>
+
+	<h2>Data analysis concepts and observational methods</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Six</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="6a.html">Example 6A</a></h1><p><a href="6a.html">Sections with Vertical Axes other than Pressure (or Depth)</a></p></li><li><h1><a href="6b.html">Example 6B</a></h1><p><a href="6b.html">Sections with horizontal axis other than distance</a></p></li><li><h1><span>Example 6C</span></h1><p><span>Exploiting some of JOA&#39;s Mapping Features</span></p></li><li><h1><a href="6d.html">Example 6D</a></h1><p><a href="6d.html">Maps of Properties on Density and Other Surfaces</a></p></li><li><h1><a href="6e.html">Example 6E</a></h1><p><a href="6e.html">Maps of Properties on Extrema</a></p></li><li><h1><a href="6f.html">Example 6F</a></h1><p><a href="6f.html">Plotting Map of Average of Properties Between Two Surfaces</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 6C: Exploiting some of JOA&#39;s Mapping Features</h3>
+	
+
+<p>The JOA mapping function, together with JOA&#39;s calculation and interpolation
+functions, provides a wide range of options that can be exploited to illustrate
+oceanographic features.  These options will be useful for exploring the data
+sets for each ocean we will use for DPO Chapters 9-13.</p>
+
+<p>For the next three JOA DPO Examples we will use the JOA data file <span class="fileName">WOA05_NorthAtlantic_square.joa</span>, which is an areal subset of
+the very large WOA05 1-degree World Ocean data set.  <span class="fileName">WOA05_NorthAtlantic_square.joa</span> is itself a large data file,
+but except for older computers with little RAM it should not over-burden most
+computers.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">WOA05_NorthAtlantic_square.joa</span></li>
+  <li><span class="fileName">ROSE-black_cbr.xml</span> <br />
+  Available from the <a href="http://joa.ucsd.edu/joa/">JOA Application</a> page under "Support Files". After downloading, copy to the "JOA_Support" folder included with the JOA application.</li>
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_6c_01">Exercise 6c-01: </h3></p>
+
+<ul>
+<li>Start JOA</li>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">File &rarr; Open&#133;</a> &rarr; <span class="fileName">WOA05_NorthAtlantic_square.joa</span></li>
+  
+<li><a class="glossary_prop" href="/dpo_examples/glossary.html#menu_bar">Plots</a> &rarr; <b>Map&#133;</b> </li>
+  
+<li>Set up the <b>General Settings</b> panel of the <b>Configure Map</b> dialog box as shown below: 
+    <br />
+    <div class="note_header">NOTE:</div>
+    <div class="note">
+      <p>Due to a JOA quirk which may linger in the version included with these DPO JOA Examples, even though you will be setting custom map boundary limits, it is still necessary, after selecting the Orthographic Projection, to:
+       <ul>
+        
+<li>Next click on one of the Preset Regions, in this case the &ldquo;North Atlantic&rdquo; choice under &ldquo;Select Map Region&rdquo;</li>  
+        
+<li><p>Then click on and type in the Custom Region &ldquo;T&rdquo; (top), &ldquo;B&rdquo; (bottom), &ldquo;L&rdquo; (left), and &ldquo;R&rdquo; (right) latitude and longitude limits.</p>  
+            <p>[Yes, it&#39;s a JOA bug, but one which has been elusive to repair.]</p></li>
+      </ul>
+      </p>  
+    </div>
+    <br />
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6c-01.png" rel="lightbox" title="Fig 6c-01 General Settings panel of the Configure Map Plot dialog box">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6c-01s.png" />
+        <p class="caption">Fig 6c-01 General Settings panel of the Configure Map Plot dialog box</p>
+      </a>
+    </p>  
+  </li>    
+  
+<li>In the <b>Bathymetry</b> panel (as shown below), the <span class="fileName">etopo20.nc</span> bathymetry file will give a pleasing appearance to land masses, and together with the <span class="fileName">ROSE-black_cbr.xml</span> colorbar will yield all-black land masses without providing any bathymetry shading.  (As you will see soon, there is no reason to add ocean bathymetry shading to this plot.)
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6c-02.png" rel="lightbox" title="Fig 6c-02 Bathymetry Panel of the Configure Map Plot dialog box">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6c-02s.png" />
+        <p class="caption">Fig 6c-02 Bathymetry panel of the Configure Map Plot dialog box</p>
+      </a>
+    </p>  
+  </li>
+  
+<li>When you click on <b>Plot</b>, you will get this somewhat odd-looking map plot (as shown below):
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6c-03.png" rel="lightbox" title="Fig 6c-03 Orthographic plot">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6c-03s.png" />
+        <p class="caption">Fig 6c-03 Orthographic plot</p>
+      </a>
+    </p>  
+    
+  
+    <p>If the ocean areas on your map, like the one above, have the appearance of being a single solid color, the reasons for this are: </p>
+  
+    <ul>
+      
+<li>We made the individual station markers square and size 5, </li>
+      
+<li>The data are on a 1-degree grid, and </li>
+      
+<li>We used a map projection which provides a modest allowance for the Earth's spherical shape.  </li>  
+    </ul>  
+  <p>The station symbols would spread apart at high <a class="glossary_prop" href="/dpo_examples/glossary.html#latitude">latitudes</a> with a <b>Mercator</b> or <b>Miller</b> projection, but they keep more nearly in proportion with the <b>Orthographic</b> projection.</p>
+  </li>
+  
+<p>JOA provides the capability of coloring the individual station symbols on a map plot by the values of observed or calculated parameters.  When this capability is applied to a gridded data set, such as the one here, the result is, essentially, a map plot of the characteristic used to color the station symbols.</p>
+<li>For example, to modify the plot above bring up the <b>Configure Map Plot</b> dialog box:
+  <ul>
+    <li>Double-click or control-click on the <b>Map Plot</b>, or type [ctrl/cmd]-R</li>
+    <li>Or type [ctrl/cmd]-R or <b>Edit</b> &rarr; <b>Edit: plotname</b> when the <b>Property-Property Plot</b> is the front-most window</li>
+  </ul>
+</li>
+  
+<li>From the <b>Station Colors</b> tab of the dialog box, select the <b>Iso-surface value</b> sub-tab, and set it up as shown below:
+  <ul> 
+    <li>Under <b>Parameter:</b> choose <b>SALT</b></li> 
+    <li>For <b>Surface:</b> use <span class="fileName">PRES-0-6000_srf.xml</span></li>
+    <li>Use the <span class="fileName">SALT-global_cbr.xml</span> color bar under <b>Colors:</b></li>
+  </ul>
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6c-04.png" rel="lightbox" title="Fig 6c-04 Iso-surface value sub-panel of Station Colors panel of the Configure Map Plot dialog box ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6c-04s.png" />
+      <p class="caption">Fig 6c-04 Iso-surface value sub-panel of Station Colors panel of the Configure Map Plot dialog box</p>
+      </a>
+    </p>  
+  </li>  
+  
+<li>Click <b>OK</b> to produce the map shown below:    
+    <br />
+
+    <br />
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6c-05.png" rel="lightbox" title="Fig 6c-05 Orthographic map ">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6c-05s.png" />
+      <p class="caption">Fig 6c-05 Orthographic map</p>
+      </a>
+    </p>  
+  </li>
+
+    <li>In the image below we have modified the original map - we show the 500 decibar surface instead of the original 0 decibar surface - using the procedure described in the <b>Examine</b> box below
+    
+    <p align="center">
+      <a href="/dpo_examples/images/ch6/fig6c-06.png" rel="lightbox" title="Fig 6c-06 Orthographic map 500 decibar surface">
+      <img align="middle" alt="target" src="/dpo_examples/images/ch6/fig6c-06s.png" />
+      <p class="caption">Fig 6c-06 Orthographic map 500 decibar surface</p>
+      </a>
+    </p>
+</li>  
+</ul>
+
+<div class="examine_header">Examine: Java OceanAtlas Orthographic Map</div>
+
+<div class="examine">
+  <p>This map is &ldquo;live&rdquo;, i.e. it is fully browsable.  What do we mean by that?</p>
+  <p>Try using the &ldquo;down&rdquo; arrow key on your keyboard.  With each tap on that key, the PRES surface onto which SALT is interpolated will go down the list of standard levels by one increment, and the station dots will be colored according to the value of SALT at that deeper level. </p>
+  <p>In the figure above, we have already keyed the map level down to 500 decibars, so the map shows the distribution of salinity in the WOA05 annual average data file at 500 decibars.  The gray ocean areas show where there is no value of SALT at that level, in this case because the water there is shallower than ca. 500 meters. </p>  
+  <p>You can see that with WOA05 data files, for each ocean region, you have in hand a powerful live &ldquo;electronic atlas&rdquo; for that region.</p>
+  <p>In the next three examples, we will color the individual station symbol squares based upon other observed and calculated parameters.</p>
+</div>
+
+{% endblock %}

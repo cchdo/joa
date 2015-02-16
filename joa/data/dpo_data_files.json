@@ -1,0 +1,386 @@
+{
+ "11": {
+  "WOA98_heavideci_basin_global_gridded_data:": [
+   "/data_files/woa/WOA98_heavideci_basin_global_gridded_data/WOA98_heavydeci_Indian.poa"
+  ], 
+  "WOA_decimated_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA05_decimated_Indian.joa"
+  ], 
+  "WOA_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_basin_global_gridded_data/WOA05_Indian.joa"
+  ], 
+  "Indian sections:": {
+   "I04_I03_1995:": [
+    "/data_files/best/Indian_sections/I04_I03_1995/I04_I03_1995_bottle.joa"
+   ], 
+   "I08S_I09N_2007:": [
+    "/data_files/best/Indian_sections/I08S_I09N_2007/I8S_I9N_2007_clean_bottle.joa", 
+    "/data_files/best/Indian_sections/I08S_I09N_2007/I8S_I9N_2007_heavydeci_ctd.joa"
+   ], 
+   "I06S_2008:": [
+    "/data_files/best/Indian_sections/I06S_2008/I06_2008_clean_CTD.joa", 
+    "/data_files/best/Indian_sections/I06S_2008/I06S_2008_clean_bottle.joa"
+   ], 
+   "I05_1987:": [
+    "/data_files/best/Indian_sections/I05_1987/I05_1987_bottle.joa"
+   ], 
+   "I09S_1995:": [
+    "/data_files/best/Indian_sections/I09S_1995/I09S_1995_bottle.joa"
+   ], 
+   "I05_2009:": [
+    "/data_files/best/Indian_sections/I05_2009/I05_2009_clean_bottle.joa", 
+    "/data_files/best/Indian_sections/I05_2009/I05_2009_clean_CTD.joa"
+   ], 
+   "I02_1995_1996:": [
+    "/data_files/best/Indian_sections/I02_1995_1996/I02_1995_1996_bottle.joa"
+   ], 
+   "I04_I03_2003:": [
+    "/data_files/best/Indian_sections/I04_I03_2003/I04_I03_2003_clean_bottle.joa"
+   ], 
+   "WOA_copies_of_Indian_sections:": [
+    "/data_files/best/Indian_sections/WOA_copies_of_Indian_sections/I8S_I9N_WOA05.joa"
+   ], 
+   "I01_1995:": [
+    "/data_files/best/Indian_sections/I01_1995/I01_1995_clean_bottle.joa"
+   ], 
+   "I04S_I07N_1995:": [
+    "/data_files/best/Indian_sections/I04S_I07N_1995/I04S_I07N_1995_bottle.joa"
+   ]
+  }
+ }, 
+ "10": {
+  "Pacific_sections:": {
+   "P16_1991_1992:": [
+    "/data_files/best/Pacific_sections/P16_1991_1992/P16_1991_1992_heavydeci_CTD.joa"
+   ], 
+   "P14_1992_1996:": [
+    "/data_files/best/Pacific_sections/P14_1992_1996/P14_1992_1996_clean_bottle.joa", 
+    "/data_files/best/Pacific_sections/P14_1992_1996/P14_1992_1996_clean_CTD.joa"
+   ], 
+   "P02_2004:": [
+    "/data_files/best/Pacific_sections/P02_2004/P02_2004_clean_bottle.joa"
+   ], 
+   "P17_1991_1992_1993:": [
+    "/data_files/best/Pacific_sections/P17_1991_1992_1993/P17_1991_92_93_bottle.joa"
+   ], 
+   "P10_2005:": [
+    "/data_files/best/Pacific_sections/P10_2005/P10_2005_clean_bottle_incomplete.joa", 
+    "/data_files/best/Pacific_sections/P10_2005/P10_2005_clean_CTD.joa"
+   ], 
+   "P16_2005_2006:": [
+    "/data_files/best/Pacific_sections/P16_2005_2006/P16_2005_2006_bottle_clean.joa", 
+    "/data_files/best/Pacific_sections/P16_2005_2006/P16_2005_2007_heavydeci_CTD.joa", 
+    "/data_files/best/Pacific_sections/P16_2005_2006/P16S_2005_2006_CTD.joa"
+   ], 
+   "P06_2003:": [
+    "/data_files/best/Pacific_sections/P06_2003/P06_2003_clean_bottle.joa"
+   ], 
+   "P18_2007:": [
+    "/data_files/best/Pacific_sections/P18_2007/P18_2007_clean_bottle.joa", 
+    "/data_files/best/Pacific_sections/P18_2007/P18_2007_clean_CTD.joa"
+   ], 
+   "P21_1994:": [
+    "/data_files/best/Pacific_sections/P21_1994/P21_1994_bottle.joa"
+   ], 
+   "P19_1993:": [
+    "/data_files/best/Pacific_sections/P19_1993/P19_1993_bottle.joa"
+   ], 
+   "P03_1985:": [
+    "/data_files/best/Pacific_sections/P03_1985/P03_1985_bottle.joa"
+   ], 
+   "P17N_2001:": [
+    "/data_files/best/Pacific_sections/P17N_2001/P17N_2001_clean_bottle.joa"
+   ], 
+   "P11_1993:": [
+    "/data_files/best/Pacific_sections/P11_1993/P11_1993_bottle.joa"
+   ], 
+   "P01_1985_1993:": [
+    "/data_files/best/Pacific_sections/P01_1985_1993/P01_1985_1993_clean_CTD.joa", 
+    "/data_files/best/Pacific_sections/P01_1985_1993/P01W_1985_1993_clean_bottle.joa"
+   ], 
+   "P04_1989:": [
+    "/data_files/best/Pacific_sections/P04_1989/P04_1989_bottle.joa"
+   ], 
+   "P06_1992:": [
+    "/data_files/best/Pacific_sections/P06_1992/P06_1992_bottle.joa"
+   ], 
+   "WOA_copies_of_Pacific_sections:": [
+    "/data_files/best/Pacific_sections/WOA_copies_of_Pacific_sections/P02_WOA05.joa", 
+    "/data_files/best/Pacific_sections/WOA_copies_of_Pacific_sections/P16_WOA09.joa"
+   ]
+  }, 
+  "WOA98_heavideci_basin_global_gridded_data:": [
+   "/data_files/woa/WOA98_heavideci_basin_global_gridded_data/WOA98_heavydeci_Pacific.poa"
+  ], 
+  "WOA_decimated_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA05_decimated_North_Pacific.joa", 
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA05_decimated_Pacific.joa", 
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA05_decimated_South_Pacific.joa"
+  ], 
+  "WOA_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_basin_global_gridded_data/WOA05_North_Pacific.joa", 
+   "/data_files/woa/WOA_basin_global_gridded_data/WOA05_South_Pacific.joa"
+  ]
+ }, 
+ "13": {
+  "Southern_sections:": [
+   "/data_files/best/Southern_sections/READ ME RE SOUTHERN SECTIONS.txt"
+  ], 
+  "WOA98_heavideci_basin_global_gridded_data:": [
+   "/data_files/woa/WOA98_heavideci_basin_global_gridded_data/WOA98_heavydeci_Antarctic.joa"
+  ], 
+  "WOA_decimated_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA05_decimated_Southern.joa"
+  ], 
+  "WOA_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_basin_global_gridded_data/WOA05_Southern.joa"
+  ]
+ }, 
+ "12": {
+  "Arctic sections:": {
+   "Trans_Arctic:": [
+    "/data_files/best/Arctic_sections/Trans_Arctic/TransArcticNordic_clean_bottle.joa", 
+    "/data_files/best/Arctic_sections/Trans_Arctic/TransArcticNordic_clean_CTD.joa"
+   ], 
+   "Nordic_70N_2002:": [
+    "/data_files/best/Arctic_sections/Nordic_70N_2002/Nordic2002_70N_clean_bottle.joa"
+   ], 
+   "Nordic_75N_2002:": [
+    "/data_files/best/Arctic_sections/Nordic_75N_2002/Nordic2002_75N_clean_bottle.joa"
+   ]
+  }, 
+  "WOA98_heavideci_basin_global_gridded_data:": [
+   "/data_files/woa/WOA98_heavideci_basin_global_gridded_data/WOA98_heavydeci_Arctic.joa"
+  ], 
+  "WOA_decimated_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA05_decimated_Arctic_1.joa"
+  ], 
+  "WOA_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_basin_global_gridded_data/WOA05_Arctic_1.joa"
+  ]
+ }, 
+ "14": {
+  "WOA09_global_grid_of_sections:": {
+   "WOA09_zonal_sections_every_5_degrees:": [
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-0.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-5.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-10.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-15.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-20.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-25.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-30.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-35.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-40.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-45.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-50.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-55.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-60.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-65.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-70.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-75.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_-80.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_5.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_10.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_15.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_20.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_25.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_30.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_35.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_40.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_45.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_50.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_55.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_60.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_65.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_70.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_75.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_80.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_zonal_sections_every_5_degrees/WOA09_lat_85.5.jos"
+   ], 
+   "WOA09_meridional_sections_every_10_degrees:": [
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-10.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-20.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-30.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-40.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-50.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-60.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-70.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-80.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-90.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-100.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-110.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-120.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-130.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-140.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-150.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-160.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_-170.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_10.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_20.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_30.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_40.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_50.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_60.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_70.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_80.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_90.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_100.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_110.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_120.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_130.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_140.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_150.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_160.5.jos", 
+    "/data_files/woa/woa09/WOA09_global_grid_of_sections/WOA09_meridional_sections_every_10_degrees/WOA09_lon_170.5.jos"
+   ]
+  }, 
+  "Global_sections:": [
+   "/data_files/best/Global_sections/Grand_Tour_2_Documentation.pdf", 
+   "/data_files/best/Global_sections/Ocean_Grand_Tour_2_bottle.joa", 
+   "/data_files/best/Global_sections/Ocean_Grand_Tour_2_CTD.joa", 
+   "/data_files/best/Global_sections/WBUC_NADW_section_bottle.joa"
+  ], 
+  "WOA98_heavideci_basin_global_gridded_data:": [
+   "/data_files/woa/WOA98_heavideci_basin_global_gridded_data/WOA98_heavydeci_Global.joa"
+  ], 
+  "WOA_decimated_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA09_decimated_Global.jos"
+  ], 
+  "WOA_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_basin_global_gridded_data/WOA05_Global.joa"
+  ]
+ }, 
+ "S6": [
+  "/data_files/best/A16_2003_2005_clean_bottle.joa", 
+  "/data_files/best/A16_2003_2005_decimated_clean_CTD.joa", 
+  "/data_files/best/A16_2003_2005_undecimated_CTD.joa", 
+  "/data_files/best/A16S_2005_sta085_bottle.joa", 
+  "/data_files/best/A16S_2005_sta085_ctd.joa", 
+  "/data_files/woa/woa05/WOA05_to_match_A16S_2005_sta085.joa", 
+  "/data_files/woa/woa05/WOA05_A16.joa",
+  "/data_files/best/A16_undecimated_CTD_segments/A16S_2005_undecimated__clean_CTD.joa",
+  "/data_files/best/A16_undecimated_CTD_segments/A16N_2003_undecimated__clean_CTD.joa"
+ ], 
+ "3": [
+  "/data_files/best/A16S_2005_sta085_bottle.joa (This data file contains the <a class=\"glossary\" href=\"/dpo_examples/glossary.html#bottle_data\">bottle data</a> from station 085 of the 2005 &ldquo;A16S&rdquo; cruise, along with the <a class=\"glossary\" href=\"/dpo_examples/glossary.html#ctd\">CTD data</a> acquired at the depths those bottles were closed.)"
+ ], 
+ "2": [
+  "/data_files/best/SIO.joa", 
+  "/data_files/best/mycity.jos"
+ ], 
+ "4": [
+  "/data_files/woa/woa05/WOA05_surface.jos", 
+  "/data_files/woa/woa05/WOA05_A16.joa (Antarctic to Iceland)", 
+  "/data_files/woa/woa05/WOA05_I8S_I9N.joa (Antarctica to Bangladesh)", 
+  "/data_files/woa/woa09/WOA09_P16.joa (Antarctic to Kodiak)", 
+  "/data_files/best/A16_2003_2005_clean_cfc.joa (Antarctic to Iceland section, edited for CFC data)"
+ ], 
+ "7": [
+  "/data_files/woa/woa09/WOA09_decimated_Pacific.joa", 
+  "/data_files/woa/woa98/WOA98_heavydeci_Pacific.poa", 
+  "/data_files/woa/woa05/WOA05_decimated_Arctic.joa", 
+  "/data_files/woa/woa05/WOA05_decimated_Atlantic.joa", 
+  "/data_files/woa/woa05/WOA05_decimated_Indian.joa", 
+  "/data_files/woa/woa05/WOA05_decimated_Southern.joa", 
+  "/data_files/woa/woa98/WOA98_heavydeci_Atlantic.poa", 
+  "/data_files/woa/woa98/WOA98_heavydeci_Indian.poa"
+ ], 
+ "6": [
+  "/data_files/best/HOT_bottle_nutrient_data.joa", 
+  "/data_files/best/P16_2005_2006_clean_bottle.joa", 
+  "/data_files/woa/WOA_basin_global_gridded_data/WOA05_NorthAtlantic_square.joa", 
+  "/data_files/woa/woa09/WOA09_P16.joa"
+ ], 
+ "9": {
+  "Atlantic sections:": {
+   "A22_1997:": [
+    "/data_files/best/Atlantic_sections/A22_1997/A22_1997_bottle.joa"
+   ], 
+   "A20_2003:": [
+    "/data_files/best/Atlantic_sections/A20_2003/A20_2003_clean_bottle.joa"
+   ], 
+   "A21_1990:": [
+    "/data_files/best/Atlantic_sections/A21_1990/A21_1990_clean_bottle.joa", 
+    "/data_files/best/Atlantic_sections/A21_1990/A21_1990_clean_hy1.csv", 
+    "/data_files/best/Atlantic_sections/A21_1990/A21_1990_decimated_CTD.joa"
+   ], 
+   "A12_1992:": [
+    "/data_files/best/Atlantic_sections/A12_1992/A12_1992_clean_bottle_hy1.csv", 
+    "/data_files/best/Atlantic_sections/A12_1992/A12_1992_clean_bottle.joa", 
+    "/data_files/best/Atlantic_sections/A12_1992/A12_1992_clean_CTD.joa"
+   ], 
+   "Atlantic_35W_1983:": [
+    "/data_files/best/Atlantic_sections/Atlantic_35W_1983/Atlantic_35°W_bottle.joa"
+   ], 
+   "A13.5_AJAX_1983:": [
+    "/data_files/best/Atlantic_sections/A13.5_AJAX_1983/A13.5_AJAX_1983_bottle.poa"
+   ], 
+   "A10_1992:": [
+    "/data_files/best/Atlantic_sections/A10_1992/A10_1992_bottle.joa"
+   ], 
+   "A01_1991:": [
+    "/data_files/best/Atlantic_sections/A01_1991/A01_1991_bottle.poa"
+   ], 
+   "A05_1992:": [
+    "/data_files/best/Atlantic_sections/A05_1992/A05_1992_clean_bottle.joa"
+   ], 
+   "A10_2003:": [
+    "/data_files/best/Atlantic_sections/A10_2003/A10_2003_clean_bottle.joa"
+   ], 
+   "Atlantic_48N_nearA02_1982:": [
+    "/data_files/best/Atlantic_sections/Atlantic_48N_nearA02_1982/Atlantic_48°N_1982_bottle.joa"
+   ], 
+   "A08_1983:": [
+    "/data_files/best/Atlantic_sections/A08_1983/A08_1983_bottle.joa"
+   ], 
+   "WOA_copies_of_Atlantic_sections:": [
+    "/data_files/best/Atlantic_sections/WOA_copies_of_Atlantic_sections/A01_WOA05_clean.joa", 
+    "/data_files/best/Atlantic_sections/WOA_copies_of_Atlantic_sections/A05_WOA05_clean.joa", 
+    "/data_files/best/Atlantic_sections/WOA_copies_of_Atlantic_sections/A12_WOA05_clean.joa", 
+    "/data_files/best/Atlantic_sections/WOA_copies_of_Atlantic_sections/A16_WOA05.joa", 
+    "/data_files/best/Atlantic_sections/WOA_copies_of_Atlantic_sections/A20_WOA05_clean.joa", 
+    "/data_files/best/Atlantic_sections/WOA_copies_of_Atlantic_sections/A21_WOA05_clean.joa"
+   ], 
+   "A16_2003_2005:": [
+    "/data_files/best/Atlantic_sections/A16_2003_2005/A16_2003_2005_clean_bottle.joa", 
+    "/data_files/best/Atlantic_sections/A16_2003_2005/A16_2003_2005_decimated_CTD.joa"
+   ], 
+   "A06_1989:": [
+    "/data_files/best/Atlantic_sections/A06_1989/A06_1989_bottle.joa"
+   ], 
+   "A08_1994:": [
+    "/data_files/best/Atlantic_sections/A08_1994/A08_1994_bottle.joa"
+   ], 
+   "A03_1993:": [
+    "/data_files/best/Atlantic_sections/A03_1993/A03_1993_bottle.joa"
+   ], 
+   "A22_2003:": [
+    "/data_files/best/Atlantic_sections/A22_2003/A22_2003_clean_bottle.joa"
+   ], 
+   "A20_1997:": [
+    "/data_files/best/Atlantic_sections/A20_1997/A20_1997_bottle.joa"
+   ], 
+   "A16_1988_1989:": [
+    "/data_files/best/Atlantic_sections/A16_1988_1989/A16_1988_1989_bottle.joa"
+   ], 
+   "A01W_1995:": [
+    "/data_files/best/Atlantic_sections/A01W_1995/A01W_1995_clean_bottle.joa"
+   ], 
+   "A05_1998:": [
+    "/data_files/best/Atlantic_sections/A05_1998/A05_1998_clean_bottle.joa"
+   ]
+  }, 
+  "WOA98_heavideci_basin_global_gridded_data:": [
+   "/data_files/woa/WOA98_heavideci_basin_global_gridded_data/WOA98_heavydeci_Atlantic.poa"
+  ], 
+  "WOA_decimated_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA05_decimated_Atlantic.joa", 
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA05_decimated_North_Atlantic.joa", 
+   "/data_files/woa/WOA_decimated_basin_global_gridded_data/WOA05_decimated_South_Atlantic.joa"
+  ], 
+  "WOA_basin_global_gridded_data:": [
+   "/data_files/woa/WOA_basin_global_gridded_data/WOA05_Atlantic.joa", 
+   "/data_files/woa/WOA_basin_global_gridded_data/WOA05_NorthAtlantic_square.joa"
+  ]
+ }
+}

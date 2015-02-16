@@ -1,0 +1,249 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Chapter Seven{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_2/index.html">Chapter 2</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><span>Chapter 7</span><ul><li class="webgen-menu-level3"><a href="7a.html">Example 7A</a></li><li class="webgen-menu-level3"><a href="7b.html">Example 7B</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Seven</h1>
+
+</h1>
+
+	<h2>Dynamical processes for descriptive ocean circulation</h2>
+
+
+	<ul id="examples"><li><h1><span>Chapter Seven</span></h1><p><span>Introduction</span></p></li><li><h1><a href="7a.html">Example 7A</a></h1><p><a href="7a.html">Before we get started</a></p></li><li><h1><a href="7b.html">Example 7B</a></h1><p><a href="7b.html">Dynamic Topography Maps</a></p></li></ul><div class="clear"></div>
+	
+
+<div id="data-files-supplied">
+<%= data_files_chapter_listing('7', DpoDataFiles::DATA_FILES, true) %>
+</div>
+
+<h3 id="goals">Goals:</h3>
+
+<ul>
+  
+<li>Map the dynamic topography of ocean regions</li>
+</ul>
+
+<h3 id="to-accomplish-this-one-will">To accomplish this, one will:</h3>
+
+<ul>
+  
+<li>Open a WOA09 data file</li>
+  
+<li>Configure map plots to display topography</li>
+  
+<li>Customize plots</li>
+</ul>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+  
+<li>JOA built in parameter calculator</li>
+</ul>
+
+<h3 id="dpo-chapter-7-sections">DPO Chapter 7 Sections:</h3>
+<div class="dpo_sections_note">DPO JOA examples are available for the following <span class="dpo_sections_highlight">highlighted</span> sections:</div>
+<table class="dpo_sections_table"> 
+  <tbody> 
+	<tr> 
+	  <td>7.1</td> 
+	  <td>Introduction: mechanisms</td>
+	</tr>
+	<tr>
+	  <td>7.2</td> 
+	  <td>Momentum balance</td>
+	</tr>
+	<tr>
+		<td>7.2.1</td> 
+	  <td>Acceleration and advection</td>
+	</tr>
+	<tr>
+		<td>7.2.2</td> 
+	  <td>Pressure gradient force and gravitational force</td>
+	</tr>
+	<tr>
+		<td>7.2.3</td> 
+	  <td>Rotation: centrifugal and Coriolis forces</td>
+	</tr>
+	<tr>
+		<td>7.2.4</td> 
+	  <td>Viscous force or dissipation</td>
+	</tr>
+	<tr>
+		<td>7.2.4.1</td> 
+	  <td>Molecular viscosity</td>
+	</tr>
+	<tr>
+		<td>7.2.4.2</td> 
+	  <td>Eddy viscosity</td>
+	</tr>
+	<tr>
+		<td>7.2.5</td> 
+	  <td>Mathematical expression of momentum balance</td>
+	</tr>
+	<tr>
+		<td>7.3</td> 
+	  <td>Temperature, salinity and density evolution</td>
+	</tr>
+	<tr>
+		<td>7.3.1</td> 
+	  <td>Temperature, salinity and density equations</td>
+	</tr>
+	<tr>
+		<td>7.3.2</td> 
+	  <td>Molecular and eddy diffusivity</td>
+	</tr>
+	<tr>
+		<td>7.4</td> 
+	  <td>Mixing layers</td>
+	</tr>
+	<tr>
+		<td>7.4.1</td> 
+	  <td>Surface mixed layer</td>
+	</tr>
+	<tr>
+		<td>7.4.2</td> 
+	  <td>Bottom mixed layers</td>
+	</tr>
+	<tr>
+		<td>7.4.3</td> 
+	  <td>Internal mixing layers</td>
+	</tr>
+	<tr>
+		<td>7.5</td> 
+	  <td>Response to wind forcing</td>
+	</tr>
+	<tr>
+		<td>7.5.1</td> 
+	  <td>Inertial currents</td>
+	</tr>
+	<tr>
+		<td>7.5.2</td> 
+	  <td>Langmuir circulation</td>
+	</tr>
+	<tr>
+		<td>7.5.3</td> 
+	  <td>Ekman layers</td>
+	</tr>
+	<tr>
+		<td>7.5.4</td> 
+	  <td>Ekman transport convergence and wind stress curl</td>
+	</tr>
+	<tr>
+		<td>7.5.5</td> 
+	  <td>Observations of Ekman response and wind forcing</td>
+	</tr>
+	<tr>
+		<td>7.6</td> 
+	  <td>Geostrophic balance </td>
+	</tr>
+	<tr>
+		<td>7.6.1</td> 
+	  <td>Pressure gradient force and Coriolis force balance</td>
+	</tr>
+	<tr>
+		<td>7.6.2</td> 
+	  <td>Geopotential and dynamic height anomalies and reference level velocities</td>
+	</tr>
+	<tr>
+		<td>7.6.3</td> 
+	  <td>Dynamic topography and sea surface height maps</td>
+	</tr>
+	<tr>
+		<td>7.6.4</td> 
+	  <td>A two-layer ocean</td>
+	</tr>
+	<tr>
+		<td>7.7</td> 
+	  <td>Vorticity, potential vorticity, Rossby and Kelvin waves, and instabilities</td>
+	</tr>
+	<tr>
+		<td>7.7.1</td> 
+	  <td>Vorticity</td>
+	</tr>
+	<tr>
+		<td>7.7.2</td> 
+	  <td>Potential vorticity</td>
+	</tr>
+	<tr>
+		<td>7.7.3</td> 
+	  <td>Rossby waves</td>
+	</tr>
+	<tr>
+		<td>7.7.4</td> 
+	  <td>Rossby deformation radius and Rossby wave dispersion relation</td>
+	</tr>
+	<tr>
+		<td>7.7.5</td> 
+	  <td>Instability of geostrophic ocean currents</td>
+	</tr>
+	<tr>
+		<td>7.7.6</td> 
+	  <td>Kelvin waves</td>
+	</tr>
+	<tr>
+		<td>7.8</td> 
+	  <td>Wind-driven circulation: Sverdrup balance and western boundary currents</td>
+	</tr>
+	<tr>
+		<td>7.8.1</td> 
+	  <td>Sverdrup balance</td>
+	</tr>
+	<tr>
+		<td>7.8.2</td> 
+	  <td>Stommel’s solution: westward intensification and western boundary currents</td>
+	</tr>
+	<tr>
+		<td>7.8.3</td> 
+	  <td>Munk’s solution: western boundary currents</td>
+	</tr>
+	<tr>
+		<td>7.8.4</td> 
+	  <td>Fofonoff's solution: large-scale inertial currents</td>
+	</tr>
+	<tr>
+		<td>7.8.5</td> 
+	  <td>Wind-driven circulation in a stratified ocean</td>
+	</tr>
+	<tr>
+		<td>7.9</td> 
+	  <td>Wind-driven circulation: eastern boundary currents and equatorial circulation  </td>
+	</tr>
+	<tr>
+		<td>7.9.1</td> 
+	  <td>Coastal upwelling and eastern boundary currents </td>
+	</tr>
+	<tr>
+		<td>7.9.2</td> 
+	  <td>Near-surface equatorial currents and Bjerknes feedback</td>
+	</tr>
+	<tr>
+		<td>7.10</td> 
+	  <td>Buoyancy (thermohaline) forcing and abyssal circulation</td>
+	</tr>
+	<tr>
+		<td>7.10.1</td> 
+	  <td>Buoyancy loss processes (diapycnal downwelling)</td>
+	</tr>
+	<tr>
+		<td>7.10.2</td> 
+	  <td>Diapycnal upwelling (buoyancy gain)</td>
+	</tr>
+	<tr>
+		<td>7.10.3</td> 
+	  <td>Stommel and Arons' solution: abyssal circulation and Deep Western Boundary Currents </td>
+	</tr>
+	<tr>
+		<td>7.10.4</td> 
+	  <td>Thermohaline oscillators: Stommel's solution</td>
+	</tr>
+  </tbody> 
+</table>
+
+{% endblock %}

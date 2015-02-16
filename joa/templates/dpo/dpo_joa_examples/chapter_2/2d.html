@@ -1,0 +1,144 @@
+{% extends "layout_dpo.html" %}
+{% block title %}Example 2D{% endblock %}
+{% block toc %}
+<ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">DPO JOA Examples</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../background/index.html">Background</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_1/index.html">Chapter 1</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S1/index.html">Chapter S1</a></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html">Chapter 2</a><ul><li class="webgen-menu-level3"><a href="2a.html">Example 2A</a></li><li class="webgen-menu-level3"><a href="2b.html">Example 2B</a></li><li class="webgen-menu-level3"><a href="2c.html">Example 2C</a></li><li class="webgen-menu-level3 webgen-menu-item-selected"><span>Example 2D</span></li><li class="webgen-menu-level3"><a href="2e.html">Example 2E</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_3/index.html">Chapter 3</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_4/index.html">Chapter 4</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_5/index.html">Chapter 5</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_6/index.html">Chapter 6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S6/index.html">Chapter S6</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_7/index.html">Chapter 7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S7/index.html">Chapter S7</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_8/index.html">Chapter 8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S8/index.html">Chapter S8</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9/index.html">Chapter 9</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_9-14/index.html">Chapters 9-14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_10/index.html">Chapter 10</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_11/index.html">Chapter 11</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_12/index.html">Chapter 12</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_13/index.html">Chapter 13</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_14/index.html">Chapter 14</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="../chapter_S15/index.html">Chapter S15</a></li></ul></li></ul>
+{% endblock %}
+{% block body %}
+
+
+<a name="top"></a>
+
+	<h1>Chapter Two</h1>
+
+</h1>
+
+	<h2>Ocean dimensions, shapes and bottom materials</h2>
+
+
+	<ul id="examples"><li><h1><a href="index.html">Chapter Two</a></h1><p><a href="index.html">Introduction</a></p></li><li><h1><a href="2a.html">Example 2A</a></h1><p><a href="2a.html">Dimensions</a></p></li><li><h1><a href="2b.html">Example 2B</a></h1><p><a href="2b.html">Sea-floor Dimensions</a></p></li><li><h1><a href="2c.html">Example 2C</a></h1><p><a href="2c.html">Bathymetry</a></p></li><li><h1><span>Example 2D</span></h1><p><span>DPO Extra Topic&#59; Map Projections</span></p></li><li><h1><a href="2e.html">Example 2E</a></h1><p><a href="2e.html">DPO Extra Topic&#59; Making a .joa file</a></p></li></ul><div class="clear"></div>
+	
+		<h3 class="example">Example 2D: DPO Extra Topic&#59; Map Projections</h3>
+	
+
+<p>It is essentially impossible to accurately map large regions of the spherical
+Earth onto flat maps. Many different attempts have been made to provide
+realistic and useful flat maps.  The curved surface of the Earth must be
+projected onto a flat surface following a specified set of rules.  Each
+&#39;map projection&#39; is optimized for a particular use or set of uses.</p>
+
+<p>Java OceanAtlas offers a small set of map projections, which will be explored next.</p>
+
+<p>Files that may be needed or created in this example:</p>
+<ul>
+  <li><span class="fileName">SIO.joa</span></li>
+  <li><span class="fileName">mycity.joa</span></li>
+</ul>
+
+<div class="note_header">TIP:</div>
+
+<div class="note">
+
+In the Java OceanAtlas <b>Configure Map Plot</b> dialog box there is a list of
+projection choices available under Projection/Region in the upper left corner
+of the window.
+
+</div>
+
+<p><h3 class="exercise_header" id="exercise_2d_01">Exercise 2D-01: Map Projections - Analyzing Different Map Projections</h3></p>
+
+<ul>  
+  
+<li>In Java OceanAtlas, with the <span class="fileName">SIO.joa</span> data file open (or your <span class="fileName">mycity.jos</span> file made in Example 2E), and with a World map plot on the screen as in 2A, try each of the following projections, available from the <b>Configure Map Plot</b> window (see note below before making the plots):
+  <ul>
+    <li>Orthographic</li>
+    <li>Mollweide</li>      
+    <li>Lambert azimuthal equal-area</li>
+    <li>Stereographic</li>
+  </ul>
+
+  <div class="note_header">NOTE:</div>
+  <div class="note">
+  <p>If you initiate a JOA map plot and simply hit <b>Plot</b> without
+  changing anything in the <b>Configure Map Plot</b> dialog box, you will get a
+  <b>Mercator World Map</b>. But if you select the Orthographic,
+  Mollweide, Lambert Azimuthal Equal Area, or Stereographic projection,
+  then hit <b>Plot</b>, you will get a blank map plot. This is because
+  these four JOA map projections work only if you also select a Plot
+  Region via that dialog box.</p>  
+
+  <p>Regarding Plot Region, choices of the <b>World 160W Center</b>
+  (Pacific), <b>World 120E Center</b> (Indian), or <b>World 60W
+  Center</b> (Atlantic) preset map regions will produce useful results
+  with any JOA map projections except the North and South pole
+  projections.</p>
+  </div>  
+
+</li>
+
+  
+<li>What are a few telling aspects of each projection?    
+    <ul>
+      
+<li class="indent_1"><u>Hint 1</u>:  Place sufficient <a class="glossary" href="/dpo_examples/glossary.html#latitude">latitude</a> and <a class="glossary" href="/dpo_examples/glossary.html#longitude">longitude</a> lines on the map (if necessary change their interval in the <b>Configure Map Plot</b> dialog box) to see both how the lines appear (straight versus curved) and also how they are relatively spaced north-south and east-west on the map plot.</li>
+      
+<li class="indent_1"><u>Hint 2</u>:  If the plot used for this projection comparison is not a World map plot, be sure to make the area of the Earth covered by the plot sufficiently large to include an entire ocean basin.</li>
+    </ul>
+  </li>  
+</ul>
+
+<p><h3 class="exercise_header" id="exercise_2d_02">Exercise 2D-02: Polar Projections</h3></p>
+
+<ul>
+  
+<li>To view the global ocean from the perspective of the poles, set up a map plot with a polar projection.</li>
+  
+<li>Below is a <b>Configure Map Plot</b> dialog box set up to provide a view of the oceans north of 40&deg;N from a North Pole perspective:
+        
+    <p align="center">
+      <a href="/dpo_examples/images/ch2/fig2d-01.png" rel="lightbox" title="FIG 2d-01 Selecting a polar projection in the Configure Map Plot dialog box ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2d-01s.png" />
+        <p class="caption">FIG 2d-01 Selecting a polar projection in the Configure Map Plot dialog box</p>
+      </a>
+    </p>
+        <p>Hint:  Don't forget to make the most equatorward latitude
+    line plotted, i.e. the bottom of the map plot, 40&deg;N by
+    entering &#39;40&#39; for &#39;B&#39; under <b>Custom
+    Region</b>.</p>  
+    <p>The resulting plot looks like this:</p>
+
+    <p align="center">
+      <a href="/dpo_examples/images/ch2/fig2d-02.png" rel="lightbox" title="FIG 2d-02 Map plot with a polar projection ">
+        <img align="middle" alt="target" src="/dpo_examples/images/ch2/fig2d-02s.png" />
+        <p class="caption">FIG 2d-02 Map plot with a polar projection</p>
+      </a>
+    </p>
+
+
+  </li>
+  
+<li>
+
+    <p>Now make a second map plot, for the Southern Ocean this
+    time, from the perspective of the South Pole (JOA allows more
+    than one map plot at a time)</p>
+
+    <p>Hint:  On the South Pole map make the most equatorward
+    latitude line plotted, i.e. the top of the map plot, 40&deg;S
+    by entering &#39;-40&#39; for &#39;T&#39; under <b>Custom
+    Region</b>.</p>
+
+  </li>  
+
+</ul>
+
+<div class="examine_header">Examine:</div>
+<div class="examine">  
+Compare the two Southern and Arctic Oceans plots:
+<ul>
+  <li>What are the fundamental features and differences of the Arctic Ocean and Southern Ocean?</li>
+  <li>To which ocean does the Arctic Ocean have its primary bathymetric connection (i.e. its principal channels for exchange of waters)?</li>
+  <li>Speculate about the primary ocean circulation feature of the Southern Ocean.</li>
+  <li>Speculate about aspects of the Southern Ocean's interactions with the other oceans.</li>
+</ul>
+</div>
+{% endblock %}
