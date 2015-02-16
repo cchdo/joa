@@ -19,7 +19,7 @@
 	
 
 <div id="data-files-supplied">
-<%= data_files_chapter_listing('10', DpoDataFiles::DATA_FILES, true) %>
+  {{ data|dpo_data_links(10)|safe }}
 </div>
 <h3 id="goals">Goals:</h3>
 

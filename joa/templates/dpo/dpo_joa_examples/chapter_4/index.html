@@ -20,7 +20,7 @@
 
 
 <div id="data-files-supplied">
-<% content_for :data_file_note do %>
+  {{ data|dpo_data_links(4)|safe }}
 <div class="note_header">NOTE:</div>
 <div class="note">
   <p>
@@ -30,8 +30,6 @@
     JOA Examples.
   </p>
 </div>
-<% end %>
-<%= data_files_chapter_listing('4', DpoDataFiles::DATA_FILES, true) { yield :data_file_note } %>
 </div>   
 
 <h3 id="goals">Goals:</h3>

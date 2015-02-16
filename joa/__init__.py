@@ -7,13 +7,46 @@ app = Flask(__name__)
 
 @app.template_filter('dpo_data_links')
 def dpo_data_links(data, chapter=None):
+    def l_to_ul(l):
+        out = u'<ul>'
+        for i in l:
+            print i
+            out += u"<li><span class='fileName'>{}</span></li>".format(
+                    i.split(' ', 1)[0].split('/')[-1]
+                    )
+        out += u'</ul>'
+        return out
+    def dict_to_ul(d, depth=0):
+        out = u'<ul>'
+        for k, v in d.iteritems():
+            if type(v) is dict:
+                out += u"<li>{}  \u2192<ul>".format(k)
+                out += dict_to_ul(v, depth+1)
+                out += u"</ul></li>"
+            if type(v) is list:
+                out += u'<li>{} \u2192'.format(k)
+                out += l_to_ul(v)
+                out += u'</li>'
+        out += u'</ul>'
+        return out
+
+    if chapter:
+        a = u'''<h3 id="data-files-supplied-for-chapter-2-exercises">Data files
+        supplied for Chapter {} exercises:</h3>'''.format(chapter)
+        d = data[str(chapter)][str(chapter)]
+        if type(d) is dict:
+            a += dict_to_ul(d)
+        if type(d) is list:
+            a += l_to_ul(d)
+        a += u"""Download: <a
+        href='/zipped/dpo/{ch}/DPO_data_chapter_{ch}.zip'>Chapter {ch} Data
+        Files</a>""".format(ch=chapter)
+        return a
     splits = data.split(' ', 1)
     a = u'<a href="{0}">{1}</a> '.format(splits[0], splits[0].split('/')[-1])
     if len(splits) > 1:
         a +=  splits[1]
     return a
-
-    
 
 @app.route("/")
 @app.route("/home")
@@ -65,17 +98,16 @@ def dpo(page=None):
         subpages = [page.split('.')[0]]
         template = "dpo/" + page
 
-        #hacks hacks hacks
-        # the DPO examples should just be rewritten in sphinx
-        if page == 'data_files.html':
-            path = os.path.dirname(os.path.abspath(__file__))
-            data = os.path.join(path, 'data', 'dpo_data_files.json')
-            with open(data, 'r') as f:
-                data = json.load(f)
-            order = ['2', '3', '4', '6', '7', '9', '10', '11', '12', '13',
-                    '14', 'S6']
-            for o in order:
-                do[o] = {o: data[o]}
+    #hacks hacks hacks
+    # the DPO examples should just be rewritten in sphinx
+    path = os.path.dirname(os.path.abspath(__file__))
+    data = os.path.join(path, 'data', 'dpo_data_files.json')
+    with open(data, 'r') as f:
+        data = json.load(f)
+    order = ['2', '3', '4', '6', '7', '9', '10', '11', '12', '13',
+            '14', 'S6']
+    for o in order:
+        do[o] = {o: data[o]}
 
     return render_template(template, data=do)
 
@@ -84,6 +116,13 @@ def dpo_rewrite(page=None):
     #some awesome routing hacks
     return redirect("static/dpo_examples/" + page)
 
+@app.route("/data")
+@app.route("/data/<subpage>")
+@app.route("/data/<subpage>/<subsubpage>")
+def data(subpage=None, subsubpage=None):
+    template = 'data/index.html'
+    data=None
+    return render_template(template, data=data)
 
 if __name__ == "__main__":
     app.run(debug=True)
