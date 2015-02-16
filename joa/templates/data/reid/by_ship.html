@@ -1,0 +1,23 @@
+{% extends "data/index.html" %}
+{% block body %}
+<h2>Reid/Mantyla Section Data</h2>
+
+<h3>{{basin}} Ocean by Ship Name/Code</h3>
+
+<p>The following is a list of all of the sections organized alphabetically by
+ship name followed by their corresponding NODC country and ship code. Unknown
+values are indicated by an underscore, '_'.</p>
+
+<table>
+  <tr>
+    <th>Ship Name</th>
+    <th>Code</th>
+  </tr>
+{% for k, v in  data.iteritems() %}
+<tr>
+  <td><a href='/data/reid/{{basin}}/ship/{{k|replace('/', '---')}}'>{{k}}</a></td>
+  <td>{{v}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

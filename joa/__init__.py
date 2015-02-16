@@ -124,7 +124,9 @@ def data_rewrite(page=None):
 @app.route("/data")
 @app.route("/data/<subpage>")
 @app.route("/data/<subpage>/<subsubpage>")
-def data(subpage=None, subsubpage=None):
+@app.route("/data/<subpage>/<subsubpage>/<cat>")
+@app.route("/data/<subpage>/<subsubpage>/<cat>/<sel>")
+def data(subpage=None, subsubpage=None, cat=None, sel=None):
     template = 'data/index.html'
     if subpage and subpage.startswith('best'):
         template = 'data/best.html'
@@ -137,6 +139,89 @@ def data(subpage=None, subsubpage=None):
         if subsubpage:
             template = 'data/woa/' + subsubpage
     data=None
+
+    #and now for the fun one...
+    if subpage and subpage.startswith('reid'):
+        template = 'data/reid/index.html'
+
+        # remember what I said about hacks...?
+        # just kinda dumped the old database to json...
+        # to those coming after me maintaining this (including myself) I'm
+        # sorry...
+        path = os.path.dirname(os.path.abspath(__file__))
+        data = os.path.join(path, 'data', 'joa_files.json')
+        with open(data, 'r') as f:
+            raw_data = json.load(f)
+        # need to chose some start point I guess...
+        if cat == 'entire':
+            data = []
+            for f in raw_data:
+                if subsubpage in f['basin_name']:
+                    data.append(f)
+            return render_template('data/reid/data.html', page='data',
+                basin=subsubpage, data=data)
+
+        if cat == 'date':
+            data = []
+            if sel:
+                for f in raw_data:
+                    if subsubpage in f['basin_name'] and sel == f['year']:
+                        data.append(f)
+                return render_template('data/reid/data.html', page='data',
+                    basin=subsubpage, data=data)
+            for f in raw_data:
+                if subsubpage in f['basin_name']:
+                    y = f['year']
+                    data.append(y)
+
+            data = [int(d) for d in set(data)]
+            data = sorted(data)
+            return render_template('data/reid/by_date.html', page='data',
+                basin=subsubpage, data=data)
+        if cat == 'ship':
+            data = OrderedDict()
+            shipnames = []
+            unorder = {}
+            if sel:
+                sel = sel.replace('---', '/')
+                data = []
+                for f in raw_data:
+                    if subsubpage in f['basin_name'] and sel == f['ship_name']:
+                        data.append(f)
+                return render_template('data/reid/data.html', page='data',
+                    basin=subsubpage, data=data)
+            for f in raw_data:
+                if subsubpage in f['basin_name']:
+                    y = f['ship_name']
+                    unorder[y] = f['ship_code']
+                    shipnames.append(y)
+            shipnames = [unicode(d) for d in set(shipnames)]
+            shipnames = sorted(shipnames)
+            for name in shipnames:
+                data[name] = unorder[name]
+            return render_template('data/reid/by_ship.html', page='data',
+                    basin=subsubpage, data=data)    
+
+        if cat == 'subbasin' and not sel:
+            if subsubpage == "Atlantic":
+                return render_template('data/reid/by_atl_subbasin.html', page='data',
+                    basin=subsubpage, data=data)    
+            if subsubpage == "Pacific":
+                return render_template('data/reid/by_pac_subbasin.html', page='data',
+                    basin=subsubpage, data=data)    
+        if cat == 'subbasin' and sel:
+            data = []
+            major, minor = sel.split('_')
+            major = "Northern" if major == "N" else "Southern"
+            # haha, seems a bug in the origional means that the noth/south
+            # hemisphere is just ignored (at least for atlantic)
+            # I've replicated said bug for consistency
+            for f in raw_data:
+                if (subsubpage in f['basin_name'] and minor in f['sub_basin_name']):
+                    data.append(f)
+            return render_template('data/reid/data.html', page='data',
+                basin=subsubpage, data=data)
+
     return render_template(template, page='data', data=data)
 
 if __name__ == "__main__":

@@ -1,0 +1,25 @@
+{% extends "data/index.html" %}
+{% block body %}
+<div class="data reid row-fluid">
+<h2>Reid/Mantyla Section Data</h2>
+
+<h3>{{basin}} Ocean Section Data</h3>
+
+<table>
+  {% for file in data %}
+  <tr>
+    <td>{{loop.index}}.</td>
+    <td class="nodc">
+      <a href="/data_files/reid/nodc_sd2/{{file.nodc_sd2}}">{{file.nodc_sd2}}</a>
+    </td>
+    <td class="ship">({{file.ship_name}})</td>
+    <td><strong>JOA:</strong> <a href="/data_files/reid/joa/{{file.file_name}}">{{file.file_name}}</a></td>
+  </tr>
+  <tr class="description">
+    <td></td>
+    <td colspan="3">{{file.description}}</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endblock %}
