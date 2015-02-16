@@ -39,7 +39,7 @@ def dpo_data_links(data, chapter=None):
         if type(d) is list:
             a += l_to_ul(d)
         a += u"""Download: <a
-        href='/zipped/dpo/{ch}/DPO_data_chapter_{ch}.zip'>Chapter {ch} Data
+        href='/data_files/dpo/DPO_data_chapter_{ch}.zip'>Chapter {ch} Data
         Files</a>""".format(ch=chapter)
         return a
     splits = data.split(' ', 1)
@@ -116,17 +116,26 @@ def dpo_rewrite(page=None):
     #some awesome routing hacks
     return redirect("static/dpo_examples/" + page)
 
+@app.route("/data_files/<path:page>")
+def data_rewrite(page=None):
+    #some more awesome routing hacks
+    return redirect("static/data_files/" + page)
+
 @app.route("/data")
 @app.route("/data/<subpage>")
 @app.route("/data/<subpage>/<subsubpage>")
 def data(subpage=None, subsubpage=None):
     template = 'data/index.html'
-    if subpage.startswith('best'):
+    if subpage and subpage.startswith('best'):
         template = 'data/best.html'
-    if subpage.startswith('other'):
+    if subpage and subpage.startswith('other'):
         template = 'data/other/index.html'
         if subsubpage:
             template = 'data/other/' + subsubpage
+
+    if subpage and subpage.startswith('woa'):
+        if subsubpage:
+            template = 'data/woa/' + subsubpage
     data=None
     return render_template(template, page='data', data=data)
 
