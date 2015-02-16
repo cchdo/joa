@@ -1,0 +1,69 @@
+{% extends "data/index.html" %}
+{% block body %}
+<h2>TTO</h2>
+
+<p>Click on a line label to view the data.</p>
+<p>
+<map name="atl_tto">
+  <area href="#A19816NK" shape="RECT" title="1981 Knorr NAS 58N" coords="175,35,202,50">
+    <area href="#A19816NI" title="1981 Knorr NAS 51N" coords="148,48,174,65">
+      <area href="#A19816NA" shape="RECT" title="1981-82 Knorr NAS/TAS 55W" coords="97,93,126,110">
+        <area href="#A19826NB" shape="RECT" title="1982 Knorr TAS Leg 2" coords="63,131,114,147">
+          <area href="#B19836NF" title="1983 Knorr TAS Leg 3" coords="144,169,199,187">
+</map>
+<img alt="Atl_tto" src="/static/images/joa_data/TTO/atl_tto.gif?1296761426" usemap="atl_tto">
+</p>
+
+<p>
+<a href="/data_files/reid/joa/entire_tto_atl.zip">Download this entire set of data</a>
+</p>
+
+<table>
+  <tr id="A19816NK">
+    <td>58N</td>
+    <td><a href="/data_files/reid/nodc_sd2/A19816NK.TXT">A19816NK.TXT</a></td>
+    <td>(Knorr - TTO/NAS 55N)</td>
+    <td><b>JOA:</b> <a href="/data_files/reid/joa/natl.1981.6N.58N.joa">natl.1981.6N.58N.joa</a></td>
+  </tr>
+  <tr>
+    <td colspan="4">A section of 36 stations along 58N, 58.845 degrees West to 10.028 degrees West. All have temperature, salinity, oxygen, phosphate, silicate, nitrate. All stations have full depth casts. </td>
+  </tr>
+  <tr id="A19816NI">
+    <td>51N</td>
+    <td><a href="/data_files/reid/nodc_sd2/A19816NI.TXT">A19816NI.TXT</a></td>
+    <td>(Knorr - TTO/NAS 50N)</td>
+    <td><b>JOA:</b> <a href="/data_files/reid/joa/natl.1981.6N.51N.joa">natl.1981.6N.51N.joa</a></td>
+  </tr>
+  <tr>
+    <td colspan="4">A section of 18 stations along 51N, 50.183 degrees West to 12.933 degrees West. All have temperature, salinity, oxygen, phosphate, silicate, nitrate. All stations have full depth casts. </td>
+  </tr>
+  <tr id="A19816NA">
+    <td>55W</td>
+    <td><a href="/data_files/reid/nodc_sd2/A19816NA.TXT">A19816NA.TXT</a></td>
+    <td>(Knorr - TTO/NAS/TAS 55W)</td>
+    <td><b>JOA:</b> <a href="/data_files/reid/joa/natl.1981-82.6N.55W.joa">natl.1981-82.6N.55W.joa</a></td>
+  </tr>
+  <tr>
+    <td colspan="4">A section of 38 stations from 4.393 degrees North to 43.6 degrees North, along 55W. All have temperature, salinity, oxygen, phosphate, silicate. Most have nitrate. There are at least 29 full depth casts. </td>
+  </tr>
+  <tr id="A19826NB">
+    <td>04N-17N</td>
+    <td><a href="/data_files/reid/nodc_sd2/A19826NB.TXT">A19826NB.TXT</a></td>
+    <td>(Knorr - TTO/TAS Leg 2)</td>
+    <td><b>JOA:</b> <a href="/data_files/reid/joa/natl.1982.6N.4N_17N.joa">natl.1982.6N.4N_17N.joa</a></td>
+  </tr>
+  <tr>
+    <td colspan="4">A section of 32 stations from 4.393 degrees North to 17.901 degrees North, 66.063 degrees West to 49.42 degrees West. All have temperature, salinity. Most have oxygen, phosphate, silicate, nitrate. There are at least 19 full depth casts. </td>
+  </tr>
+  <tr id="B19836NF">
+    <td>34W-17W</td>
+    <td><a href="/data_files/reid/nodc_sd2/B19836NF.TXT">B19836NF.TXT</a></td>
+    <td>(Knorr - TTO/TAS Leg 3)</td>
+    <td><b>JOA:</b> <a href="/data_files/reid/joa/satl.1983.6N.34W_17W.joa">satl.1983.6N.34W_17W.joa</a></td>
+  </tr>
+  <tr>
+    <td colspan="4">A section of 37 stations from 8.633 degrees South to 9.541 degrees North, 34.585 degrees West to 17.473 degrees West. All have temperature, salinity, oxygen, phosphate, silicate, nitrate. There are at least 31 full depth casts. </td>
+  </tr>
+  </tbody></table>
+  </table>
+{% endblock %}

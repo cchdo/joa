@@ -121,6 +121,12 @@ def dpo_rewrite(page=None):
 @app.route("/data/<subpage>/<subsubpage>")
 def data(subpage=None, subsubpage=None):
     template = 'data/index.html'
+    if subpage.startswith('best'):
+        template = 'data/best.html'
+    if subpage.startswith('other'):
+        template = 'data/other/index.html'
+        if subsubpage:
+            template = 'data/other/' + subsubpage
     data=None
     return render_template(template, page='data', data=data)
 

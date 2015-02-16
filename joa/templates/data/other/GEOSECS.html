@@ -1,0 +1,70 @@
+{% extends "data/index.html" %}
+{% block body %}
+<h2>GeoSECS</h2>
+
+<p>Click on a line label to view the data.</p>
+<p>
+<map name="atl_geosecs">
+  <area shape="RECT" coords="161,30,211,45" href="#A19726NE" title="1972 Knorr 44-74N">
+    <area shape="RECT" coords="112,154,168,170" href="#B19726NA" title="1972-73 Knorr 66-1W">
+      <area shape="RECT" coords="203,198,253,214" href="#B19736NB" title="1973 Knorr 67-19E">
+        <area shape="RECT" coords="182,313,208,328" href="#B19736NA" title="1973 Knorr 58S">
+</map>
+<img alt="Atl_geosecs" src="/static/images/joa_data/GEOSECS/atl_geosecs.gif?1296761426" usemap="atl_geosecs">
+</p>
+
+<p>
+<a href="/data_files/reid/joa/entire_geosecs_atl.zip">Download this entire set of data</a>
+</p>
+
+<table>
+  <tr id="A19726NE">
+    <td>44N-74N</td>
+    <td><a href="/data_files/reid/nodc_sd2/A19726NE.TXT">A19726NE.TXT</a></td>
+    <td>(Knorr - GeoSECS)</td>
+    <td><b>JOA:</b> <a href="/data_files/reid/joa/natl.1972.6N.44N_74N.joa">natl.1972.6N.44N_74N.joa</a></td>
+  </tr>
+  <tr>
+    <td colspan="4">A section of 10 stations from 44.96 degrees North to 74.933 degrees
+      North, 42.076 degrees West to 0.008 degrees West. All have temperature,
+      salinity. Most have oxygen, phosphate, silicate. None have nitrate. There are
+      at least 9 full depth casts.</td>
+  </tr>
+  <tr id="B19726NA">
+    <td>66W-01W</td>
+    <td><a href="/data_files/reid/nodc_sd2/B19726NA.TXT">B19726NA.TXT</a></td>
+    <td>(Knorr - GeoSECS)</td>
+    <td><b>JOA:</b> <a href="/data_files/reid/joa/satl.1972-73.6N.66W_1W.joa">satl.1972-73.6N.66W_1W.joa</a></td>
+  </tr>
+  <tr>
+    <td colspan="4">A section of 61 stations from 61.05 degrees South to 74.933
+      degrees North, 66.133 degrees West to 1.121 degrees West. All have
+      temperature, salinity. Most have oxygen, phosphate, silicate. None have
+      nitrate. There are at least 60 full depth casts.
+    </td>
+  </tr>
+  <tr id="B19736NB">
+    <td>67W-19E</td>
+    <td><a href="/data_files/reid/nodc_sd2/B19736NB.TXT">B19736NB.TXT</a></td>
+    <td>(Knorr - GeoSECS)</td>
+    <td><b>JOA:</b> <a href="/data_files/reid/joa/satl.1973.6N.67W_19E.joa">satl.1973.6N.67W_19E.joa</a></td>
+  </tr>
+  <tr>
+    <td colspan="4">A section of 28 stations from 60.025 degrees South to 35.99
+      degrees North, 67.983 degrees West to 19.396 degrees East. All have
+      temperature, salinity. Most have oxygen, phosphate, silicate. None have
+      nitrate. There are at least 25 full depth casts.</td>
+  </tr>
+  <tr id="B19736NA">
+    <td>58S</td>
+    <td><a href="/data_files/reid/nodc_sd2/B19736NA.TXT">B19736NA.TXT</a></td>
+    <td>(Knorr - GeoSECS)</td>
+    <td><b>JOA:</b> <a href="/data_files/reid/joa/satl.1973.6N.58S.joa">satl.1973.6N.58S.joa</a></td>
+  </tr>
+  <tr>
+    <td colspan="4">A section of 11 stations along 58S, 45.033 degrees West to
+      0.025 degrees East. All have temperature, salinity, oxygen, phosphate,
+      silicate. None have nitrate. There are at least 9 full depth casts.</td>
+  </tr>
+</table>
+{% endblock %}
