@@ -10,7 +10,6 @@ def dpo_data_links(data, chapter=None):
     def l_to_ul(l):
         out = u'<ul>'
         for i in l:
-            print i
             out += u"<li><span class='fileName'>{}</span></li>".format(
                     i.split(' ', 1)[0].split('/')[-1]
                     )
