@@ -11,62 +11,60 @@ computer application for exploring those data.
 </p>
 
 <div class="downloads">
-  <h3>Download</h3>
+  <h3>Download Current Versions</h3>
+  <h3>5.3</h3>
+  <p>JOA 5.3 is considered Beta software. There are known problems, including issues with netCDF files and the need to make a plot before browsing.</p>
+  <div class="row">
+    <div class="span4">
+      <h4>Mac OS X</h4>
+      <p><a href="http://cchdo.ucsd.edu/data/11986/JOA5.3.zip" class="btn btn-primary">Get JOA 5.3</a></p>
+      <p><small>(71 MB)</small></p>
+    </div><!--close span4-->
+  <div class="span8">
+    <p>Required for Mac OS X 10 or greater. It may work on earlier versions of Mac OS X. This version of JOA contains an embedded Java environment and does not require a separate Java download.</p>
+  </div><!--close span8-->
+  </div><!--close row-->
+  <br>
+  <div class="row">  
+    <div class="span4">
+      <h4>Windows</h4>
+      <p><a href="/static/joa/win/JOA_Setup_5_2_1.msi" class="btn btn-primary">Get JOA 5.3</a></p>
+      <p><small>(74 MB)</small></p>
+    </div><!--close span4-->
+    <div class="span8">
+      <p>Designed for Windows XP-7. It has not been tested under Windows 8, 8.1, and 10 but should work. This version of JOA requires you to download and install a Java 1.6 or higher runVme environment (JRE).</p>
+    </div><!--close span8-->
+  </div><!--close row-->
+  <h3>5.2.1</h3>
   <div class="row">
     <div class="span4">
       <h4>Mac OS X</h4>
       <p><a href="/static/joa/mac/Java OceanAtlas 5.2.1.zip" class="btn btn-primary">Get JOA 5.2.1</a></p>
       <p><small>(32 MB)</small></p>
-    </div>
+    </div><!--close span4-->
+    <div class="span8">
+      <p>Designed for Windows 7, 8, and 8.1. It has not been tested under Windows 10 or earlier versions of Windows. This version of JOA contains an embedded Java environment and does not require a separate Java download.</p>
+    </div><!--close span8-->
+  </div><!--close row-->
+  <br>
+  <div class="row">
     <div class="span4">
       <h4>Windows</h4>
       <p><a href="/static/joa/win/JOA_Setup_5_2_1.msi" class="btn btn-primary">Get JOA 5.2.1</a></p>
       <p><small>(19 MB)</small></p>
-    </div>
-    <div class="span4">
-      <h4>Linux</h4>
-      <p><a href="#" class="btn btn-primary disabled">Coming soon!</a></p>
-    </div>
-  </div>
+    </div><!--close span4-->
+    <div class="span8">
+      <p>Works up to and including Mac OS X 9. It requires Apple’s Java environment. You may need to install <a href="http://support.apple.com/kb/DL1572">Java for OS X from Apple (http://support.apple.com/kb/DL1572)</a>.</p>
+    </div><!--close span8-->
+  </div><!--close row-->
 
-  <h4>Mac OS X Java</h4>
-  <p>For JOA to run on Mac OS X up to version 10.10, you may need to install <a href="http://support.apple.com/kb/DL1572">Java for OS X from Apple (http://support.apple.com/kb/DL1572)</a>.</p>
-
-  <h4>Pre-releases</h4>
-  <p>Curious as to what is coming next? Try the most recent <a href="/joa/prerelease.html">work-in-progress</a>.</p>
-
-  <h4>Previous releases</h4>
-  <div class="row alerted">
-    <div class="span4">
-      <h4>Mac OS X</h4>
-      <p><a href="/static/joa/mac/Java OceanAtlas 5.0.2.dmg" class="btn">Get JOA 5.0.2</a></p>
-      <p><small>(24 MB)</small></p>
-      <div class="alert">
-        <strong>Please note</strong> <small>There is a known bug in this
-          release when both CTDPRS and REVPRS are present in the same
-          file.</small>
-      </div>
-    </div>
-    <div class="span4">
-      <h4>Windows</h4>
-      <p><a href="/static/joa/win/JOA_Setup_32_64.msi" class="btn btn-primary">Get JOA 5.0</a></p>
-      <p><small>(19 MB)</small></p>
-      <div class="alert">
-        <strong>Please note</strong> <small>
-          This release does not work with Java 7 or later.
-        </small>
-      </div>
-    </div>
-    <div class="span4">
-      <h4>Linux</h4>
-    </div>
-  </div>
 </div>
 
 <div id="install">
   <h3>Install</h3>
   <ul>
     <li><a href="/joa/joa_download_instructions.html">General installation instructions</a></li>
+    <li><a href="/joa/joa_download_mac.html">Mac specific installation instructions</a></li>
     <li><a href="/joa/joa_download_windows.html">Windows specific installation instructions</a></li>
   </ul>
 </div>
@@ -76,11 +74,10 @@ computer application for exploring those data.
   <p>
   If you already have JOA 5.0 installed on your computer, you can just
   replace your copy's JOA5.jar file with the new version.
+  Follow <a href="/joa/updates.html">these instructions</a> to update JOA.
   </p>
-  <p>
-  Follow <a href="/joa/updates.html">these instructions</a> to update JOA
-  </p>
-  <p><a href="/static/joa/mac/jar5.0.2/JOA5.jar" class="btn btn-primary">JOA 5.0.2 JOA5.jar</a> (6.9 MB)</p>
+  <p><a href="/static/joa/mac/jar5.3/JOA5.jar" class="btn btn-primary">JOA 5.3 JOA5.jar</a> (3.8 MB)</p>
+  <p><a href="/static/joa/mac/jar5.2.1/JOA5.jar" class="btn btn-primary">JOA 5.2.1 JOA5.jar</a> (4 MB)</p>
 </div>
 {% endblock %}
 {% block right_nav %}
