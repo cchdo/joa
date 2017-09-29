@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block body %}
+<div id="top"></div>
+<h1>Java OceanAtlas Application</h1>
+<p>
+Java OceanAtlas (JOA) is a multi-OS application for viewing and exploring
+ocean vertical profile data. Along with a broad collection of data, JOA is
+the culmination of a long dream: a collection of some of the most useful
+oceanographic section data from the World Ocean with a multi-platform
+computer application for exploring those data.
+</p>
+
+<div class="downloads">
+  <h3><a href="/joa/index.html">Click Here for Current Versions of JOA</a></h3>
+  <h3>Download Previous Versions</h3>
+  <h3>JOA 5.2.1</h3>
+  <div class="row">
+    <div class="span4">
+      <h4>Mac OS X</h4>
+      <p><a href="/static/joa/mac/Java OceanAtlas 5.2.1.zip" class="btn btn-primary">Get JOA 5.2.1</a></p>
+      <p><small>(32 MB)</small></p>
+    </div><!--close span4-->
+    <div class="span8">
+      <p>Works up to and including Mac OS X 10.9. It requires Apple’s Java environment. You may need to install <a href="http://support.apple.com/kb/DL1572">Java for OS X from Apple (http://support.apple.com/kb/DL1572)</a>.</p>
+    </div><!--close span8-->
+  </div><!--close row-->
+  <br>
+  <div class="row">
+    <div class="span4">
+      <h4>Windows</h4>
+      <p><a href="/static/joa/win/JOA_Setup_5_2_1.msi" class="btn btn-primary">Get JOA 5.2.1</a></p>
+      <p><small>(19 MB)</small></p>
+    </div><!--close span4-->
+    <div class="span8">
+      <p>Designed for Windows XP-7. It has not been tested under Windows 8, 8.1, and 10 but should work. This version of JOA requires you to download and install a Java 1.6 or higher runtime environment (JRE).</p>
+    </div><!--close span8-->
+  </div><!--close row-->
+
+
+<div id="install">
+  <h3>Install</h3>
+  <ul>
+    <li><a href="/joa/joa_download_instructions.html">General installation instructions</a></li>
+    <li><a href="/joa/joa_download_mac.html">Mac specific installation instructions</a></li>
+    <li><a href="/joa/joa_download_windows.html">Windows specific installation instructions</a></li>
+  </ul>
+</div>
+
+<div id="update">
+  <h3>Update</h3>
+  <p>
+  If you already have JOA 5.0 installed on your computer, you can just
+  replace your copy's JOA5.jar file with the new version.
+  Follow <a href="/joa/updates.html">these instructions</a> to update JOA.
+  </p>
+  <!--
+  <div class="alert alert-info">
+  There are currently no updates avaiable for JOA 5.3
+  </div>
+  <p><a href="/static/joa/mac/jar5.3/JOA5.jar" class="btn btn-primary">JOA 5.3 JOA5.jar</a> (3.8 MB)</p>
+  -->
+  <br>
+  <div class="row">
+    <div class="span4">
+      <h4>JOA 5.2.1</h4>
+      <p><a href="/static/joa/mac/jar5.2.1/JOA5.jar" class="btn btn-primary">JOA5.jar</a></p>
+      <p><small>(4 MB)</small></p>
+    </div><!--close span4-->
+    <div class="span8">
+      <p>The most current jar for JOA 5.2.1 is version 3736 <br>
+	 (December 4, 2013)
+      </p>
+    </div><!--close span8-->
+  </div><!--close row-->
+</div><!--close update-->
+</div><!--close downloads-->
+{% endblock %}
+{% block right_nav %}
+{% include "joa/_right_nav.html"%}
+{% endblock %}
