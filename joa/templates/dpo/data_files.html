@@ -21,7 +21,7 @@ JOA. With JOA open, you can do this by selecting
 <a class="glossary_prop" href="/dpo/glossary.html#menu_bar">File → Open</a>
 from the JOA menu bar, then selecting the appropriate file.</p>
 
-{%- for key, value in data.iteritems() recursive%}
+{%- for key, value in data.items() recursive%}
   {%-if value is mapping %}
     {%- if loop.depth == 1 %}
     <h3><a href="/data_files/dpo/DPO_data_chapter_{{key}}.zip">Chapter {{key}} Data Files</a></h3>
@@ -29,7 +29,7 @@ from the JOA menu bar, then selecting the appropriate file.</p>
     <ul>
       <li>{{key}}  →
     {%- endif %}
-    {{loop(value.iteritems())}}
+    {{loop(value.items())}}
     {%- if loop.depth == 1 %}
     {%- else %}
     </li>

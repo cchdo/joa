@@ -17,7 +17,7 @@ def dpo_data_links(data, chapter=None):
         return out
     def dict_to_ul(d, depth=0):
         out = u'<ul>'
-        for k, v in d.iteritems():
+        for k, v in d.items():
             if type(v) is dict:
                 out += u"<li>{}  \u2192<ul>".format(k)
                 out += dict_to_ul(v, depth+1)
