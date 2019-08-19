@@ -197,7 +197,7 @@ def data(subpage=None, subsubpage=None, cat=None, sel=None):
                     y = f['ship_name']
                     unorder[y] = f['ship_code']
                     shipnames.append(y)
-            shipnames = [unicode(d) for d in set(shipnames)]
+            shipnames = [str(d) for d in set(shipnames)]
             shipnames = sorted(shipnames)
             for name in shipnames:
                 data[name] = unorder[name]
