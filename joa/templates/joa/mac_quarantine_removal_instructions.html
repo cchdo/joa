@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Java OceanAtlas Application</h1>
+<h2>Mac quarantine removal instructions</h2>
+
+  <p> 
+   Due to an OS change made by Apple, it is not currently possible for Mac OS 10.12 
+   (Sierra) users to successfully open an internet downloaded copy of the Mac OS  
+   version of Java OceanAtlas. Until a work-around is in place, Mac OS 10.12 users 
+   can obtain Java OceanAtlas only via flash drive or other file sharing mechanisms 
+   which do not involve download over the internet.
+   </p>
+
+   <p> 
+   Follow these instructions for removing Mac quarantine restrictions 
+   from downloaded software via Terminal.
+  </p>
+
+
+
+   <p> 
+   <strong>Note:</strong> This workaround assumes you are somewhat comfortable using Terminal.app.
+   </p>
+
+<h5>Step #1:</h5>
+
+   <p> 
+Enable the "Anywhere" option in Gate Keeper (Apple's name for the software that handles downloads of new software to your Mac).
+   <br />
+
+   <br />
+This is described here:
+
+   <br />
+   <a href="https://www.youtube.com/watch?time_continue=112&v=Ctz_dHfYfb8">https://howchoo.com/g/yty3mdvkyty/how-to-download-apps-from-anywhere-in-macos-sierra</a>
+   </p>
+
+   <h5>Step #2:</h5> 
+
+   <p> 
+   Download JOA 5.4 from <a href="http://joa.ucsd.edu/joa">http://joa.ucsd.edu/joa</a>
+
+   <br />
+   <br />
+The behavior on most Macs is put an expanded zip file in my Downloads folder called "Java OceanAtlas". If you have a zip file, double click to expand into a Java OceanAtlas folder.
+
+   <br />
+   </p>
+
+<h5>Step #3:</h5>
+
+   <p> 
+   <strong>Complete Step #3 before attempting to launch JOA.</strong>
+   <br />
+   <br />
+   Use the terminal to navigate to your Java Oceanatlas folder in downloads using the cd command.
+	   Start in your home directory, i.e. /Users/<i>yourusername</i>
+	   
+   <br />
+   <br />
+	   Issue this sequence of commands:
+
+   <br />
+   &bull;&nbsp;cd Downloads
+   <br />
+   &bull;&nbsp;cd Java\ Oceanatlas 
+   <br />
+   &nbsp;&nbsp;<i>note: the "\" allows you to enter a space into the command</i>
+   <br />
+   &bull;&nbsp;ls 
+   <br />
+   <i>note: ls shows the contents of the folder</i>
+   </p>
+
+<p style="color: #FF6600; font-weight: bold;">IMPORTANT: 
+if you don't see:
+
+   <br />
+   <br />
+   <span style="color: #32473c; font-weight: normal;">
+	   Example Data Files Java OceanAtlas 5.app coastlines ndeditsettings.txt <br />
+	   JOA_Support bathymetry lexicon.txt <br />
+	   temp
+   </span>
+   <br />
+   <br />
+
+You may not be where you think you are. 
+   <br />
+   <br />
+If you are not in the right folder, issue:
+   <br />
+   <span style="color: #32473c; font-weight: normal;">
+   &bull;&nbsp;cd /~<i>yourusername</i> and start over.
+   </span>
+
+   </p>
+   <p> 
+   Once you are in the correct folder, issue this command:
+
+   <br />
+   &bull;&nbsp;xattr -r -d com.apple.quarantine Java\ OceanAtlas\ 5.app
+
+   <br />
+   <br />
+   The xattr command removes a "quarantine" attribute that Apple has added to the JOA application.
+
+   <br />
+   <br />
+   This is what an example Terminal session might look like:
+   </p>
+
+<div class="image">
+  <img alt="Example Terminal session for removing Mac quarantine using xattr command"
+       src="/static/dpo_examples/images/JOAimages/terminal_remove_mac_quarantine.png">
+</div>
+
+
+
+{% endblock %}
+{% block right_nav %}
+{% include "joa/_right_nav.html"%}
+{% endblock %}
