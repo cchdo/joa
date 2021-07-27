@@ -90,11 +90,9 @@ def dpo(page=None):
     template = 'dpo/index.html'
     data = None
     do = OrderedDict()
-    sort = []
     if page:
         if not page.endswith('.html'):
             page += ".html"
-        subpages = [page.split('.')[0]]
         template = "dpo/" + page
 
     #hacks hacks hacks
