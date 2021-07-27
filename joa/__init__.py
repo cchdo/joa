@@ -3,7 +3,7 @@ from flask import render_template, redirect, url_for
 import json
 import os
 from collections import OrderedDict
-app = Flask(__name__)
+app = Flask(__name__, static_folder=None)
 
 @app.template_filter('dpo_data_links')
 def dpo_data_links(data, chapter=None):
@@ -224,5 +224,23 @@ def data(subpage=None, subsubpage=None, cat=None, sel=None):
 
     return render_template(template, page='data', data=data)
 
+def debug_static_proxy(path):
+    from flask import request
+    from requests import get
+    print(f"hi: {path}")
+    dpo = ""
+    if "dpo_examples" in path:
+        dpo = "dpo_examples/"
+    r = get(f"https://joa_old.cchdo.io/static/{dpo}{path}")
+    try:
+        del r.headers["content-encoding"]
+    except KeyError:
+        ...
+    return (r.content, 200, dict(r.headers))
+
 if __name__ == "__main__":
+    debug = True
+    if debug:
+        app.add_url_rule("/static/<path:path>", view_func=debug_static_proxy)
+        app.add_url_rule("/dpo_examples/images/<path:path>", view_func=debug_static_proxy)
     app.run(debug=True)
