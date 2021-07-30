@@ -26,9 +26,9 @@
         <div id="nav">
           <ul class="menu">
             <li{% if page == 'home' %} id="current_tab"{% endif %}><a href="/home">Home</a></li>
-            <li{% if page == 'joa'%} id="current_tab"{% endif %}><a href="/joa">JOA application</a></li>
-            <li{% if page == 'data'%} id="current_tab"{% endif %}><a href="/data">JOA data</a></li>
+            <li{% if page == 'data'%} id="current_tab"{% endif %}><a href="/data">Legacy JOA data</a></li>
             <li{% if page == 'dpo' %} id="current_tab"{% endif %}><a href="/dpo/">DPO JOA Examples</a></li>
+            <li><a href="https://joa.ucsd.edu/">Return to JOA Suite</a></li>
           </ul>	
         </div>
       </div>
@@ -45,63 +45,7 @@
         </div>
         {% endif %}
       </div>
-
-      <div id="footer">
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <h1>Quick Navigation</h1>
-                <ul>
-                  <li><a href="#top">Back to Top</a></li>
-                  <li><a href="/">Home</a></li>
-                </ul>
-              </td>
-
-              <td>
-                <h1>About Us</h1>
-                <ul>
-                  <li><a href="/home/aboutus.html">About</a></li>
-                  <li><a href="/home/siteguide.html">Site Guide</a></li>
-                </ul>
-              </td>
-
-              <td>
-                <h1>Legal</h1>
-                <ul>
-                  <li><a href="javascript:;">Terms of Use
-                      <span class="infopopup">
-                        <p>JOA application</p>
-                        <p>The Java OceanAtlas application is copyrighted by John Osborne. It cannot be sold, re-packaged, or modified without his direct consent.</p><br />
-                        <p>DPO JOA Examples</p>
-                        <p>Copyright  2011 Elsevier Inc. All rights reserved</p>
-                      </span>
-                    </a></li>
-                    <li><a href="javascript:;">Funding
-                        <span class="infopopup">Java OceanAtlas was developed with support from the US National Science Foundation <img alt="Nsf_banner" src="/static/images/nsf_banner.png"> 
-                      </a></li>
-                </ul>
-              </td>
-              <td>
-                <h1>Learn More</h1>
-                <ul>
-                  <li><a href="/home/contact.html">Contact Us</a></li>
-                  <li><a href="http://ushydro.ucsd.edu/outreach">Outreach on USHydro</a></li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div id="footer_funding">
-        <ul>
-          <li><img alt="Clivar_logo" src="/static/images/clivar_logo.jpg"></li>
-          <li><img alt="Nsf_logo" src="/static/images/nsf_logo.jpg"></li>
-          <li><img alt="Sio_logo" src="/static/images/sio_logo.gif"></li>
-        </ul>
-      </div>
-
-    </div>
+   </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>jQuery.noConflict();</script>
