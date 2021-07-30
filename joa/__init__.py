@@ -116,12 +116,12 @@ def dpo_rewrite(page=None):
     # glossary is special case...
     if page.endswith("glossary.html"):
         return redirect("/dpo/" + page)
-    return redirect("static/dpo_examples/" + page)
+    return redirect("/static/dpo_examples/" + page)
 
 @app.route("/data_files/<path:page>")
 def data_rewrite(page=None):
     #some more awesome routing hacks
-    return redirect("static/data_files/" + page)
+    return redirect("/static/data_files/" + page)
 
 @app.route("/data")
 @app.route("/data/<subpage>")
