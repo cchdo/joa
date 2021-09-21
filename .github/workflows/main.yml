@@ -12,7 +12,7 @@ on:
 
 env:
   #COMMIT_SHA: ${{ github.sha::6 }} #First 6 characters of SHA hash of commit, for making image name unique
-  REPO_NAME: ${{ github.repository }} #This includes the owner/organization name
+  REPO_NAME: ${{ github.event.repository.name }} #This includes the owner/organization name
    
 jobs:
   build-and-publish-latest:
@@ -26,5 +26,5 @@ jobs:
       uses: VaultVulp/gp-docker-action@1.2.0
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
-        image-name: ${{ env.REPO_NAME }}:${GITHUB_SHA::6}
+        image-name: ${{ env.REPO_NAME }}:${{GITHUB_SHA::6}}
         dockerfile: Dockerfile
