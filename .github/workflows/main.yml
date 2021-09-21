@@ -13,14 +13,8 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-
-#env:
-  #COMMIT_SHA: ${{ github.sha::6 }} #First 6 characters of SHA hash of commit, for making image name unique
-  #REPO_NAME: ${{ github.event.repository.name }} #This includes the owner/organization name
-   
+  
 jobs:
-
-
   build-and-publish-latest:
     runs-on: ubuntu-latest
     
